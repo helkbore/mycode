@@ -1,0 +1,46 @@
+<html>
+
+<meta charset="utf-8" />
+<title>禁止输入</title>
+<body>
+<!-- 通过html方式禁止输入 -->
+<input type="text" value="html" disabled />
+<input type="text" value="html" disabled="disabled" />
+<input type="text" value="html" readonly />
+
+<!-- 通过js方式禁止输入 -->
+<input type="text" id="test_input" value="js1" />
+<input type="text" id="test_input2" value="js2" />
+<button id="do_test_button" >禁止输入1</button>
+<button id="do_test_button2" >禁止输入1</button>
+
+<script>
+(function(){
+    var f_input = document.getElementById('test_input');
+    var f_input2 = document.getElementById('test_input2');
+    
+    var f_btn = document.getElementById('do_test_button');
+    var f_btn2 = document.getElementById('do_test_button2');
+    
+    // 注意这段写法
+    f_btn.onclick = doTest1;
+    f_btn2.onclick = doTest2;
+
+    // 禁止输入: 方法一
+    function doTest1() {
+        console.log(1);
+       f_input.onfocus = function() { console.log(10); f_input.blur(); } 
+    }
+    
+    //  禁止输入: 方法二, 感觉一的效果更好一些
+    function doTest2() {
+        console.log(2);
+       var noText = function() { console.log(20); f_input2.value="js2"; }
+       f_input2.onkeyup = f_input2.onblur = noText;
+    }
+
+})();
+
+</script>
+</body>
+<html>
