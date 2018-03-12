@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>只能输入数字</title>
+</head>
+<body>
+<h1>只能输入数字</h1>
+
+<h2>HTML5</h2>
+<!-- 方法一. html5 -->
+<input type="number" value="谷歌支持别的没试" />
+<input type="text" pattern=[0-9] value="没成功" />
+
+<input type="text" id="test_input" value="js1" />
+<button id="do_test_button" >点我实现功能</button>
+
+<script>
+    (function(){
+        var f_input = document.getElementById('test_input');
+        var f_btn = document.getElementById('do_test_button');
+
+        f_btn.onclick = function() {
+            clearNumber = function(el) {
+                var _v = el.value;
+                el.value = _v.replace(/\D/g, '');
+            }
+
+            f_input.onfocus = function() {
+                clearNumber(this);
+            };
+
+            f_input.onkeyup  = function() {
+                clearNumber(this);
+            };
+
+            f_input.onblur = function() {
+                clearNumber(this);
+            };
+        }
+    })();
+</script>
+</body>
+</html>
