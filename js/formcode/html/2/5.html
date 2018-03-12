@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>禁止复制与粘贴</title>
+</head>
+<body>
+<h1>禁止复制与粘贴</h1>
+<input type="text" id="test_input" value="禁止复制与粘贴" />
+<button id="do_test_button" >点我实现功能</button>
+
+<script>
+    (function(){
+        var f_input = document.getElementById('test_input');
+        var f_btn = document.getElementById('do_test_button');
+
+        f_btn.onclick = function() {
+            f_input.oncopy = function() {
+                return false;
+            }
+
+            f_input.onpaste = function() {
+                return false;
+            }
+        };
+
+    })();
+</script>
+</body>
+</html>
