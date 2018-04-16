@@ -75,3 +75,5 @@ fabric.properties
 .idea/*
 */.idea/*
 */*.idea/*
+.idea/*.*
+**/.idea/**

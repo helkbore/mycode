@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>限制字符串长度</title>
+</head>
+<body>
+<h1>限制字符串长度</h1>
+<p>有局限性, 不同平台占位计算不同--中英文/数字等</p>
+<input type="text" maxlength="5" value="html"/>
+
+<input type="text" id="test_input" value="js" data-length='5' data-model='Ch' />
+<button id="do_test_button" >点我实现功能</button>
+
+<script>
+    (function(){
+        var f_input = document.getElementById('test_input');
+        var f_btn = document.getElementById('do_test_button');
+
+        f_btn.onclick = function(ev){
+            var clearNumber = function(tThis) {
+                var _v = tThis.value,
+                    _vLen = _v.length,
+                    dataLength = tThis.getAttribute("data-length"),
+                    subLen = dataLength;
+                if (_vLen > dataLength) {
+                    tThis.value = _v.substr(0, subLen);
+                }
+            };
+
+            f_input.onfocus = function (ev2) {
+                clearNumber(this);
+            }
+            f_input.onkeyup = function (ev2) {
+                clearNumber(this);
+            }
+            f_input.onblur = function (ev2) {
+                clearNumber(this);
+            }
+        }
+
+    })();
+</script>
+</body>
+</html>

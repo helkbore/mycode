@@ -36,17 +36,56 @@ _v.replace(/\D/g, '')
 ```
 
 
-#### [关闭输入法](html/2/1.html)
+#### [限制字符串长度](html/2/8.html)
+```javascript
+_v.substr(0, subLen);
+```
+
+
+#### [限制字符串长度(区分中英文)](html/2/9.html)
 ```javascript
 
 ```
 
-
-#### [关闭输入法](html/2/1.html)
+#### [限制字符串长度(区分中英文)](html/2/10.html)
 ```javascript
 
 ```
 
+#### [限制字符串长度(区分中英文)](html/2/11.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/12.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/13.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/14.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/15.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/16.html)
+```javascript
+
+```
+
+#### [限制字符串长度(区分中英文)](html/2/17.html)
+```javascript
+
+```
 
 #### [关闭输入法](html/2/1.html)
 ```javascript

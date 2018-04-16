@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <style>
+        .loading{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top:0;
+            left: 0;
+            z-index: 100;
+            background: #fff;
+        }
+
+        .loading .pic {
+            height: 64px;
+            width: 64px;
+            background: url("../images/loading1.gif");
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            var loading = '<div class="loading"><div class="pic"></div></div>'
+            $("body").append(loading);
+            setInterval(function() {
+                $(".loading").fadeOut();
+            }, 3000)
+        });
+    </script>
+</head>
+
+<body>
+
+
+<img src="http://a.cdn.zhuolaoshi.cn/user/sxhzla/%E8%8A%B1%E5%8D%89%E9%A3%8E%E5%85%89%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8003.jpg" />
+<img src="http://www.deam-us.com/wp-content/uploads/2015/12/sky-809367_1280.jpg" />
+<img src="http://pic1.win4000.com/wallpaper/c/584e0d51534b6.jpg" />
+<img src="http://pic.qiantucdn.com/58pic/17/92/26/83558PICw72_1024.jpg" />
+<img src="http://pic1.win4000.com/wallpaper/b/58070e2feff36.jpg" />
+<img src="http://p15.qhimg.com/d/_open360/design0312/2.jpg" />
+<img src="http://4493bz.1985t.com/uploads/allimg/160512/5-160512144132.jpg" />
+<img src="http://pic2.16pic.com/00/51/44/16pic_5144662_b.jpg" />
+<img src="http://pic2.cxtuku.com/00/02/95/b7810e9f98f6.jpg" />
+<img src="http://www.woaihuahua.com/uploads/allimg/140614/1-140614205606130.jpg" />
+<img src="http://pic1.jigouxinxi.com/tupian/HTTP3BpYzgxLmh1aXR1LmNvbS9yZXMvMjAxNjA2MzAvNzQ4NzcxXzIwMTYwNjMwMTEwMjI4OTMwNTAwXzEuanBn.jpg" />
+<img src="" />
+<img src="" />
+<img src="" />
+<img src="" />
+<img src="" />
+<img src="" />
+<img src="" />
+</body>
+</html>
