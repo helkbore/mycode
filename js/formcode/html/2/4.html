@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关闭输入法</title>
+</head>
+<body>
+<h1>关闭输入法</h1>
+<!-- 方法一: 利用css特殊属性 不支持chrome -->
+<input type="text" id="test_input" value="不支持谷歌 " />
+<button id="do_test_button" >禁用输入法</button>
+
+<!-- 方法二: 事件文本过滤 -->
+<input type="text" id="test_input2" value="js2" banInputMethod="1" />
+
+<script>
+    (function(){
+        var f_input = document.getElementById('test_input');
+        var f_input2 = document.getElementById('test_input2');
+
+        var f_btn = document.getElementById('do_test_button');
+        var f_btn2 = document.getElementById('do_test_button2');
+
+        // 方法一. CSS特殊属性 关闭输入法
+        // 实际运行结果表示所有浏览器都不好用= =! 是输入法的问题吗
+        // imeMode: auto打开(默认属性), active(中文), inactive(英文), disable(关闭)
+        // 实际上只有IE11生效了
+        function banInputMethod(_elementArr) {
+            var arr = _elementArr;
+
+            // 为了增加对外层域的访问, 定义了一个变量 self
+            self = this;
+
+            // 判断元素是否为数组, 如果不是数组将其变成数组
+            if ( !(_elementArr instanceof Array) ) {
+                arr = [_elementArr];
+            }
+
+            for ( var i = 0, arrLen = arr.length; i < arrLen; i++ ) { // 遍历元素节点
+                var arrl = arr[i];
+                arrl.onfocus = function () {
+                    // 样式方案, 只兼容除了chrome之外的浏览器
+                    this.style.imeMode = 'disabled';
+                }
+            }
+        }
+
+        // 方法一实验:
+        f_input.onfocus = function (ev) { console.log(1); this.style.imeMode = 'disabled'; console.log(this); }
+
+        do_test_button.onclick = function() {
+            alert('第一种方法禁用输入法');
+            _inputs = document.getElementsByTagName("input");
+            banInputMethod(_inputs);
+        }
+
+
+
+
+
+
+    })();
+
+    // 方法二
+    (function(){//创建节点数组
+        var f_input = document.getElementById('test_input');
+        var f_input2 = document.getElementById('test_input2');
+
+        var arr = [
+            f_input, f_input2
+        ];
+
+        self = this;
+
+        // 先进行方法一
+        for (var i = 0, arrLen = arr.length; i < arrLen; i++) {//遍历待处理的节点对象
+            var arrI = arr[i];
+            arrI.onfocus = function() {  //获取焦点事件
+                this.style.imeMode = 'disabled';  //样式方案,只兼容除了谷歌浏览器之外的浏览器
+            };
+
+
+            // 判断是否进行方法二
+            var banInputMethod = arrI.getAttribute('banInputMethod');  //获取banInputMethod属性
+            console.log(arrI);
+            console.log(banInputMethod);
+            if (banInputMethod) { //判断是否存在banInputMethod
+
+                // 定义替换中文字符的方法
+                var clearChinese = function(_this) {
+                    var _v = _this.value;
+                    _this.value = _v.replace(/[\u4e00-\u9fa5]/g, "");  //正则替换中文字符
+                }
+
+                arrI.onkeyup = function() { //keyup事件
+                    clearChinese(this);
+                }
+
+                arrI.onblur = function() { //blur事件
+                    clearChinese(this);
+                }
+            }
+        }
+    })();
+
+</script>
+</body>
+</html>
