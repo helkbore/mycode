@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-direction</title>
+    <style>
+        /* 显示样式 */
+        body {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1024px;
+            background-color: #595b66;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        .box {
+            background-color: white;
+            margin: 0 0 55px;
+
+        }
+
+        .box-item {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background-color: #3cbe7f;
+            margin: 5px;
+            text-align: center;
+            font-size: 100px;
+
+        }
+
+        /* flex学习 */
+        .box {
+            display: flex;
+        }
+
+        .box-1 {
+            flex-direction: row;
+        }
+
+        .box-2 {
+            flex-direction: row-reverse;
+        }
+
+        .box-3 {
+            flex-direction: column;
+        }
+        .box-4 {
+            flex-direction: column-reverse;
+        }
+
+        .box-item {
+
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>flex-direction</h1>
+<div class="box box-1">
+    <div class="box-item">1</div>
+    <div class="box-item">2</div>
+    <div class="box-item">3</div>
+    <div class="box-item">4</div>
+</div>
+
+<div class="box box-2">
+    <div class="box-item">1</div>
+    <div class="box-item">2</div>
+    <div class="box-item">3</div>
+    <div class="box-item">4</div>
+</div>
+
+<div class="box box-3">
+    <div class="box-item">1</div>
+    <div class="box-item">2</div>
+    <div class="box-item">3</div>
+    <div class="box-item">4</div>
+</div>
+
+<div class="box box-4">
+    <div class="box-item">1</div>
+    <div class="box-item">2</div>
+    <div class="box-item">3</div>
+    <div class="box-item">4</div>
+</div>
+</body>
+</html>

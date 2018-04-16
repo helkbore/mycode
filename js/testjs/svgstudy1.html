@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+    <!--
+    <g id="house" style="fill: none; stroke: black">
+        <desc>House</desc>
+        <rect x="6" y="50" width="60" height="60" />
+        <polyline points="6 50, 36 9, 66 50" />
+        <polyline points="36 110, 36 80, 50 80, 50 110" />
+    </g>
+
+    <g id="male" style="fill: none; stroke: black">
+        <desc>male</desc>
+        <circle cx="85" cy="56" r="10" />
+        <line x1="85" y1="66" x2="85" y2="80" />
+        <polyline points="76 104, 85 80, 94 104" />
+        <polyline points="76 70, 85 76, 94 70" />
+    </g>
+
+    <g id="female" style="fill: none; stroke: black">
+        <desc>female</desc>
+        <circle cx="110" cy="56" r="10" />
+        <line x1="85" y1="66" x2="85" y2="80" />
+        <polyline points="110 66, 110 80, 100 90, 120 90, 110 80" />
+        <line x1="104" y1="104" x2="108" y2="90" />
+        <line x1="112" y1="90" x2="116" y2="104" />
+        <polyline points="101 70, 110 76, 119 70" />
+    </g>
+
+    <use xlink:href="#house" x="70" y="100" />
+    <use xlink:href="#female" x="-90" y="100" />
+
+
+    <g id="female" style="fill: none; stroke: black">
+        <desc>female</desc>
+        <circle cx="110" cy="56" r="10" />
+        <line x1="85" y1="66" x2="85" y2="80" />
+        <polyline points="110 66, 110 80, 100 90, 120 90, 110 80" />
+        <line x1="104" y1="104" x2="108" y2="90" />
+        <line x1="112" y1="90" x2="116" y2="104" />
+        <polyline points="101 70, 110 76, 119 70" />
+    </g>
+
+    -->
+    <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block"
+          style=""></path>
+    <marker id="raphael-marker-endblock33-obj19" markerHeight="3" markerWidth="3" orient="auto" refX="1.5"
+            refY="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block"
+             transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="Red" stroke="none"
+             style=""></use>
+    </marker>
+</svg>
+
+<svg width="600px" height="100px">
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refx="0" refy="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#f00"/>
+        </marker>
+    </defs>
+    <line x1="50" y1="50" x2="250" y2="50" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+    <line x1="295" y1="50" x2="95" y2="75" stroke="#000" stroke-width="5" marker-end="url(#arrow" />
+</svg>
+
+<svg width="500" height="500px">
+    <rect fill="none" width="60" height="50" x="10" y="50" stroke="#000" stroke-width="2" />
+    <rect fill="#c00" width="60" height="50" x="10" y="50" transform="matrix(1,0,0,1,50,10)" />
+</svg>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/reset.css?v=1.0"/>
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/main.css?v=1.0"/>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/main.js" ></script>
+
+    <style>
+
+        /* 左侧布局 */
+        #img_2{
+            width:720px;
+            height:611px;
+            border-radius: 0 20px 20px 0;
+
+            position:absolute;
+            top:69px;
+
+            background:#eceaea;
+            z-index: 1000;
+
+        }
+
+        .footer {
+
+            margin-top: 51px;
+            margin-left: -300px;
+            background: url('images/footer2.png') ;
+            background-size:cover;
+            height: 87px;
+            line-height: 87px;
+            width: 1024px;
+            z-index: 10;
+            font-size: 15px;
+        }
+        .footer span1{
+            margin-left: 390px;
+            font-size:15px;
+
+        }
+        .footer span2{
+            margin-left: 40px;
+            font-size:15px;
+
+        }
+        .main_title{
+            width:690px;
+            height:50px;
+            float:left;
+            position:absolute;
+            margin-top: 71px;
+            z-index: 1000;
+
+        }
+        .m_t_c1{
+            padding:45px 0 0 22px;
+            float:left;
+            z-index: 1000;
+
+        }
+        .m_t_c1 span{
+            color:#333333;
+            text-align:left;
+            font-size:40px;
+            z-index: 1000;
+        }
+
+
+        .m_t_c2 span{
+            text-align:left;
+            font-size:20px;
+            color:#333333;
+            position:absolute;
+            top:70px;
+            z-index: 1000;
+        }
+        .slider, .slider .slider-img {
+            overflow: hidden;
+            height: 460px;
+        }
+
+        .slider {
+            width: 670px;
+            margin: 20px auto;
+            position: relative;
+            left:15px;
+            z-index: 1000;
+
+
+        }
+        .slider:hover .slider-btn {
+            color: #fff;
+            text-shadow: 0 0 5px #666;
+        }
+        .slider .slider-img {
+            width: 12000px;
+            position: relative;
+        }
+        .slider .slider-img .slider-img-ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+        .slider .slider-img .slider-img-ul li {
+            float: left;
+        }
+        .slider .slider-img .slider-img-ul li img {
+            width: 670px;
+            height: 460px;
+        }
+        .slider .slider-dot ul {
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+
+            top:450px;
+            z-index:99999;
+
+        }
+        .slider .slider-dot ul li {
+            cursor: pointer;
+            width: 30px;
+            height: 10px;
+            border-radius:;
+            background: #ccc;
+            border: 2px solid #fff;
+            float: left;
+            margin-left:;
+        }
+        .slider .slider-dot ul li.active, .slider .slider-dot ul li:hover {
+            background:#FF3300;
+        }
+        .slider .slider-btn {
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            top: 50%;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+            font-size: 28px;
+            text-decoration: none;
+            font-family: '黑体';
+            color: rgba(255, 255, 255, 0);
+        }
+        .slider .slider-btn:hover {
+            background: rgba(125, 125, 125, .3);
+        }
+        .slider .slider-btn.slider-btn-left {
+            left: 0;
+            margin-top: -50px;
+        }
+        .slider .slider-btn.slider-btn-right {
+            right: 0;
+            margin-top: -50px;
+        }
+
+        /* 右边 */
+        .t1{
+            width: 253px;
+            height: 765px;
+
+            z-index:1;
+        }
+        #t2{
+            position:relative;
+            top:-207px;
+            left:-13px;
+
+            z-index:2;
+            opacity: 0.8;
+        }
+
+        #t3{
+            position:relative;
+            top:-203px;
+            left:4px;
+            z-index:2;
+            opacity: 0.8;
+
+        }
+
+        #card {
+            width: 0px;
+            height: 0px;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+
+        }
+
+    </style>
+
+    <script>
+
+        // 关机, 登录
+        function dopoweroff(){
+            if(confirm('确定要关闭计算机吗?')){
+                this.location="Webshellshuntdown://"  //执行关机命令
+            }
+        }
+        function dologin(){
+            alert("登录");
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <div id="img_2">
+        </div>
+
+
+        <div class="main_title">
+            <div class="m_t_c1">
+                <span>请刷卡登录</span>
+            </div>
+
+            <div class="m_t_c2">
+                <span>PLEASE BRUSH YOUR WORK CARD TO LOGIN IN</span>
+            </div>
+
+            <!-- 轮播 -->
+            <div class="slider">
+
+                <!-- js添加元素 -->
+                <!--<a href="javascript:" class="slider-btn slider-btn-left">&lt;</a>-->
+                <!--<a href="javascript:" class="slider-btn slider-btn-right">&gt;</a>-->
+                <!--<div class="slider-dot"><ul>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--</ul></div>-->
+
+
+                <div class="slider-img">
+                    <ul class="slider-img-ul">
+                        <li><img src="images/slider-5.jpg"></li>
+                        <li><img src="images/slider-1.jpg"></li>
+                        <li><img src="images/slider-2.jpg"></li>
+                        <li><img src="images/slider-3.jpg"></li>
+                        <li><img src="images/slider-4.jpg"></li>
+                        <li><img src="images/slider-5.jpg"></li>
+                        <li><img src="images/slider-1.jpg"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <span1>华光集团 · 版权所有 Copyright 2018 </span1>
+                <span2>技术支持: 辽宁维森信息技术股份有限公司<input type="text" id="card" /></span2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--<div style="clear: both;" ></div>-->
+
+    <div class=right >
+        <div class="t1"><img src="images/backjpg.jpg" />
+        </div>
+        <div id="t2"><a href="javascript:dopoweroff()" ><img src="images/gj.png"  border="0"/></a>
+        </div>
+        <div id="t3"><a href="javascript:dologin()" ><img src="images/cq3.png" border="0" /></a>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <script type="text/javascript" src="js/xSlider.js"></script>
+</div>
+
+<script></script>
+</body>
+</html>

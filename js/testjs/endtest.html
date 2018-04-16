@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box {
+        fill: #eceaea;
+        stroke: #fff;
+        stroke-width: 1;
+    }
+
+    .svg-frame {
+        margin: 23px 0 0 10px;
+    }
+
+    .arrow-line {
+        fill:none;
+        stroke: #eceaea;
+        stroke-width: 3;
+    }
+</style>
+<body>
+<svg width="670" height="460" class="svg-frame">
+    <defs>
+        <path stroke-linecap="round" d="M8,0 0,4 8,8z" id="raphael-marker-block"
+              style=""></path>
+        <marker id="arrow" markerHeight="8" markerWidth="8" orient="auto" refX="7"
+                refY="5.5" style="">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block"
+                 transform="rotate(180 4 4) scale(0.6,0.6)" stroke-width="1.6667" fill="#eceaea" stroke="none"
+                 style=""></use>
+        </marker>
+    </defs>
+    <a xlink:href="http://www.baidu.com">
+        <rect x="0" y="0" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="35" y="50" style="fill: #000;">使用说明书
+            <tspan x="50" y="70">合格证</tspan>
+        </text>
+    </a>
+
+    <a xlink:href="http://www.baidu.com">
+        <rect x="0" y="150" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="50" y="205" style="fill: #000;">贴商标
+
+        </text>
+    </a>
+
+    <a xlink:href="http://www.baidu.com">
+        <rect x="0" y="300" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="60" y="355" style="fill: #000;">商标
+        </text>
+    </a>
+
+    <!-- 第二列 -->
+    <a xlink:href="http://www.baidu.com">
+        <rect x="250" y="70" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="280" y="125" style="fill: #000;">FU-33/501
+        </text>
+    </a>
+
+
+    <a xlink:href="http://www.baidu.com">
+        <rect x="250" y="250" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="280" y="305" style="fill: #000;">FU33包装箱
+        </text>
+    </a>
+
+    <!-- 第三列 -->
+    <a xlink:href="http://www.baidu.com">
+        <rect x="500" y="70" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="560" y="125" style="fill: #000;">包装
+        </text>
+    </a>
+
+    <a xlink:href="http://www.baidu.com">
+        <rect x="500" y="250" width="150" height="100" rx="15" ry="15" class="box" >
+            <set attributeName="fill" to="red" begin="click" />
+        </rect>
+
+        <text x="560" y="305" style="fill: #000;">检验
+        </text>
+    </a>
+
+    <polyline points="155, 50 200, 50 200, 120, 245, 120" class="arrow-line" marker-end="url(#arrow)"/>
+    <polyline points="155, 200 200, 200 200, 120, 245, 120" class="arrow-line" marker-end="url(#arrow)" />
+    <polyline points="75, 297 75, 255  " class="arrow-line"   marker-end="url(#arrow)" />
+
+    <polyline points="325,70 325,50, 575,50, 575,65" class="arrow-line" marker-end="url(#arrow)" />
+    <polyline points="400,300 450,300, 450,120, 495,120" class="arrow-line" marker-end="url(#arrow)" />
+    <polyline points="575, 175 575, 245  " class="arrow-line" marker-end="url(#arrow)" />
+</svg>
+</body>
+</html>

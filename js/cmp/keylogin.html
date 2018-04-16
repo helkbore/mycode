@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/reset.css?v=1.0"/>
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/main.css?v=1.0"/>
+    <!-- 图标库 -->
+    <link rel="stylesheet" type="text/css"  href="css/font-awesome.min.css"/>
+    <!-- 键盘 -->
+    <link rel="stylesheet" type="text/css" href="css/keyboard.css" />
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/main.js" ></script>
+
+
+
+
+    <style>
+
+        /* 左边 */
+        .outer {
+            width:720px;
+            height:611px;
+            border-radius: 0 20px 20px 0;
+            background:#eceaea;
+            margin-top: 70px;
+            z-index: 10;
+        }
+
+        .center {
+            z-index: 10;
+        }
+
+        /* 标题 */
+        .title {padding-top: 46px; }
+        .title p { color: #333;}
+        .zh-info {
+            font-size: 40px;
+            display: inline-block;
+            margin-left: 22px;
+
+        }
+        .en-info {
+            font-size: 20px;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+            left: -5px;
+        }
+
+        /* 登录文本框 */
+        .content {
+            margin-left: 22px;
+            background: url("images/loginbg.png") no-repeat;
+            width: 670px;
+            height: 460px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            background-color: #0f5b97;
+
+        }
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-between;
+            flex-direction: column;
+            position: relative;
+            width: 397px;
+            height: 224px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 30px 0;
+        }
+
+        .login p {
+            margin: auto;
+        }
+        .login input {
+            padding: 10px;
+            padding-left: 30px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        .login i {
+            position: relative;
+            left: 20px;
+            width: 12px;
+
+        }
+
+        .login-btn {
+            width: 250px;
+            background-color: #6296ea;
+            color: #fff;
+            height: 37px;
+            line-height: 37px;
+            border: none;
+            margin-left: 11px;
+        }
+        .footer {
+            /*margin-top: 51px;*/
+            margin-left: -300px;
+            background: url('images/footer2.png') ;
+            background-size:cover;
+            height: 87px;
+            line-height: 83px;
+            width: 1024px;
+            font-size: 15px;
+        }
+
+        .banquan {
+            margin-left: 323px;
+
+        }
+
+        .zhichi {
+            margin-left: 40px;
+        }
+
+
+        /* 右侧 */
+        .right {
+            position: relative;
+        }
+        .top_time {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            position: absolute;
+            top: 45px;
+            font-size: 17px;
+        }
+
+        #t2, #t3 {
+            position: absolute;
+            opacity: 0.8;
+            overflow: hidden;
+        }
+
+        #t2 {
+            bottom: 102px;
+            left: -13px;
+        }
+
+        #t3 {
+            bottom: 26px;
+            left: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <div class="outer">
+            <div class="title">
+                <p class="zh-info">请刷卡登录</p>
+                <p class="en-info">PLEASE BRUSH YOUR WORK CARD TO LOGIN IN</p>
+            </div>
+            <div class="content">
+                <div class="login">
+                    <p><i class="fa fa-user" aria-hidden="true"></i><input type="text" id="username" name="username" placeholder="用户名" autofocus /></p>
+                    <p><i class="fa fa-unlock-alt" aria-hidden="true"></i><input type="password" id="password" name="password" placeholder="密码" /></p>
+                    <p><button class="login-btn">登录</button></p>
+                </div>
+                <div class="keyboard">
+                    <ul id="keyboard">
+                        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+                        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+                        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+                        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+                        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+                        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+                        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+                        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+                        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+                        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+                        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+                        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+                        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+                        <li class="delete lastitem">delete</li>
+                        <li class="tab">tab</li>
+                        <li class="letter">q</li>
+                        <li class="letter">w</li>
+                        <li class="letter">e</li>
+                        <li class="letter">r</li>
+                        <li class="letter">t</li>
+                        <li class="letter">y</li>
+                        <li class="letter">u</li>
+                        <li class="letter">i</li>
+                        <li class="letter">o</li>
+                        <li class="letter">p</li>
+                        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+                        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+                        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+                        <li class="capslock">caps lock</li>
+                        <li class="letter">a</li>
+                        <li class="letter">s</li>
+                        <li class="letter">d</li>
+                        <li class="letter">f</li>
+                        <li class="letter">g</li>
+                        <li class="letter">h</li>
+                        <li class="letter">j</li>
+                        <li class="letter">k</li>
+                        <li class="letter">l</li>
+                        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+                        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+                        <li class="return lastitem">enter</li>
+                        <li class="left-shift">shift</li>
+                        <li class="letter">z</li>
+                        <li class="letter">x</li>
+                        <li class="letter">c</li>
+                        <li class="letter">v</li>
+                        <li class="letter">b</li>
+                        <li class="letter">n</li>
+                        <li class="letter">m</li>
+                        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+                        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+                        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+                        <li class="right-shift lastitem">shift</li>
+                        <li class="space lastitem">&nbsp;</li>
+                    </ul>
+
+                </div>
+
+                <!-- 键盘 -->
+                <script type="text/javascript" src="js/keyboard.js"></script>
+                <!-- 兼容IE9 flex模型 -->
+                <!--<script type="text/javascript" src="js/flexie.js"></script>-->
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p class="banquan">锦州华光电子管有限公司 · 版权所有 Copyright 2018 <span class="zhichi">技术支持: 辽宁维森信息技术股份有限公司</span></p>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="top_time">
+            <script language="Javascript">
+                today=new Date();
+                var hours = today.getHours();
+                var minutes = today.getMinutes();
+                var seconds = today.getSeconds();
+                function initArray(){
+                    this.length=initArray.arguments.length
+                    for(var i=0;i<this.length;i++)
+                        this[i+1]=initArray.arguments[i] }
+                var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+                document.write("",today.getFullYear(),"-",today.getMonth()+1,"-",today.getDate()," ",d[today.getDay()+1]," ",today.getHours(), " : ", today.getMinutes());
+            </script>
+        </div>
+        <div class="t1"><img src="images/backjpg.jpg" />
+        </div>
+        <div id="t2"><a href="javascript:dopoweroff()" ><img src="images/gj.png"  border="0"/></a>
+        </div>
+        <div id="t3"><a href="javascript:dologin()" ><img src="images/cq3.png" border="0" /></a>
+        </div>
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

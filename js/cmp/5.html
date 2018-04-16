@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="text-transform: uppercase;" id="test_p">abc</p>
+<button id="test_btn">test</button>
+
+<script>
+
+    var test_p = document.getElementById('test_p');
+    var test_btn = document.getElementById('test_btn');
+
+    test_btn.onclick = function (ev) { alert(test_p.innerHTML); }
+</script>
+</body>
+</html>

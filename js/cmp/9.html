@@ -1,0 +1,554 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>锦州华光电子管有限公司</title>
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/reset.css?v=1.0"/>
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css"  href="css/main.css?v=1.0"/>
+    <!-- 图标库 -->
+    <link rel="stylesheet" type="text/css"  href="css/font-awesome.min.css"/>
+    <!-- 键盘 -->
+    <link rel="stylesheet" type="text/css" href="css/keyboard.css" />
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="js/main.js" ></script>
+
+
+
+
+    <style>
+
+        /* 左边 */
+        .outer {
+            width:720px;
+            height:611px;
+            border-radius: 0 20px 20px 0;
+            background:#eceaea;
+            margin-top: 70px;
+            z-index: 10;
+        }
+
+        .center {
+            z-index: 10;
+        }
+        .top_time {
+
+            padding: 10px;
+            position: absolute;
+            top: 11px;
+            left: 22px;
+            font-size: 16px;
+
+
+        }
+        /* 标题 */
+        .title {padding-top: 46px; }
+        .title p { color: #333;}
+        .zh-info {
+            font-size: 30px;
+            display: inline-block;
+            margin-left: 22px;
+
+        }
+        .en-info {
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+            left: -5px;
+        }
+
+        /* 中间内容区 */
+        .content {
+            margin-left: 22px;
+            background: url("images/background.jpg");
+            width: 670px;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            background-color: #0f5b97;
+
+        }
+
+        .content-title {
+            padding: 5px 30px;
+            background: rgba(255, 255, 255, 0.3);
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .content-title i {
+            margin-right: 10px;
+        }
+
+        .list-ul {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            padding: 0 40px 30px;
+        }
+        .list-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border-bottom: 1px #fff dashed;
+
+        }
+
+        .list-item span {
+            height: 65px;
+            line-height: 65px;
+        }
+        .list-item-no {
+            margin-left: 20px;
+            font-family: listNumber;
+            width: 100px;
+        }
+        .list-item-title {
+            width: 250px;
+        }
+        .list-item-btn {
+            width: 100px;
+        }
+        .list-item-btn img {
+            height: 65px;
+        }
+
+        /* 分页样式 */
+        .page-list {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 9px;
+        }
+        .page-list a {
+            color: #666;
+            font-size: 9px;
+        }
+
+        .page-item {
+            box-shadow: -1px -1px 1px #aaa;
+            border: 1px solid #aaa;
+            background: #eceaea;
+            border-radius: 9px;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        .footer {
+            /*margin-top: 51px;*/
+            margin-left: -300px;
+            background: url('images/footer2.png') ;
+            background-size:cover;
+            height: 87px;
+            line-height: 83px;
+            width: 1024px;
+            font-size: 15px;
+        }
+
+        .banquan {
+            margin-left: 323px;
+
+        }
+
+        .zhichi {
+            margin-left: 40px;
+        }
+
+
+        /* 右侧 */
+        .right {
+            position: relative;
+            width: 300px;
+        }
+
+        /* 信息框
+        .right-info {
+            margin: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 13px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            align-items: center;
+            margin-bottom: 1px;
+            margin-right: 28px;
+
+        }
+
+		*/
+
+        .right-info {
+            margin: 50px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 16px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-content: flex-start; */
+            align-items: center;
+            margin-bottom: 2px;
+            margin-right: 60px;
+        }
+
+        .member-info span{
+            padding: 10px;
+            line-height: 33px;
+
+        }
+
+
+        .info-data {
+            width: 100px;
+        }
+
+        /* 右下菜单 */
+        .right-menu {
+            background: url("images/bk.png") no-repeat;
+            background-position-x: -20px;
+            height: 530px;
+            width: 300px;
+            background-size: 300px 530px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /*padding: 10px;*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            /*align-content: center;*/
+
+            /*position: absolute;*/
+            /*right: 25px;*/
+
+            /*margin-right: 25px;*/
+            /*-webkit-background-size: auto;*/
+            /*background-size: contain;*/
+        }
+
+        .right-menu-up, .right-menu-down {
+            background: #eceaea;
+            /*width: 100%;*/
+            color: #666;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            width: 230px;
+            margin-left: -19px;
+            box-shadow: 2px 2px 3px #000;
+
+        }
+
+        .right-menu-up {
+            /*border-top-right-radius: 10px;*/
+            /*border-top-left-radius: 10px;*/
+            /*border-bottom-right-radius: 3px;*/
+            /*border-bottom-left-radius: 3px;*/
+            border-radius: 10px 10px 3px 3px;
+            margin-top: -16px;
+            margin-bottom: 5px;
+        }
+
+        .right-menu-down {
+            border-radius: 3px 3px 10px 10px;
+        }
+
+        .right-menu-item {
+            height: 63px;
+            background: #eed7d2;
+            color: #666;
+            line-height: 63px;
+            margin-bottom: 5px;
+            width: 230px;
+            margin-left: -19px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 2px 2px 3px #000;
+            background: linear-gradient(180deg, #eed7d2 50%, rgb(225, 168, 157));
+
+
+        }
+
+        .right-menu-item a {
+            color: #666;
+            line-height: 63px;
+            height: 63px;
+        }
+
+        .right-menu-item.active a {
+            color: #fff;
+            /*background-color: #1b5480;*/
+        }
+
+        .right-menu .right-menu-item.active {
+            /*background-color: #1b5480;*/
+            box-shadow: -1px -1px 3px  #fff;
+            width: 230px;
+            background: linear-gradient(180deg, #1b5480 50%, rgb(18, 58, 88));
+        }
+
+
+        /* 流程图 -s */
+        .box {
+            fill: #eceaea;
+            stroke: #fff;
+            stroke-width: 1;
+        }
+
+        .svg-frame {
+            margin: 23px 0 0 10px;
+        }
+
+        .arrow-line {
+            fill:none;
+            stroke: #eceaea;
+            stroke-width: 3;
+        }
+        /* 流程图 -e */
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <div class="outer">
+            <div class="title">
+                <p class="zh-info">列表标题测试文字</p>
+                <p class="en-info">INTELLIGENT MANAGEMENT AND CONTROL SYSTEM</p>
+            </div>
+            <div class="content">
+
+                <svg width="670" height="460" class="svg-frame">
+                    <defs>
+                        <path stroke-linecap="round" d="M8,0 0,4 8,8z" id="raphael-marker-block"
+                              style=""></path>
+                        <marker id="arrow" markerHeight="8" markerWidth="8" orient="auto" refX="7"
+                                refY="5.5" style="">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block"
+                                 transform="rotate(180 4 4) scale(0.6,0.6)" stroke-width="1.6667" fill="#eceaea" stroke="none"
+                                 style=""></use>
+                        </marker>
+                    </defs>
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="0" y="0" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="35" y="50" style="fill: #000;">使用说明书
+                            <tspan x="50" y="70">合格证</tspan>
+                        </text>
+                    </a>
+
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="0" y="150" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="50" y="205" style="fill: #000;">贴商标
+
+                        </text>
+                    </a>
+
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="0" y="300" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="60" y="355" style="fill: #000;">商标
+                        </text>
+                    </a>
+
+                    <!-- 第二列 -->
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="250" y="70" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="280" y="125" style="fill: #000;">FU-33/501
+                        </text>
+                    </a>
+
+
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="250" y="250" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="280" y="305" style="fill: #000;">FU33包装箱
+                        </text>
+                    </a>
+
+                    <!-- 第三列 -->
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="500" y="70" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="560" y="125" style="fill: #000;">包装
+                        </text>
+                    </a>
+
+                    <a xlink:href="http://www.baidu.com">
+                        <rect x="500" y="250" width="150" height="100" rx="15" ry="15" class="box" >
+                            <set attributeName="fill" to="red" begin="click" />
+                        </rect>
+
+                        <text x="560" y="305" style="fill: #000;">检验
+                        </text>
+                    </a>
+
+                    <polyline points="155, 50 200, 50 200, 120, 245, 120" class="arrow-line" marker-end="url(#arrow)"/>
+                    <polyline points="155, 200 200, 200 200, 120, 245, 120" class="arrow-line" marker-end="url(#arrow)" />
+                    <polyline points="75, 297 75, 255  " class="arrow-line"   marker-end="url(#arrow)" />
+
+                    <polyline points="325,70 325,50, 575,50, 575,65" class="arrow-line" marker-end="url(#arrow)" />
+                    <polyline points="400,300 450,300, 450,120, 495,120" class="arrow-line" marker-end="url(#arrow)" />
+                    <polyline points="575, 175 575, 245  " class="arrow-line" marker-end="url(#arrow)" />
+                </svg>
+            </div>
+
+            <ul class="page-list">
+                <li class="page-item"><a href="">FIRST</a></li>
+                <li class="page-item"><a href=""><i class="fa fa-backward" aria-hidden="true"></i></a></li>
+                <li class="page-item"><a href=""><i class="fa fa-forward" aria-hidden="true"></i></a></li>
+                <li class="page-item"><a href="">LAST</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p class="banquan">锦州华光电子管有限公司 · 版权所有 Copyright 2018 <span class="zhichi">技术支持: 辽宁维森信息技术股份有限公司</span></p>
+
+        </div>
+    </div>
+    <div class="right">
+
+        <div class="top_time">
+            <span id="clock"></span>
+        </div>
+
+
+        <div class="right-info">
+            <ul class="member-info">
+                <li class="member-info-item">
+                    <span class="info-title">姓名</span>
+                    <span class="info-data">系统管理员</span>
+                </li>
+                <li class="member-info-item">
+                    <span class="info-title">岗位</span>
+                    <span class="info-data">管理</span>
+                </li>
+                <li class="member-info-item">
+                    <span class="info-title">部门</span>
+                    <span class="info-data">信息部</span>
+                </li>
+            </ul>
+            <a href="javascript:dozx()" ><img src="images/zx.png" /></a>
+        </div>
+
+        <div class="right-menu">
+            <div class="right-menu-up"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            <ul>
+                <li class="right-menu-item">
+                    <a href="right-menu-item-link">
+                    菜单一
+                    </a>
+                </li>
+
+                <li class="right-menu-item active" id="test">
+                    菜单二
+
+                </li>
+
+                <li class="right-menu-item">
+
+                    菜单三
+
+                </li>
+
+                <li class="right-menu-item">
+                    菜单四
+                </li>
+
+                <li class="right-menu-item">
+
+                    菜单五
+
+                </li>
+
+                <li class="right-menu-item">
+                    菜单六
+                </li>
+            </ul>
+            <div class="right-menu-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function dozx(){
+        if(confirm('确定要注销当前用户吗?')){
+            this.location="../logout"  //执行关机命令
+
+        }
+
+    }
+</script>
+<script language="Javascript">
+    (function () {
+        function initArray(){
+            this.length=initArray.arguments.length
+            for(var i=0;i<this.length;i++)
+                this[i+1]=initArray.arguments[i]
+        }
+        var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+
+        var setClock = function() {
+            console.log(0);
+            today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            month = today.getMonth() + 1;
+
+
+            var time = today.getFullYear()
+                + "-"+ month
+                + "-" + today.getDate() + " "
+                + d[today.getDay()+1] + " "
+                + hours + " : "
+                + minutes + " : "
+                + seconds;
+            document.getElementById('clock').innerHTML = time;
+
+        }
+        setClock();
+        setInterval(setClock, 1000);
+    })();
+
+
+</script>
+</body>
+</html>

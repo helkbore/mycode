@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .icon-red {
+            fill: red;
+        }
+
+        .icon-blue {
+            fill: blue;
+        }
+    </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="my-first-icon" viewBox="0 0 20 20">
+        <title>my-first-icon</title>
+        <path d="..." />
+    </symbol>
+
+    <svg class="icon">
+        <use xlink:href="#my-first-icon" />
+    </svg>
+</svg>
+</body>
+</html>

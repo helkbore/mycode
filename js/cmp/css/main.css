@@ -1,0 +1,31 @@
+body{
+    background-color:#0f5b97;
+    background:url("../images/background.jpg") no-repeat;
+}
+
+/* 页面结构 */
+.main {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+}
+
+.left{
+    width:700px;
+    height:765px;
+    float:left;
+}
+
+.right{
+    position: relative;
+    width:250px;
+    height:765px;
+    float:right;
+}
+
+
+/* 字体 */
+@font-face {
+    font-family: 'listNumber';
+    src: url("../fonts/334-CAI978.TTF");
+}
