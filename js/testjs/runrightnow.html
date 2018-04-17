@@ -27,16 +27,27 @@
         alert(10);
     })();
 
-    i = 'abc';
-    var test2 = (function(i) {
-        function abc() {
-            console.log('abc');
-        }
+    (function(glob, factory){
+        factory(glob);
+    })(window || this, function(window) {
+        var Snap = (function(root){
+            function Snap(){
+                console.log('success');
+            }
+            var glob = {
+                win: root.window,
+                doc: root.window.document
+            };
 
-        return abc;
-    })(this);
+            glob.win.Snap = Snap;
 
-    abc();
+            return Snap;
+        })(window || this);
+
+        return Snap
+    });
+
+    Snap();
 
     // 围观一下, 脑回路不够了
     // (function(glob, factory){
