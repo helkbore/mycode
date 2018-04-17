@@ -3,12 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 90%;
+            background: #012;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .boy-land {
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            background: url(http://7xipdd.com1.z0.glb.clouddn.com/boy-land.svg) center center no-repeat;
+        }
+    </style>
 </head>
 <body>
-<svg width="100%" height="100%" viewBox="-400 -300 800 600" preserveAspectRation="xMinYMid slice">
+<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="http://up.mcyt.net/?down/38540.mp3"></audio>
+<svg width="100%" height="90%" viewBox="-400 -300 800 600" preserveAspectRation="xMinYMid slice">
     <defs>
         <polygon id="star" points="0 -10 2 -2 10 0 2 2 0 10 -2 2 -10 0 -2 -2" fill="white"></polygon>
     </defs>
+
+    <g id="star-group"></g>
+
+    <div class="boy-land">
 </svg>
+
+<script>
+
+    (function(){
+
+
+        // svg 元素的命名空间
+        var svgNs = "http://www.w3.org/2000/svg";
+        var XLINK_NS = "http://www.w3.org/1999/xlink";
+
+        // 将use属性封装成函数, 以便使用
+        function use(origin) {
+            var _use = document.createElementNS(svgNs, "use");
+            _use.setAttributeNS(XLINK_NS, "xlink:href", "#" + origin.id);
+            return _use;
+        }
+
+        // 创建任意两个数之间的随机数
+        function random(min, max) {
+            return min + (max - min) * Math.random();
+        }
+
+        // 绘制满天星星
+        function rederStar() {
+            // 获取星星原型和装载满天星星的容器star-group
+            var starRef = document.getElementById('star');
+            var starGroup = document.getElementById('star-group');
+
+            // 星星总数量
+            var starCount = 500;
+
+            // 循环, 画出 starCount 个星星
+            for (var i = 1; i < starCount; i++){
+                // star 引用 starRef原型
+                var star;
+                star = use(starRef);
+
+                // 让星星的透明度, 位置和大小随机变化
+                star.setAttribute("opacity", random(0.1, 0.4));
+                star.setAttribute("transform", "translate(" + random(-1000, 1000) + "," + random(-400, 400)
+                                  + ")" + "scale(" + random(0.1, 0.6) + ")");
+
+
+                // 将绘制好星星置入starGroup的DOM子元素中
+                starGroup.appendChild(star);
+            }
+        }
+
+        rederStar();
+    })();
+</script>
 </body>
 </html>
