@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var person = {
+        firstName : "John",
+        lastName : "Doe",
+        fullName : function() {
+            return this.firstName + "  " + this.lastName;
+        }
+    }
+
+    var myObject = {
+        firstName : "Mary",
+        lastName: "Doe"
+    }
+
+    // console.log(person.fullName.call(myObject));
+
+    // console.log(person.fullName());
+
+    var b;
+   function a(xx) {
+        this.b = xx;
+   }
+
+   a(5);
+   console.log(b);  // 5
+
+   var o = {};
+   a.apply(o, [6]); // 想要传递给这个函数的参数都放到数组中(第二个参数)
+   console.log(o.b);    // 6
+   console.log(b);  // 5
+
+
+</script>
+</body>
+</html>

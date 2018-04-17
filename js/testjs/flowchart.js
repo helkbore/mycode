@@ -581,6 +581,8 @@
                         var self = this;
                         this.diagram && this.diagram.clean();
                         var diagram = new FlowChart(container, options);
+                        console.log('diagram');
+                        console.log(diagram);
                         this.diagram = diagram;
                         var dispSymbols = {};
                         !function constructChart(s, prevDisp, prev) {

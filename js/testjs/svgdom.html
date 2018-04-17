@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg id="svg_frame" width="670" height="460" class="svg-frame">
+    <defs>
+    </defs>
+    <g id="svg_add"></g>
+</svg>
+
+<script>
+    var svgNS = "http://www.w3.org/2000/svg";
+    var XLINK_NS = "http://www.w3.org/1999/xlink";
+
+    function use(origin) {
+        var _use = document.createElementNS(svgNS, "use");
+        _use.setAttributeNS(XLINK_NS, "xlink:href", "#" + origin.id);
+        return _use;
+    }
+
+    var c = document.createElementNS(svgNS, "circle");
+    c.cx.baseVal.value = 20;
+    c.cy.baseVal.value = 20;
+    c.r.baseVal.value = 20;
+    c.style.fill = "lime";
+    // element.setAttribute（“x”，“10”）;
+    // element.setAttribute（“y”，“20”）;
+    // element.setAttribute（“width”，“100％”）;
+    // element.setAttribute（“height”，“2em”）;
+    // element.setAttribute（“fill”，“lime”）;
+
+    var svgContainer = document.getElementById("svg_add");
+    svgContainer.appendChild(c);
+
+
+
+</script>
+</body>
+</html>

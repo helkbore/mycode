@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 运行结果 1, 2, 3, 6, 8, 9, 10
+    (function(){alert(1);})();
+
+    (a = function(){alert(2);})();
+
+    (function(a){alert(3);})([function(){alert(4);}, function(){alert(5);}]);
+
+    (function(){alert(6);})(window, function(){
+        return (function(){alert(7);})();
+    });
+
+    // 这个call 是为了严格模式
+    (function(a, b){
+        alert(a);
+        alert(b);
+    }).call(this,8, 9);
+
+    var test = (function() {
+        alert(10);
+    })();
+
+    i = 'abc';
+    var test2 = (function(i) {
+        function abc() {
+            console.log('abc');
+        }
+
+        return abc;
+    })(this);
+
+    abc();
+
+    // 围观一下, 脑回路不够了
+    // (function(glob, factory){
+    //      factory(glob, glob.eve);
+    // })(window || this, function(window, eve){...});
+</script>
+</body>
+</html>

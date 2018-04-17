@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            fill: #dcf1ff;
+            stroke: #3a73ff;
+            stroke-width: 1;
+        }
+    </style>
+</head>
+<body>
+<svg width="670" height="460" class="svg-frame">
+    <defs>
+        <rect id="flow_box" x="0", y="0" rx="15" ry="15" class="box">
+        </rect>
+    </defs>
+    <g id="svg_col_a"></g>
+</svg>
+<script>
+
+
+    var name_index = ['A','B','C','D','E','F','G'];
+    var chart = {
+        rows: [
+            ["焊料片"],
+            ["连接架", "去油清洗"],
+            ["上引出盘", "去油,清洗", "烧氢", "纤焊", "栅级引出线", "喷砂" ],
+            ["焊接", "栅级引出清洗", "高频焙烧", "涂玻璃粉", "湿氢脱碳"]
+
+
+        ],
+
+        relations: [
+            "A0-BT-B0",
+            "B0-RL-B1",
+            "B0-BT-C0",
+            "B1-RT-C3",
+            "C0-RL-C1",
+            "C1-RL-C2",
+            "C2-RL-C3",
+            "C3-RL-C4",
+            "C4-RL-C5",
+            "C5-BR-C6",
+            "D4-LR-D3",
+            "D3-LR-D2",
+            "D2-LR-D1",
+            "D1-LR-D0"
+        ]
+    }
+
+    var config = {
+        w: 670,
+        h: 460
+    }
+
+    // 设置并读取json 以及配置
+    // 计算每个矩形的宽高(画布宽度/高度 除以 矩形个数)
+    box_num = {
+        rowNum : chart.rows.length,
+        colNum : 0
+    }
+
+    for (var i = 0; i < box_num.rowNum; i++) {
+        if (chart.rows[i].length >= box_num.colNum) {
+            box_num.colNum = chart.rows[i].length;
+        }
+    }
+
+    // 计算每个矩形的宽度
+    function getBoxData(allSize, elementNum) {
+        var data = {};
+        data.box = Math.floor(allSize / elementNum); // 整个矩形占据空间(包括空白)
+        data.box_size = Math.floor(data.box * 2 /3);    // 矩形的空间尺寸
+        data.box_blank = data.box - data.box_size;  // 矩形间距
+        data.topButtom = Math.floor(data.box_size / 2); // 距整个画布的边距
+        return data;
+    }
+
+    boxData = {};
+    boxData.width = getBoxData(config.w, box_num.colNum);
+    boxData.height = getBoxData(config.h, box_num.rowNum);
+
+    console.log(boxData);
+
+    // Test
+
+
+    var svgContainer = document.getElementById("svg_col_a");
+    // console.log(svgContainer);
+    // svgContainer.appendChild(c);
+
+
+    // 配置矩形属性
+    var svgNS = "http://www.w3.org/2000/svg";
+    var XLINK_NS = "http://www.w3.org/1999/xlink";
+
+    // 将use属性封装成函数，以便调用
+    function use(origin) {
+        var _use = document.createElementNS(svgNS, "use");
+        _use.setAttributeNS(XLINK_NS, "xlink:href", "#" + origin.id);
+        return _use;
+    }
+
+    var boxModel = document.getElementById('flow_box');
+
+    boxModel.setAttribute("width", boxData.width.box_size);
+    boxModel.setAttribute("height", boxData.height.box_size);
+
+
+
+
+    function getPyl(x, y) {
+        pyl = {};
+        pyl.x = boxData.width.topButtom + x*(boxData.width.box);
+        pyl.y = boxData.height.topButtom + y*(boxData.height.box);
+        // console.log(pyl)
+        return pyl;
+    }
+
+    // Test
+    // console.log(getPyl(2,0));
+
+    for (var i = 0; i < chart.rows.length; i++) {
+        for (var j = 0; j < chart.rows[i].length; j++) {
+            // 设置偏移量
+            var newBox = use(boxModel);
+            pyl = getPyl(j, i);
+            newBox.setAttribute("transform", "matrix(1,0,0,1,"
+                + pyl.x + "," + pyl.y + ")");
+
+            // console.log(newBox.getAttribute("transform"));
+            // TODO 设置文字
+
+            // 设置id
+            // var id = name_index[i] + "" + j;
+            // console.log(id);
+            // alert();
+            newBox.setAttribute("id", name_index[i] + "" + j);
+
+            // 添加绘制
+            // console.log(newBox)
+            svgContainer.appendChild(newBox);
+        }
+    }
+
+
+    // var c = document.createElementNS(svgNS, "rect");
+
+    // <rect x="0" y="300" width="150" height="100" rx="15" ry="15" class="box" >
+    // c.x.baseVal.value = boxData.width.topButtom;
+    // c.y.baseVal.value = boxData.height.topButtom;
+    // c.width.baseVal.value = boxData.width.box_size;
+    // c.height.baseVal.value = boxData.height.box_size;
+    // c.rx.baseVal.value = 15;
+    // c.ry.baseVal.value = 15;
+    // c.setAttribute("class", "box");
+
+    // 获取当前矩形的分支
+    function getBranch(){}
+
+    var test = document.getElementById('C2');
+    console.log(test);
+    var bBox=(document.getDocumentElement().getBBox());
+    SVGAElement
+    // test.createSVGPoint();
+    // console.log(document.getDocumentElement());
+    // document.getDocumentElement();
+    // console.log(test.createSVGPoint().x)
+    // console.log(test.currentScale);
+    // 读取关系, 计算连线
+    // 计算连线 - 找出端点
+    // 计算连线 - 判断端点是否等x 或 等y 否则自动生成中间值
+    // 预览 修改
+
+    // var svgNS = "http://www.w3.org/2000/svg";
+    // var XLINK_NS = "http://www.w3.org/1999/xlink";
+    //
+    // var c = document.createElementNS(svgNS, "circle");
+    // c.cx.baseVal.value = 20;
+    // c.cy.baseVal.value = 20;
+    // c.r.baseVal.value = 20;
+    // c.style.fill = "lime";
+    //
+    // var svgContainer = document.getElementById("svg_col_a")
+    // svgContainer.appendChild(c);
+
+</script>
+</body>
+</html>
