@@ -467,8 +467,6 @@
 })(this);
 
 (function (glob, factory) {
-    console.log(glob);
-    console.log(factory);
     // AMD support
     if (typeof define == "function" && define.amd) {
         // Define as an anonymous module
@@ -888,14 +886,15 @@
  = (object) @Element
 \*/
         function Snap(w, h) {
+            console.log('snap');
             if (w) {
-                if (w.nodeType) {
+                if (w.nodeType) {   // 直接传的dom元素
                     return wrap(w);
                 }
-                if (is(w, "array") && Snap.set) {
+                if (is(w, "array") && Snap.set) { // 如果是数组
                     return Snap.set.apply(Snap, w);
                 }
-                if (w instanceof Element) {
+                if (w instanceof Element) { // 如果是snap元素?
                     return w;
                 }
                 if (h == null) {
@@ -2186,6 +2185,7 @@
             }
         }, 1e4);
         function Element(el) {
+            console.log('element');
             if (el.snap in hub) {
                 return hub[el.snap];
             }
@@ -2357,6 +2357,8 @@
             return el;
         }
         function Paper(w, h) {
+            console.log('paper');
+            console.log(Paper.prototype);
             var res,
                 desc,
                 defs,
@@ -2381,7 +2383,7 @@
                 res.defs = defs;
                 for (var key in proto) if (proto[has](key)) {
                     res[key] = proto[key];
-                }
+            }
                 res.paper = res.root = res;
             } else {
                 res = make("svg", glob.doc.body);
@@ -2395,6 +2397,7 @@
             return res;
         }
         function wrap(dom) {
+            console.log('wrap');
             if (!dom) {
                 return dom;
             }
@@ -4870,6 +4873,7 @@
      | var c = paper.circle(50, 50, 40);
     \*/
         proto.circle = function (cx, cy, r) {
+            console.log('circle');
             var attr;
             if (is(cx, "object") && cx == "[object Object]") {
                 attr = cx;
@@ -4880,6 +4884,8 @@
                     r: r
                 };
             }
+            console.log('circle');
+            console.log(this);
             return this.el("circle", attr);
         };
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>othertest</title>
+</head>
+<body>
+<!-- test2 -->
+<div id="mydiv">
+    <p class="demo">第一段</p>
+    <p class="demo">第二段</p>
+    <p class="demo">第三段</p>
+    <p class="demo">第四段</p>
+    <p class="demo">第五段</p>
+</div>
+<script>
+    // Test1 call使用 --已归档
+    // var str = "ABC";
+    // console.log(str.toLowerCase());
+    // console.log(String.prototype.toLowerCase.call("EFgG"));
+
+    // Test2 querySelector() 与 querySelectorAll() --已归档
+    // var x = document.getElementById("mydiv");
+    // console.log(x.querySelector(".demo"));
+    // x.querySelector(".demo").innerHTML = "Hello World!";
+    // x.querySelectorAll(".demo")[0].style.color = "red";
+
+    // querySelectorAll 返回的是一个 Static Node List
+    // getElementBy 返回的是一个 Live Node List
+
+    // Test 3 想看看如果将 aa()赋值给了test,那么调用aa的成员时aa会不会再执行一遍, 答案是不会;
+    // 不归档
+    // var aa = function() {
+    //     console.log('aa');
+    //     this.bb = function() {
+    //         console.log('bb');
+    //     }
+    //
+    //     return this;
+    // }
+    //
+    // var test = aa();
+    // test.bb();
+
+    // Test 4
+    // function aa() {
+    //     this.aa = "aa";
+    //     this.bb = "bb";
+    //     this.cc = function(){
+    //         console.log('cc');
+    //     }
+    //
+    //
+    // }
+    //
+    // var a = new aa();
+    // a.dd = a;
+    // console.log(a.dd.prototype);
+
+    (function(glob, factory){
+        factory(glob);
+    })(window || this, function(window) {
+        var Snap = (function(root){
+            function Snap(){
+                console.log('success');
+            }
+            var glob = {
+                win: root.window,
+                doc: root.window.document
+            };
+
+            glob.win.Snap = Snap;
+
+            Snap.test = "aa";
+            console.log(Snap);
+            return Snap;
+        })(window || this);
+
+        return Snap
+    });
+
+    Snap();
+
+
+
+</script>
+</body>
+</html>
