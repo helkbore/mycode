@@ -42,45 +42,33 @@
     // var test = aa();
     // test.bb();
 
+
     // Test 4
-    // function aa() {
-    //     this.aa = "aa";
-    //     this.bb = "bb";
-    //     this.cc = function(){
-    //         console.log('cc');
-    //     }
-    //
-    //
+    // function test(){
+    //     var a = (function(){console.log(2);})();
+    //     console.log(1);
+    //     return a;
     // }
     //
-    // var a = new aa();
-    // a.dd = a;
-    // console.log(a.dd.prototype);
+    // test();
 
-    (function(glob, factory){
-        factory(glob);
-    })(window || this, function(window) {
-        var Snap = (function(root){
-            function Snap(){
-                console.log('success');
-            }
-            var glob = {
-                win: root.window,
-                doc: root.window.document
-            };
+    // Test 5
+    function aa(){
+        this.aa = 'aa';
+        this.bb = 'bb';
+        this.cc = 'cc';
 
-            glob.win.Snap = Snap;
 
-            Snap.test = "aa";
-            console.log(Snap);
-            return Snap;
-        })(window || this);
+    }
 
-        return Snap
-    });
+    var a = new aa();
 
-    Snap();
-
+    aa.prototype.dd = function(){
+        cosnole.log("dd");
+        console.log(this);
+    };
+    console.log(a.dd);
+    // console.log(a.cc);
 
 
 </script>
