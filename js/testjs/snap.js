@@ -83,6 +83,7 @@
      = (object) array of returned values from the listeners. Array has two methods `.firstDefined()` and `.lastDefined()` to get first or last not `undefined` value.
     \*/
     eve = function (name, scope) {
+        console.log(events);
         var e = events,
             oldstop = stop,
             args = Array.prototype.slice.call(arguments, 2),
@@ -963,6 +964,7 @@
             };
 
         function $(el, attr) {
+            // console.log(el);
             if (attr) {
                 if (el == "#text") {
                     el = glob.doc.createTextNode(attr.text || attr["#text"] || "");
@@ -2191,7 +2193,6 @@
             try {
                 svg = el.ownerSVGElement;
             } catch(e) {}
-            console.log(svg);
             /*\
      * Element.node
      [ property (object) ]
@@ -2216,7 +2217,6 @@
     \*/
             this.type = el.tagName || el.nodeName;
             var id = this.id = ID(this);
-            console.log(id);
             this.anims = {};
             this._ = {
                 transform: []
@@ -2282,9 +2282,9 @@
                     return eve("snap.util.getattr." + params, el).firstDefined();
                 }
             }
+
             for (var att in params) {
                 if (params[has](att)) {
-                    console.log(eve);
                     eve("snap.util.attr." + att, el, params[att]);
                 }
             }
@@ -2396,7 +2396,6 @@
             return res;
         }
         function wrap(dom) {
-            console.log(dom);
             if (!dom) {
                 console.log(0);
                 return dom;
