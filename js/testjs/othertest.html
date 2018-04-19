@@ -57,31 +57,84 @@
     // a.dd = a;
     // console.log(a.dd.prototype);
 
-    (function(glob, factory){
-        factory(glob);
-    })(window || this, function(window) {
-        var Snap = (function(root){
-            function Snap(){
-                console.log('success');
-            }
-            var glob = {
-                win: root.window,
-                doc: root.window.document
-            };
+    // (function(glob, factory){
+    //     factory(glob);
+    // })(window || this, function(window) {
+    //     var Snap = (function(root){
+    //         function Snap(){
+    //             console.log('success');
+    //         }
+    //         var glob = {
+    //             win: root.window,
+    //             doc: root.window.document
+    //         };
+    //
+    //         glob.win.Snap = Snap;
+    //
+    //         Snap.test = "aa";
+    //         console.log(Snap);
+    //         return Snap;
+    //     })(window || this);
+    //
+    //     return Snap
+    // });
+    //
+    // Snap();
 
-            glob.win.Snap = Snap;
+    // Test 5
+    function aa(){
+        this.aa = 'aa';
+        this.bb = function(){console.log('bb')};
+    }
 
-            Snap.test = "aa";
-            console.log(Snap);
-            return Snap;
-        })(window || this);
+    // aa.prototype.dd = function() {
+    //     console.log('dd');
+    // }
+    // var a = new aa();
+    // aa.prototype.cc = function() {
+    //     console.log('cc');
+    //     // console.log(this);
+    //     this.dd();
+    // }
 
-        return Snap
-    });
+    // a.dd();
 
-    Snap();
+    // var a = new aa();
+    // console.log(a.__proto__);
+    // console.log(a.constructor);
+    // console.log(a.__proto__ === aa.prototype); // true
+    // console.log(aa.prototype.__proto__);
+    // console.log(aa.prototype.constructor);
+    // console.log(aa.prototype.constructor === aa); // true
+    //
+    // console.log(aa.__proto__);
+    // console.log(aa.__proto__ === Function.prototype);
 
+    // Test 6 hasOwnProperty
+    // var a = [1,2,3,4,5,6];
+    // console.log(a["hasOwnProperty"](5));
+    // for (var att in a) {
+    //     if (a[has](att)) {
+    //         // console.log(0);
+    //     }
+    // }
 
+    // // Test 7
+    // function aa(a, b){
+    //     console.log(a);
+    //     console.log(b);
+    // }
+    // aa(1,2,3);
+
+    // Test 8
+    var o = {
+        a: 'aaa',
+        b: 'bbb'
+    }
+
+    for (var att in o){
+        console.log(att);
+    }
 
 </script>
 </body>

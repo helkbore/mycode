@@ -886,7 +886,6 @@
  = (object) @Element
 \*/
         function Snap(w, h) {
-            console.log('snap');
             if (w) {
                 if (w.nodeType) {   // 直接传的dom元素
                     return wrap(w);
@@ -2185,7 +2184,6 @@
             }
         }, 1e4);
         function Element(el) {
-            console.log('element');
             if (el.snap in hub) {
                 return hub[el.snap];
             }
@@ -2193,6 +2191,7 @@
             try {
                 svg = el.ownerSVGElement;
             } catch(e) {}
+            console.log(svg);
             /*\
      * Element.node
      [ property (object) ]
@@ -2217,6 +2216,7 @@
     \*/
             this.type = el.tagName || el.nodeName;
             var id = this.id = ID(this);
+            console.log(id);
             this.anims = {};
             this._ = {
                 transform: []
@@ -2284,6 +2284,7 @@
             }
             for (var att in params) {
                 if (params[has](att)) {
+                    console.log(eve);
                     eve("snap.util.attr." + att, el, params[att]);
                 }
             }
@@ -2357,8 +2358,6 @@
             return el;
         }
         function Paper(w, h) {
-            console.log('paper');
-            console.log(Paper.prototype);
             var res,
                 desc,
                 defs,
@@ -2397,17 +2396,21 @@
             return res;
         }
         function wrap(dom) {
-            console.log('wrap');
+            console.log(dom);
             if (!dom) {
+                console.log(0);
                 return dom;
             }
             if (dom instanceof Element || dom instanceof Fragment) {
+                console.log(1);
                 return dom;
             }
             if (dom.tagName && dom.tagName.toLowerCase() == "svg") {
+                console.log(2);
                 return new Paper(dom);
             }
             if (dom.tagName && dom.tagName.toLowerCase() == "object" && dom.type == "image/svg+xml") {
+                console.log(3);
                 return new Paper(dom.contentDocument.getElementsByTagName("svg")[0]);
             }
             return new Element(dom);
@@ -4873,7 +4876,6 @@
      | var c = paper.circle(50, 50, 40);
     \*/
         proto.circle = function (cx, cy, r) {
-            console.log('circle');
             var attr;
             if (is(cx, "object") && cx == "[object Object]") {
                 attr = cx;
@@ -4884,8 +4886,6 @@
                     r: r
                 };
             }
-            console.log('circle');
-            console.log(this);
             return this.el("circle", attr);
         };
 
