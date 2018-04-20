@@ -68,6 +68,7 @@
         isArray = Array.isArray || function (ar) {
             return ar instanceof Array || objtos.call(ar) == "[object Array]";
         };
+    console.log(events)
     /*\
      * eve
      [ method ]
@@ -83,7 +84,7 @@
      = (object) array of returned values from the listeners. Array has two methods `.firstDefined()` and `.lastDefined()` to get first or last not `undefined` value.
     \*/
     eve = function (name, scope) {
-        console.log(events);
+        console.log('eve')
         var e = events,
             oldstop = stop,
             args = Array.prototype.slice.call(arguments, 2),
@@ -172,6 +173,9 @@
             nes,
             es = [e],
             out = [];
+
+        // console.log(es);
+        // console.log(names);
         for (i = 0, ii = names.length; i < ii; i++) {
             nes = [];
             for (j = 0, jj = es.length; j < jj; j++) {
