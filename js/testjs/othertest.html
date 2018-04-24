@@ -121,15 +121,45 @@
     // aa(1,2,3);
 
     // Test 8
-    var o = {
-        a: 'aaa',
-        b: 'bbb'
-    }
+    // var o = {
+    //     a: 'aaa',
+    //     b: 'bbb'
+    // }
+    //
+    // for (var att in o){
+    //     console.log(att);
+    // }
 
-    for (var att in o){
-        console.log(att);
-    }
+    // // Test 9
+    // var name = [1, 2, 3, 4, 5];
+    // name = "snap.util.getattr";
+    // objtos = Object.prototype.toString;
+    // comaseparator = /\s*,\s*/;
+    //
+    // isArray = Array.isArray || function (ar) {
+    //     return ar instanceof Array || objtos.call(ar) == "[object Array]";
+    // };
+    // console.log(isArray(name));
+    // names = String(name).split(comaseparator)
+    // // console.log(name[0]);
+    // // console.log(typeof( name))
+    // // console.log(isArray(name[0]) ? name : [name])
+    // console.log(names);
 
+    // Test 10
+    var name = "snap.util.getattr";
+    var separator = /[\.\/]/
+    names = String(name).split(separator)
+    // console.log(names);
+    events =  {n: {}};
+    e = events
+    e = e.n;
+    i =  0;
+    // console.log(e.hasOwnProperty(names[i]));
+    console.log(e.hasOwnProperty(names[i]));
+    // e = 0 && 2 || (e.a = 3);
+    e = e.hasOwnProperty(names[i]) && e[names[i]] || (e[names[i]] = {n: {}});
+    console.log(e)
 </script>
 </body>
 </html>
