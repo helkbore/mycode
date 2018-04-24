@@ -372,53 +372,208 @@
             <a href=""><img src="images/zx.png" /></a>
         </div>
 
-        <div class="right-menu">
-            <div class="right-menu-up"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-            <ul>
+        <div class="right-menu" id="menu">
+            <div class="right-menu-up" id="menu_up"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            <ul id="dynamic_menu">
                 <li class="right-menu-item">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        工位登记
                     </a>
                 </li>
 
                 <li class="right-menu-item active" id="test">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        加工填报
                     </a>
                 </li>
 
                 <li class="right-menu-item">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        领取材料
                     </a>
                 </li>
 
                 <li class="right-menu-item">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        排产计划
                     </a>
                 </li>
 
                 <li class="right-menu-item">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        返工产品
                     </a>
                 </li>
 
                 <li class="right-menu-item">
                     <a href="right-menu-item-link">
-                        滑动菜单文字
+                        生产统计表
                     </a>
                 </li>
+
+                <li class="right-menu-item">
+                    <a href="right-menu-item-link">
+                        工序档案
+                    </a>
+                </li>
+
+                <li class="right-menu-item">
+                    <a href="right-menu-item-link">
+                        工具流程图
+                    </a>
+                </li>
+
+
+
+
+
+
             </ul>
-            <div class="right-menu-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div id="menu_down" class="right-menu-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
         </div>
 
     </div>
 </div>
 
 <script>
+var menus = document.querySelectorAll(".right-menu-item");
+var index = 0;
+var menu_show_length = 6;
+var menu_up = document.getElementById("menu_up");
+var menu_down = document.getElementById("menu_down");
 
+initMenu();
+menu_up.onclick = function(e) {
+    index --;
+    setIndex();
+    initMenu();
+
+}
+
+menu_down.onclick = function(e) {
+    index ++;
+    setIndex();
+    initMenu();
+
+}
+
+function initMenu() {
+    var _menu = document.getElementById("dynamic_menu");
+    cleanChildren(_menu);
+    addMenuNode();
+}
+
+function setIndex () {
+    if (index >= menus.length ) {
+        index = index - menus.length;
+    }
+
+    if (index < 0) {
+        index = index + menus.length;
+    }
+}
+function addMenuNode () {
+    var _menu = document.getElementById("dynamic_menu");
+    for (var i = 0; i < menu_show_length; i++) {
+        page_index = index + i;
+        if (page_index >= menus.length) {
+            page_index = page_index - menus.length;
+        }
+
+        if (page_index < 0) {
+            page_index = page_index + menus.length;
+        }
+        _menu.appendChild(menus[page_index]);
+    }
+}
+
+// 清除子节点
+function cleanChildren(element) {
+
+    node_length = element.childNodes.length;
+    for(var i=0; i<node_length; i++)
+    {
+        var node = element.childNodes[0];
+        node.parentNode.removeChild(node);
+    }
+}
+
+// 触摸屏滑动(待测试)
+var startx, starty;
+var menu_top = document.getElementById('menu');
+menu_top.addEventListener('touchstart', function(e){
+    startx = e.touches[0].pageX;
+    starty = e.touches[0].pageY;
+}, false);
+menu_top.addEventListener('touchend', function(e){
+    var endx, endy;
+    endx = e.changedTouches[0].pageX;
+    endy = e.changedTouches[0].pageY;
+
+    var direction = getDirection(startx, starty, endx, endy);
+    switch (direction) {
+        case 0:
+            // alert('为滑动')
+            break;
+        case 1:
+            // alert('up')
+            index --;
+            setIndex();
+            initMenu();
+            break;
+        case 2:
+            // alert('down')
+            index ++;
+            setIndex();
+            initMenu();
+            break;
+        case 3:
+            // alert('left')
+            break;
+        case 4:
+            // alert('down')
+            break;
+    }
+}, false);
+
+// 判断滑动方向
+function getDirection(sx, sy, ex, ey) {
+    var angx = ex - sx;
+    var angy = ey - sy;
+    var result = 0;
+
+    // 滑动距离太短
+    if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+        return result;
+    }
+
+    var angle = getAngle(angx, angy);
+
+    if (angle >= -135 && angle <= -45) {
+        result = 1;
+    }
+
+    if (angle > 45 && angle < 135) {
+        result = 2;
+    }
+
+    if ((angle >=135 && angle <= 180) || (angle >= -180 && angle < -135) ) {
+        result = 3;
+    }
+
+    if (angle >= -45 && angle <= 45) {
+        result = 4;
+    }
+
+    return result;
+
+
+}
+
+// 获取角度
+function getAngle(angx, angy) {
+    return Math.atan2(angy, angx) * 180 / Math.PI;
+}
 </script>
 </body>
 </html>

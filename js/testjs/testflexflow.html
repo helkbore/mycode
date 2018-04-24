@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 右下菜单 */
+        .right-menu {
+            background: url("bk.png") no-repeat;
+            background-position-x: -20px;
+            height: 530px;
+            width: 300px;
+            background-size: 300px 530px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /*padding: 10px;*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            /*align-content: center;*/
+
+            /*position: absolute;*/
+            /*right: 25px;*/
+
+            /*margin-right: 25px;*/
+            /*-webkit-background-size: auto;*/
+            /*background-size: contain;*/
+        }
+
+        .right-menu-up, .right-menu-down {
+            background: #eceaea;
+            /*width: 100%;*/
+            color: #666;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            width: 230px;
+            margin-left: -19px;
+            box-shadow: 2px 2px 3px #000;
+
+        }
+
+        .right-menu-up {
+            /*border-top-right-radius: 10px;*/
+            /*border-top-left-radius: 10px;*/
+            /*border-bottom-right-radius: 3px;*/
+            /*border-bottom-left-radius: 3px;*/
+            border-radius: 10px 10px 3px 3px;
+            margin-top: -16px;
+            margin-bottom: 5px;
+        }
+
+        .right-menu-down {
+            border-radius: 3px 3px 10px 10px;
+        }
+
+        .right-menu-item {
+            height: 63px;
+            background: #eed7d2;
+            color: #666;
+            line-height: 63px;
+            margin-bottom: 5px;
+            width: 230px;
+            margin-left: -19px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 2px 2px 3px #000;
+            background: linear-gradient(180deg, #eed7d2 50%, rgb(225, 168, 157));
+
+
+        }
+
+        .right-menu-item a {
+            color: #666;
+            line-height: 63px;
+            height: 63px;
+        }
+
+        .right-menu-item.active a {
+            color: #fff;
+            /*background-color: #1b5480;*/
+        }
+
+        .right-menu .right-menu-item.active {
+            /*background-color: #1b5480;*/
+            box-shadow: -1px -1px 3px  #fff;
+            width: 230px;
+            background: linear-gradient(180deg, #1b5480 50%, rgb(18, 58, 88));
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="right-menu">
+    <div class="right-menu-up"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+    <ul>
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+                工位登记
+            </a>
+        </li>
+
+        <li class="right-menu-item active" id="test">
+            <a href="right-menu-item-link">
+                加工提交产品
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+
+                领取材料
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+                排产计划
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+
+                返工产品
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+                生产情况统计
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+                技术档案
+            </a>
+        </li>
+
+        <li class="right-menu-item">
+            <a href="right-menu-item-link">
+                工序流程图
+            </a>
+        </li>
+    </ul>
+    <div class="right-menu-down"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+</div>
+</body>
+</html>
