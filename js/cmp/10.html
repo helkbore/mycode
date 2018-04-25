@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>highchart</title>
+
+    <!-- jquery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- highcharts -->
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+
+
+</head>
+<body>
+<div id="container" style="min-width: 300px; height: 400px; margin: 0 auto">
+
+</div>
+
+<script>
+    var options = {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '完成的元件'
+        },
+
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45, // 图标下面字体的角度
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '元件个数'
+            }
+        },
+        legend: {
+            enabled: false // 分类图示
+        },
+        tooltip: {
+            pointFormat: '完成元件个数: <b>{point.y:.0f}</b>'
+        },
+        series: [{
+            name: '完成元件个数', // legend 为 true 时显示
+            data: [42, 68, 70, 67, 60, 48, 58],
+            dataLabels: {
+                enabled: true,
+                rotation: 0,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                x: -10,
+                y: 25, // 柱子上数字的距离
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    }
+
+    // y轴标量带单位
+    options.yAxis.labels = {};
+    options.yAxis.labels.format = '{value}(件)'
+
+    // 设置日期
+    options.xAxis.labels = {};
+    options.xAxis.labels.format = '{value: %Y-%m-%d}';
+    // options.xAxis.labels.formatter = function() {
+    //     return Highcharts.dateFormat('%Y-%m-%d', this.value);
+    // };
+    options.xAxis.labels.rotation = -45;
+
+    options.xAxis.type = 'datetime';
+
+    var date = new Date();
+    date.setHours(8, 0, 0, 0);
+    console.log(date);
+    console.log(date.getTime());
+    console.log((new Date()).setHours(0,0,0,0));
+    options.series[0].pointStart = date.getTime() - 7 * 24 * 36e5;
+    options.series[0].pointInterval = 24 * 36e5
+
+    $("#container").highcharts(options);
+
+</script>
+</body>
+</html>

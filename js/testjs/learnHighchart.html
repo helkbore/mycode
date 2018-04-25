@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+
+    <style>
+        .test {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="test1"></div>
+<div id="test2"></div>
+<div id="test3"></div>
+<script>
+    var options = {
+        chart: {},
+        title: {},
+        xAxis: {},
+        yAxis: {},
+        series:  [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 94.2]
+        }]
+    };
+
+    // 设置宽高
+    options.chart.style = {
+        fontFamily: "",
+        fontSize: '12px',
+        fontWeight: 'bold',
+        color: '#006cee'
+    }
+
+    options.chart.style.className = "test";
+
+    options.xAxis = {};
+    options.xAxis.title = {
+      text: 'x轴标题'
+    };
+
+    options.yAxis.title = {
+        text: 'y轴标题'
+    }
+
+    // 坐标轴刻度
+    options.yAxis.labels = {};
+    // options.yAxis.labels.enabled = false;
+    options.yAxis.labels.enabled = true;
+
+    // 格式化标签
+    options.yAxis.labels.format = '{value}元'
+
+    // 时间格式化
+    options.xAxis.labels = {};
+    options.xAxis.labels.format = '{value: %Y-%m-%d}';
+    options.xAxis.labels.formatter = function() {
+        return Highcharts.dateFormat('%Y-%m-%d', this.value);
+    };
+    options.xAxis.labels.rotation = -45;
+
+    options.xAxis.type = 'datetime';
+
+
+
+    // console.log(Date.UTC(2018,4,1))
+    var date = new Date();
+    date.setHours(8, 0, 0, 0);
+    console.log(date);
+    console.log(date.getTime());
+    console.log((new Date()).setHours(0,0,0,0));
+    options.series[0].pointStart = date.getTime() - 7 * 24 * 36e5;
+    options.series[0].pointInterval = 24 * 36e5
+
+    options.tooltip = {
+        xDateFormat: '%Y-%m-%d %H:%M',
+        pointFormat: "Value: {point.y:,.1f} mm",
+        dateTimeLabelFormats: {day: '%Y-%m-%d'}
+    }
+
+
+
+
+    // 三种实例化方式
+    // 第一种
+    options.title.text = "test1";
+    var charts = Highcharts.chart('test1', options);
+
+    // 第二种
+    options.chart.renderTo = 'test2';
+    options.title.text = "test2";
+    options.chart.type = "column";
+    var charts2 = Highcharts.chart(options);
+
+    // 第三种
+    options.title.text = "test3";
+    options.chart.type = "pie";
+    $("#test3").highcharts(options);
+</script>
+</body>
+</html>

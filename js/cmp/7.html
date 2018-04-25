@@ -18,7 +18,11 @@
     <script type="text/javascript" src="js/main.js" ></script>
 
 
+    <!-- jquery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
 
+    <!-- highcharts -->
+    <script src="js/highcharts.js"></script>
 
     <style>
 
@@ -35,7 +39,16 @@
         .center {
             z-index: 10;
         }
+        .top_time {
 
+            padding: 10px;
+            position: absolute;
+            top: 11px;
+            left: 22px;
+            font-size: 16px;
+
+
+        }
         /* 标题 */
         .title {padding-top: 46px; }
         .title p { color: #333;}
@@ -61,6 +74,7 @@
             height: 460px;
             display: flex;
             flex-direction: column;
+
             background-color: #0f5b97;
 
         }
@@ -94,20 +108,7 @@
             height: 65px;
             line-height: 65px;
         }
-        .list-item-no {
-            margin-left: 20px;
-            font-family: listNumber;
-            width: 100px;
-        }
-        .list-item-title {
-            width: 250px;
-        }
-        .list-item-btn {
-            width: 100px;
-        }
-        .list-item-btn img {
-            height: 65px;
-        }
+
 
         /* 分页样式 */
         .page-list {
@@ -158,16 +159,16 @@
 
         /* 信息框 */
         .right-info {
-            margin: 10px;
+            margin: 50px;
             background: rgba(0, 0, 0, 0.3);
-            padding: 13px 0;
+            padding: 16px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             /*align-content: flex-start;*/
             align-items: center;
-            margin-bottom: 1px;
-            margin-right: 28px;
+            margin-bottom: 2px;
+            margin-right: 60px;
 
         }
 
@@ -273,69 +274,162 @@
         }
 
 
+        /* 返回和主页图标 */
+        .back-icon {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        .back-icon i {
+            font-size: 45px;
+            display: inline-block;
+            margin: 10px;
+        }
+        /* 中间内容区附加 */
+        .content{
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            background-image: none;
+        }
+
+        .content-info ul {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+            margin: 10px;
+            color: #000;
+        }
+
+        .info-num {
+            margin: 10px;
+        }
+
+        .info-red {
+            color: red;
+        }
+
+        .content-inner-data {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content-left-table {
+            height: 380px;
+            display: flex;
+            align-items: center;
+
+        }
+        table.gridtable {
+            margin-left: 5px;
+            color: #1b5480;
+            border-width: 1px;
+            border-color: #1b5480;
+
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            background-color: #1b5480;
+            color: #fff;
+        }
+
+        table.gridtable td {
+            padding: 8px 0;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        #content_charts {
+            width: 450px;
+            height: 400px;
+        }
+
     </style>
 </head>
 <body>
 <div class="main">
     <div class="left">
+        <div class="back-icon">
+            <!--<a href=""><i style="font-size: 40px;" class="fa fa-backward" aria-hidden="true"></i></a>-->
+            <a href="${ctx}/card/tomain.ws"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
         <div class="outer">
+
             <div class="title">
-                <p class="zh-info">列表大标题测试文字</p>
+                <p class="zh-info">主页</p>
                 <p class="en-info">INTELLIGENT MANAGEMENT AND CONTROL SYSTEM</p>
             </div>
             <div class="content">
 
-                <div class="content-title"><i class="fa fa-calculator" aria-hidden="true"></i>任务完成情况列表</div>
-                <ul class="list-ul">
-                    <li class="list-item">
-                        <span class="list-item-no">1</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
+                <div class="content-info">
+                    <ul>
+                        <li>
+                            <span>本次提交成品数量</span>
+                            <span class="info-num">58</span>
+                        </li>
 
-                    </li>
+                        <li>
+                            <span class="info-red">今日返回数量(不合格)</span>
+                            <span class="info-num info-red">2</span>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li class="list-item">
-                        <span class="list-item-no">2</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
+                <div class="content-inner-data">
+                    <div id="content_table" class="content-left-table">
+                        <table class="gridtable">
+                            <tr>
+                                <th>日期</th>
+                                <th>完成元件</th>
+                            </tr>
 
-                    </li>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    <li class="list-item">
-                        <span class="list-item-no">3</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    </li>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    <li class="list-item">
-                        <span class="list-item-no">4</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    </li>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    <li class="list-item">
-                        <span class="list-item-no">5</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
 
-                    </li>
+                            <tr>
+                                <td>2018年4月25日</td>
+                                <td>42</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="content_charts" class="content-right-charts"></div>
+                </div>
 
-                    <li class="list-item">
-                        <span class="list-item-no">6</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
 
-                    </li>
-
-                    <li class="list-item">
-                        <span class="list-item-no">7</span>
-                        <span class="list-item-title">任务名称的标题的测试文字</span>
-                        <span class="list-item-btn"><a href=""><img src="images/an.png" /></a></span>
-
-                    </li>
-                </ul>
 
             </div>
 
@@ -354,19 +448,25 @@
         </div>
     </div>
     <div class="right">
+
+        <div class="top_time">
+            <span id="clock"></span>
+        </div>
+
+
         <div class="right-info">
             <ul class="member-info">
                 <li class="member-info-item">
                     <span class="info-title">姓名</span>
-                    <span class="info-data">李大四</span>
+                    <span class="info-data">系统管理员</span>
                 </li>
                 <li class="member-info-item">
                     <span class="info-title">岗位</span>
-                    <span class="info-data">测试</span>
+                    <span class="info-data">管理</span>
                 </li>
                 <li class="member-info-item">
                     <span class="info-title">部门</span>
-                    <span class="info-data">测试部门</span>
+                    <span class="info-data">信息部</span>
                 </li>
             </ul>
             <a href=""><img src="images/zx.png" /></a>
@@ -436,144 +536,286 @@
 </div>
 
 <script>
-var menus = document.querySelectorAll(".right-menu-item");
-var index = 0;
-var menu_show_length = 6;
-var menu_up = document.getElementById("menu_up");
-var menu_down = document.getElementById("menu_down");
+    // 时钟
+    (function () {
+        function initArray(){
+            this.length=initArray.arguments.length
+            for(var i=0;i<this.length;i++)
+                this[i+1]=initArray.arguments[i]
+        }
+        var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
 
-initMenu();
-menu_up.onclick = function(e) {
-    index --;
-    setIndex();
+        var setClock = function() {
+            console.log(0);
+            today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            month = today.getMonth() + 1;
+
+
+            var time = today.getFullYear()
+                + "-"+ month
+                + "-" + today.getDate() + " "
+                + d[today.getDay()+1] + " "
+                + hours + " : "
+                + minutes + " : "
+                + seconds;
+            document.getElementById('clock').innerHTML = time;
+
+        }
+        setClock();
+        setInterval(setClock, 1000);
+    })();
+
+    // 滚动菜单
+    var menus = document.querySelectorAll(".right-menu-item");
+    var index = 0;
+    var menu_show_length = 6;
+    var menu_up = document.getElementById("menu_up");
+    var menu_down = document.getElementById("menu_down");
+
     initMenu();
+    menu_up.onclick = function(e) {
+        index --;
+        setIndex();
+        initMenu();
 
-}
-
-menu_down.onclick = function(e) {
-    index ++;
-    setIndex();
-    initMenu();
-
-}
-
-function initMenu() {
-    var _menu = document.getElementById("dynamic_menu");
-    cleanChildren(_menu);
-    addMenuNode();
-}
-
-function setIndex () {
-    if (index >= menus.length ) {
-        index = index - menus.length;
     }
 
-    if (index < 0) {
-        index = index + menus.length;
+    menu_down.onclick = function(e) {
+        index ++;
+        setIndex();
+        initMenu();
+
     }
-}
-function addMenuNode () {
-    var _menu = document.getElementById("dynamic_menu");
-    for (var i = 0; i < menu_show_length; i++) {
-        page_index = index + i;
-        if (page_index >= menus.length) {
-            page_index = page_index - menus.length;
+
+    function initMenu() {
+        var _menu = document.getElementById("dynamic_menu");
+        cleanChildren(_menu);
+        addMenuNode();
+    }
+
+    function setIndex () {
+        if (index >= menus.length ) {
+            index = index - menus.length;
         }
 
-        if (page_index < 0) {
-            page_index = page_index + menus.length;
+        if (index < 0) {
+            index = index + menus.length;
         }
-        _menu.appendChild(menus[page_index]);
     }
-}
+    function addMenuNode () {
+        var _menu = document.getElementById("dynamic_menu");
+        for (var i = 0; i < menu_show_length; i++) {
+            page_index = index + i;
+            if (page_index >= menus.length) {
+                page_index = page_index - menus.length;
+            }
 
-// 清除子节点
-function cleanChildren(element) {
-
-    node_length = element.childNodes.length;
-    for(var i=0; i<node_length; i++)
-    {
-        var node = element.childNodes[0];
-        node.parentNode.removeChild(node);
+            if (page_index < 0) {
+                page_index = page_index + menus.length;
+            }
+            _menu.appendChild(menus[page_index]);
+        }
     }
-}
 
-// 触摸屏滑动(待测试)
-var startx, starty;
-var menu_top = document.getElementById('menu');
-menu_top.addEventListener('touchstart', function(e){
-    startx = e.touches[0].pageX;
-    starty = e.touches[0].pageY;
-}, false);
-menu_top.addEventListener('touchend', function(e){
-    var endx, endy;
-    endx = e.changedTouches[0].pageX;
-    endy = e.changedTouches[0].pageY;
+    // 清除子节点
+    function cleanChildren(element) {
 
-    var direction = getDirection(startx, starty, endx, endy);
-    switch (direction) {
-        case 0:
-            // alert('为滑动')
-            break;
-        case 1:
-            // alert('up')
-            index --;
-            setIndex();
-            initMenu();
-            break;
-        case 2:
-            // alert('down')
-            index ++;
-            setIndex();
-            initMenu();
-            break;
-        case 3:
-            // alert('left')
-            break;
-        case 4:
-            // alert('down')
-            break;
+        node_length = element.childNodes.length;
+        for(var i=0; i<node_length; i++)
+        {
+            var node = element.childNodes[0];
+            node.parentNode.removeChild(node);
+        }
     }
-}, false);
 
-// 判断滑动方向
-function getDirection(sx, sy, ex, ey) {
-    var angx = ex - sx;
-    var angy = ey - sy;
-    var result = 0;
+    // 触摸屏滑动(待测试)
+    var startx, starty;
+    var menu_top = document.getElementById('menu');
+    menu_top.addEventListener('touchstart', function(e){
+        startx = e.touches[0].pageX;
+        starty = e.touches[0].pageY;
+    }, false);
+    menu_top.addEventListener('touchend', function(e){
+        var endx, endy;
+        endx = e.changedTouches[0].pageX;
+        endy = e.changedTouches[0].pageY;
 
-    // 滑动距离太短
-    if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+        var direction = getDirection(startx, starty, endx, endy);
+        switch (direction) {
+            case 0:
+                // alert('为滑动')
+                break;
+            case 1:
+                // alert('up')
+                index --;
+                setIndex();
+                initMenu();
+                break;
+            case 2:
+                // alert('down')
+                index ++;
+                setIndex();
+                initMenu();
+                break;
+            case 3:
+                // alert('left')
+                break;
+            case 4:
+                // alert('down')
+                break;
+        }
+    }, false);
+
+    // 判断滑动方向
+    function getDirection(sx, sy, ex, ey) {
+        var angx = ex - sx;
+        var angy = ey - sy;
+        var result = 0;
+
+        // 滑动距离太短
+        if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+            return result;
+        }
+
+        var angle = getAngle(angx, angy);
+
+        if (angle >= -135 && angle <= -45) {
+            result = 1;
+        }
+
+        if (angle > 45 && angle < 135) {
+            result = 2;
+        }
+
+        if ((angle >=135 && angle <= 180) || (angle >= -180 && angle < -135) ) {
+            result = 3;
+        }
+
+        if (angle >= -45 && angle <= 45) {
+            result = 4;
+        }
+
         return result;
+
+
     }
 
-    var angle = getAngle(angx, angy);
+    // 获取角度
+    function getAngle(angx, angy) {
+        return Math.atan2(angy, angx) * 180 / Math.PI;
+    }
+</script>
 
-    if (angle >= -135 && angle <= -45) {
-        result = 1;
+
+<script>
+    // 右侧柱状图
+    var options = {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '完成的元件'
+        },
+
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45, // 图标下面字体的角度
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: ''
+            }
+        },
+        legend: {
+            enabled: false // 分类图示
+        },
+        tooltip: {
+            pointFormat: '完成元件个数: <b>{point.y:.0f}</b>'
+        },
+        series: [{
+            name: '完成元件个数', // legend 为 true 时显示
+            data: [42, 68, 70, 67, 60, 48, 58],
+            dataLabels: {
+                enabled: true,
+                rotation: 0,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y}', // one decimal
+
+                y: 25, // 柱子上数字的距离
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
     }
 
-    if (angle > 45 && angle < 135) {
-        result = 2;
+    // 时区 没生效
+    // options.global = {};
+    // options.global.timezoneOffset = 8 * 60;
+
+    // y轴标量带单位
+    options.yAxis.labels = {};
+    options.yAxis.labels.format = '{value}(件)'
+
+    // 设置日期
+    options.xAxis.labels = {};
+    options.xAxis.labels.format = '{value: %Y-%m-%d}';
+    options.xAxis.labels.formatter = function() {
+        return Highcharts.dateFormat('%Y-%m-%d', this.value);
+    };
+    options.xAxis.labels.rotation = -45;
+    options.xAxis.type = 'datetime';
+    options.xAxis.tickInterval = 24 * 36e5;
+
+    var date = new Date();
+    date.setHours(8, 0, 0, 0);
+    options.series[0].pointStart = date.getTime() - 7 * 24 * 36e5;
+    options.series[0].pointInterval = 24 * 36e5;
+
+    // 数据列的颜色
+    options.series[0].color = "#1b5480";
+
+    // 版权信息
+    options.credits = {};
+    options.credits.enabled = false;
+
+    // 提示框格式化
+    options.tooltip = {
+        xDateFormat: '%Y-%m-%d',
+        pointFormat: "完成的元件: {point.y:,.1f}",
+        dateTimeLabelFormats: {day: '%Y-%m-%d'}
     }
 
-    if ((angle >=135 && angle <= 180) || (angle >= -180 && angle < -135) ) {
-        result = 3;
-    }
-
-    if (angle >= -45 && angle <= 45) {
-        result = 4;
-    }
-
-    return result;
 
 
-}
 
-// 获取角度
-function getAngle(angx, angy) {
-    return Math.atan2(angy, angx) * 180 / Math.PI;
-}
+    $("#content_charts").highcharts(options);
+
 </script>
 </body>
 </html>
