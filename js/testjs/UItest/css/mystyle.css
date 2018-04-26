@@ -1,0 +1,200 @@
+/* body */
+
+/* 滚动条 -s */
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+/* 滚动条 -e */
+
+/* 不知道为什么这样做, 因为box-sizing不继承? */
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+
+    /* 点击链接时出现高亮颜色 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    /* 在IOS中改变方向后, 不要调整字体大小. */
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-size: 14px;
+    font-size: 13px;
+
+    color: #333;
+    color: #676a6c;
+
+    line-height: 1.42857143;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.gray-bg {
+    background-color: #f3f3f4;
+}
+
+#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #2f4050;
+}
+
+body.full-height-layout #wrapper{
+    height: 100%;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: block;
+}
+
+
+.navbar-default {
+    background-color: transparent;
+    background-color: #f8f8f8;
+
+    border-color: #e7e7e7;
+    border-color: #2f4050;
+
+    position: relative;
+}
+
+.navbar-static-side {
+    background: #2f4050;
+}
+
+body.flexed-sidebar .navbar-static-side{
+    position: fixed;
+    width: 220px;
+    z-index: 2001;
+    height: 100%;
+}
+
+.nav-close {
+    padding: 10px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.4em;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    color: rgba(255, 255, 255, .3);
+}
+
+
+
+.nav:before,
+.nav:after{
+    display: table;
+    content: " ";
+}
+
+
+.nav:after {
+    clear: both;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-header {
+    padding: 33px 25px;
+    background: url(patterns/header-profile.png) no-repeat;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.nav-header a {
+    color: #DFE4ED;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+}
+
+.m-t-xs {
+    margin-top: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.font-bold {
+    font-weight: 600;
+}

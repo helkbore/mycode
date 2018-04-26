@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动条</title>
+    <style>
+        /* Turn on a 13x13 scrollbar */
+        ::-webkit-scrollbar {
+            width: 13px;/*对垂直流动条有效*/
+            height: 13px;/*对水平流动条有效*/
+        }
+        /*垂直滚动条的按钮*/
+        ::-webkit-scrollbar-button:vertical {
+            background-color: red;
+            border: 1px dashed blue;
+        }
+        /*CSS的坐标系，左上角为(0,0),往右往下为增加，往上往左为减少*/
+        /*显示滚动条上方的渐增按钮*/
+        ::-webkit-scrollbar-button:start:decrement,
+            /*显示滚动条上方的渐减按钮*/
+        ::-webkit-scrollbar-button:end:increment {
+            display: block
+        }
+
+        /*隐藏滚动条上方的渐增按钮*/
+        ::-webkit-scrollbar-button:vertical:start:increment,
+        ::-webkit-scrollbar-button:vertical:end:decrement {
+            display: none;
+
+        }
+
+        /* 定义垂直滚动条渐增按扭的样式 */
+        ::-webkit-scrollbar-button:vertical:increment {
+            background-color: white;
+            border: 1px dashed blue;
+        }
+
+        /* 定义垂直滚动条渐减按扭的样式 */
+        /*::-webkit-scrollbar-button:vertical:decrement {*/
+            /*background-color: purple;*/
+            /*border: 1px dashed blue;*/
+        /*}*/
+
+
+        /*　　scrollbar-track　　　　上面是　scrollbar-track-piece　　*/
+        /*　　scrollbar-track-piece　上面是　四个按扭与scrollbar-track-piece:start与scrollbar-track-piece:end与scrollbar-thumb　*/
+        /* 垂直滚动条的第一层轨道*/
+        /*::-webkit-scrollbar-track:vertical {*/
+            /*background-color: blue;*/
+            /*border: 1px dashed pink;*/
+        /*}*/
+
+
+        /* 垂直滚动条的第二层轨道　*/
+        /*::-webkit-scrollbar-track-piece {*/
+            /*background-color: green;*/
+        /*}*/
+        /* 垂直滚动条的第三层轨道的上段　*/
+        /*::-webkit-scrollbar-track-piece:vertical:start {*/
+            /*border: 1px solid #000;*/
+        /*}*/
+
+        /* 垂直滚动条的第三层轨道的下段　*/
+        /*::-webkit-scrollbar-track-piece:vertical:end {*/
+            /*border: 1px dashed pink;*/
+        /*}*/
+
+        /* 垂直滚动条的滑动块 */
+        /*::-webkit-scrollbar-thumb:vertical {*/
+            /*height: 50px;*/
+            /*background-color: yellow;*/
+        /*}*/
+
+        /* Corner */
+        /*::-webkit-scrollbar-corner:vertical {*/
+            /*background-color: black;*/
+        /*}*/
+        /*  http://www.cssportal.com/css-properties/resize.htm  */
+        /* Resizer */
+        /*::-webkit-resizer {*/
+            /*background-color:orange;*/
+        /*}*/
+
+        /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+        /*::-webkit-scrollbar*/
+        /*{*/
+            /*width: 16px;*/
+            /*height: 16px;*/
+            /*background-color: #F5F5F5;*/
+        /*}*/
+
+        /*定义滚动条轨道 内阴影+圆角*/
+        /*::-webkit-scrollbar-track*/
+        /*{*/
+            /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+            /*border-radius: 10px;*/
+            /*background-color: #F5F5F5;*/
+        /*}*/
+
+        /*定义滑块 内阴影+圆角*/
+        /*::-webkit-scrollbar-thumb*/
+        /*{*/
+            /*border-radius: 10px;*/
+            /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+            /*background-color: #555;*/
+        /*}*/
+
+        /*:horizontal*/
+        /*//horizontal伪类适用于任何水平方向上的滚动条*/
+
+          /*:vertical*/
+        /*//vertical伪类适用于任何垂直方向的滚动条*/
+
+          /*:decrement*/
+        /*//decrement伪类适用于按钮和轨道碎片。表示递减的按钮或轨道碎片，例如可以使区域向上或者向右移动的区域和按钮*/
+
+          /*:increment*/
+        /*//increment伪类适用于按钮和轨道碎片。表示递增的按钮或轨道碎片，例如可以使区域向下或者向左移动的区域和按钮*/
+
+          /*:start*/
+        /*//start伪类适用于按钮和轨道碎片。表示对象（按钮 轨道碎片）是否放在滑块的前面*/
+
+          /*:end*/
+        /*//end伪类适用于按钮和轨道碎片。表示对象（按钮 轨道碎片）是否放在滑块的后面*/
+
+          /*:double-button*/
+        /*//double-button伪类适用于按钮和轨道碎片。判断轨道结束的位置是否是一对按钮。也就是轨道碎片紧挨着一对在一起的按钮。*/
+
+          /*:single-button*/
+        /*//single-button伪类适用于按钮和轨道碎片。判断轨道结束的位置是否是一个按钮。也就是轨道碎片紧挨着一个单独的按钮。*/
+
+          /*:no-button*/
+          /*no-button伪类表示轨道结束的位置没有按钮。*/
+
+          /*:corner-present*/
+        /*//corner-present伪类表示滚动条的角落是否存在。*/
+
+          /*:window-inactive*/
+        /*//适用于所有滚动条，表示包含滚动条的区域，焦点不在该窗口的时候。*/
+
+          /*::-webkit-scrollbar-track-piece:start {*/
+              /*!*滚动条上半边或左半边*!*/
+          /*}*/
+
+        /*::-webkit-scrollbar-thumb:window-inactive {*/
+            /*!*当焦点不在当前区域滑块的状态*!*/
+        /*}*/
+
+        /*::-webkit-scrollbar-button:horizontal:decrement:hover {*/
+            /*!*当鼠标在水平滚动条下面的按钮上的状态*!*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<div style="width: 200px; height: 200px; overflow: scroll; resize:both; margin: 200px;">
+    <div style="width: 500px; height: 100px;">
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+        """""""""""""""""""
+    </div>
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+    ....................
+</div>
+</body>
+</html>
