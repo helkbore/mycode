@@ -1,0 +1,472 @@
+<%@page import="com.wsframe.core.api.util.PropertyUtil"%>
+<%@page
+import="org.springframework.security.authentication.AuthenticationServiceException"%>
+<%@page
+import="org.springframework.security.authentication.AccountExpiredException"%>
+<%@page
+import="org.springframework.security.authentication.DisabledException"%>
+<%@page
+import="org.springframework.security.authentication.LockedException"%>
+<%@page
+import="org.springframework.security.authentication.BadCredentialsException"%>
+<%@page import="java.util.Enumeration"%>
+<%@ page pageEncoding="UTF-8"%>
+<%@page import="org.springframework.security.web.WebAttributes"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户名密码登陆</title>
+
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css" href="/card/css/reset.css?v=1.0"/>
+    <!-- 公共引用 -->
+    <link rel="stylesheet" type="text/css" href="/card/css/main.css?v=1.0"/>
+    <!-- 图标库 -->
+    <link rel="stylesheet" type="text/css" href="/card/css/font-awesome.min.css"/>
+    <!-- 键盘 -->
+    <link rel="stylesheet" type="text/css" href="/card/css/keyboard.css"/>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="/card/js/jquery-1.11.0.min.js"></script>
+    <!-- 公共引用 -->
+    <script type="text/javascript" src="/card/js/main.js"></script>
+
+    <style>
+        .outer {
+            width:720px;
+            height:611px;
+            border-radius: 0 20px 20px 0;
+            background:#eceaea;
+            margin-top: 70px;
+            z-index: 10;
+        }
+
+        .center {
+            z-index: 10;
+        }
+        .top_time {
+
+            padding: 10px;
+            position: absolute;
+            top: 11px;
+            left: 22px;
+            font-size: 16px;
+
+
+        }
+        /* 标题 */
+        .title {padding-top: 46px; }
+        .title p { color: #333;}
+        .zh-info {
+            font-size: 30px;
+            display: inline-block;
+            margin-left: 22px;
+
+        }
+        .en-info {
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+            left: -5px;
+        }
+
+        /* 中间内容区 */
+        .content {
+            margin-left: 22px;
+            background: url("/card/images/background.jpg");
+            width: 670px;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            background-color: #0f5b97;
+
+        }
+
+        /* 左边 */
+        .outer {
+            width: 720px;
+            height: 611px;
+            border-radius: 0 20px 20px 0;
+            background: #eceaea;
+            margin-top: 70px;
+            z-index: 10;
+        }
+
+        .center {
+            z-index: 10;
+        }
+
+        /* 标题 */
+        .title {
+            padding-top: 46px;
+        }
+
+        .title p {
+            color: #333;
+        }
+
+        .zh-info {
+            font-size: 40px;
+            display: inline-block;
+            margin-left: 22px;
+
+        }
+
+        .en-info {
+            font-size: 20px;
+            display: inline-block;
+            position: relative;
+            bottom: -4px;
+            left: -5px;
+        }
+
+        /* 登录文本框 */
+        .content {
+            margin-left: 22px;
+            background: url("/card/images/loginbg.png") no-repeat;
+            width: 670px;
+            height: 460px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            background-color: #0f5b97;
+
+        }
+
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-between;
+            flex-direction: column;
+            position: relative;
+            width: 397px;
+            height: 224px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 30px 0;
+        }
+
+        .login p {
+            margin: auto;
+        }
+
+        .login input {
+            padding: 10px;
+            padding-left: 30px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        .login i {
+            position: relative;
+            left: 20px;
+            width: 12px;
+
+        }
+
+        .login-btn {
+            width: 250px;
+            background-color: #6296ea;
+            color: #fff;
+            height: 37px;
+            line-height: 37px;
+            border: none;
+            margin-left: 11px;
+        }
+
+        .login-error {
+            width: 250px;
+            height: 45px;
+            line-height: 37px;
+            border: none;
+            margin-left: 11px;
+        }
+
+        .footer {
+            /*margin-top: 51px;*/
+            margin-left: -300px;
+            background: url('/card/images/footer2.png');
+            background-size: cover;
+            height: 87px;
+            line-height: 83px;
+            width: 1024px;
+            font-size: 15px;
+        }
+
+        .banquan {
+            margin-left: 323px;
+
+        }
+
+        .zhichi {
+            margin-left: 40px;
+        }
+
+        /* 右侧 */
+        .right {
+            position: relative;
+        }
+
+        .top_time {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            position: absolute;
+            top: 45px;
+            left: -15px;
+            font-size: 16px;
+
+        }
+
+        #t2, #t3 {
+            position: absolute;
+            opacity: 0.8;
+            overflow: hidden;
+        }
+
+        #t2 {
+            bottom: 102px;
+            left: -13px;
+        }
+
+        #t3 {
+            bottom: 26px;
+            left: 4px;
+        }
+    </style>
+    <script>
+        function winload() {
+            document.getElementById("username").select();
+
+        }
+
+
+        //console.log('begin page');
+        // 关机, 登录
+        function dopoweroff() {
+            if (confirm('确定要关闭计算机吗?')) {
+                this.location = "Webshellshuntdown://"  //执行关机命令
+            } else {
+
+                document.getElementById("card").focus();
+            }
+        }
+
+        function dologin() {
+            if (confirm('确定要重启系统吗?')) {
+                this.location = "Webshellreboot://"  //执行重启命令
+            } else {
+
+                document.getElementById("card").focus();
+            }
+        }
+    </script>
+
+</head>
+<body onLoad="winload()">
+<div class="main">
+    <div class="left">
+        <div class="outer">
+            <div class="title">
+                <p class="zh-info">请密码登录</p>
+                <p class="en-info">PLEASE BRUSH YOUR PASSWORD TO LOGIN IN</p>
+            </div>
+            <div class="content">
+                <div class="login">
+                    <form method="post" id="submituser" action="${ctx}/card/login.ws">
+                        <p><i class="fa fa-user" aria-hidden="true"></i><input type="text" id="username" name="username"
+                                                                               placeholder="用户名"/></p>
+                        <p><i class="fa fa-unlock-alt" aria-hidden="true"></i><input type="password" id="password"
+                                                                                     name="password" placeholder="密码"/>
+                        </p>
+                        <input type="hidden" id="iscard" name="iscard" size="0" value="1"/>
+                    </form>
+                    <%-- edit by wb 登录按钮放在表单外, 否则 会自动提交表单跳转 --%>
+                    <p>
+                        <button class="login-btn" id="loginuser">登 录</button>
+                    </p>
+
+
+                    <p><span class="login-error" style="color: #ff0000; text-align: center;" id="error"></span></p>
+
+                </div>
+                <div class="keyboard">
+                    <ul id="keyboard">
+                        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+                        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+                        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+                        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+                        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+                        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+                        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+                        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+                        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+                        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+                        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+                        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+                        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+                        <li class="delete lastitem">delete</li>
+                        <li class="tab">tab</li>
+                        <li class="letter">q</li>
+                        <li class="letter">w</li>
+                        <li class="letter">e</li>
+                        <li class="letter">r</li>
+                        <li class="letter">t</li>
+                        <li class="letter">y</li>
+                        <li class="letter">u</li>
+                        <li class="letter">i</li>
+                        <li class="letter">o</li>
+                        <li class="letter">p</li>
+                        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+                        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+                        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+                        <li class="capslock">caps lock</li>
+                        <li class="letter">a</li>
+                        <li class="letter">s</li>
+                        <li class="letter">d</li>
+                        <li class="letter">f</li>
+                        <li class="letter">g</li>
+                        <li class="letter">h</li>
+                        <li class="letter">j</li>
+                        <li class="letter">k</li>
+                        <li class="letter">l</li>
+                        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+                        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+                        <li class="return lastitem">enter</li>
+                        <li class="left-shift">shift</li>
+                        <li class="letter">z</li>
+                        <li class="letter">x</li>
+                        <li class="letter">c</li>
+                        <li class="letter">v</li>
+                        <li class="letter">b</li>
+                        <li class="letter">n</li>
+                        <li class="letter">m</li>
+                        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+                        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+                        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+                        <li class="right-shift lastitem">shift</li>
+                        <li class="space lastitem">&nbsp;</li>
+                    </ul>
+
+                </div>
+
+                <!-- 键盘 -->
+                <script type="text/javascript" src="/card/js/keyboard.js"></script>
+                <!-- 兼容IE9 flex模型 -->
+                <!--<script type="text/javascript" src="js/flexie.js"></script>-->
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p class="banquan">锦州华光电子管有限公司 · 版权所有 Copyright 2018 <span class="zhichi">技术支持: 辽宁维森信息技术股份有限公司</span></p>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="top_time">
+            <span id="clock"></span>
+        </div>
+        <div class="t1" id="turnback"><img src="/card/images/backjpg.jpg"/>
+        </div>
+        <div id="t2"><a href="javascript:dopoweroff()"><img src="/card/images/gj.png" border="0"/></a>
+        </div>
+        <div id="t3"><a href="javascript:dologin()"><img src="/card/images/cq3.png" border="0"/></a>
+        </div>
+    </div>
+</div>
+
+<script language="Javascript">
+
+    // add by wb 2018-03-30 登陆按钮 先验证 在表单提交
+    var loginuser = document.getElementById('loginuser');
+    loginuser.onclick = function (ev) {
+
+        var username = $("#username").val();
+        var password = $("#password").val();
+        if (username == '' || username == undefined || username == null) {
+            document.getElementById("error").innerHTML = "请输入用户名!";
+            document.getElementById("username").select();
+
+        } else {
+
+            if (password == '' || password == undefined || password == null) {
+                document.getElementById("error").innerHTML = "请输入密码!";
+                document.getElementById("password").select();
+                return false;
+            } else {
+
+                // 验证成功后, 表单提交
+                $("#submituser").submit();
+            }
+
+        }
+
+
+    }
+
+
+    // add by wb 2018-03-30 返回首页按钮
+    var turnback = document.getElementById('turnback');
+    turnback.onclick = function (ev) {
+        window.location.href = '/cardLogin.jsp';
+    }
+
+
+    setInterval("window.location.href='cardLogin.jsp';", 180000)//  add  by  wb  2018-03-28轮询3分钟后 跳出
+</script>
+
+
+<script language="Javascript">
+    (function () {
+        function initArray() {
+            this.length = initArray.arguments.length
+            for (var i = 0; i < this.length; i++)
+                this[i + 1] = initArray.arguments[i]
+        }
+
+        var d = new initArray("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+
+        var setClock = function () {
+            console.log(0);
+            today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            month = today.getMonth() + 1;
+
+
+            var time = today.getFullYear()
+                + "-" + month
+                + "-" + today.getDate() + " "
+                + d[today.getDay() + 1] + " "
+                + hours + " : "
+                + minutes + " : "
+                + seconds;
+            document.getElementById('clock').innerHTML = time;
+
+        }
+        setClock();
+        setInterval(setClock, 1000);
+    })();
+
+
+</script>
+</body>
+</html>
