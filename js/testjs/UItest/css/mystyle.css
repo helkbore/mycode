@@ -13,6 +13,7 @@
     width: 6px;
     background-color: #F5F5F5;
 }
+
 /* 滚动条 -e */
 
 /* 不知道为什么这样做, 因为box-sizing不继承? */
@@ -60,6 +61,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .gray-bg {
     background-color: #f3f3f4;
 }
@@ -70,10 +72,9 @@ body {
     background-color: #2f4050;
 }
 
-body.full-height-layout #wrapper{
+body.full-height-layout #wrapper {
     height: 100%;
 }
-
 
 * {
     -webkit-box-sizing: border-box;
@@ -81,11 +82,9 @@ body.full-height-layout #wrapper{
     box-sizing: border-box;
 }
 
-
-nav{
+nav {
     display: block;
 }
-
 
 .navbar-default {
     background-color: transparent;
@@ -101,7 +100,7 @@ nav{
     background: #2f4050;
 }
 
-body.flexed-sidebar .navbar-static-side{
+body.fixed-sidebar .navbar-static-side {
     position: fixed;
     width: 220px;
     z-index: 2001;
@@ -121,14 +120,11 @@ body.flexed-sidebar .navbar-static-side{
     color: rgba(255, 255, 255, .3);
 }
 
-
-
 .nav:before,
-.nav:after{
+.nav:after {
     display: table;
     content: " ";
 }
-
 
 .nav:after {
     clear: both;
@@ -149,6 +145,7 @@ ul {
     padding: 33px 25px;
     background: url(patterns/header-profile.png) no-repeat;
 }
+
 .nav > li {
     position: relative;
     display: block;
@@ -198,3 +195,129 @@ strong {
 .font-bold {
     font-weight: 600;
 }
+
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    z-index: 100;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin: 2px 0 0;
+    font-size: 12px;
+    text-align: left;
+    list-style: none outside none;
+    background-color: #fff;
+
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+
+    border: medium none;
+    border-radius: 0;
+
+    -webkit-box-shadow: 0 0 3px rgba(86, 86, 117, 0.3);
+    -moz-box-shadow: 0 0 3px rgba(86, 86, 117, 0.3);
+    box-shadow: 0 0 3px rgba(86, 86, 117, 0.3);
+
+    text-shadow: none;
+}
+
+.m-t-xs {
+. margin-5px;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+
+.nav li > a {
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    white-space: nowrap;
+    border-radius: 3px;
+
+    color: #333;
+    color: inherit; /* 实际值为: #676A6C, rgb(103, 106, 108) 遗传自body */
+    line-height: 25px;
+    margin: 4px;
+    text-align: left;
+    font-weight: normal;
+
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+
+.nav-second-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding: 7px 15px 7px 10px;
+    padding-left: 52px;
+}
+
+.nav > li > a i {
+    margin-right: 6px;
+}
+
+.logo-element {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    display: none;
+    padding: 18px 0;
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.arrow {
+    float: right;
+    margin-top: 2px;
+}
+
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+}
+
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus {
+    background-color: #293846;
+}
+
