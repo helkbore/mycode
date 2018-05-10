@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    ul, div {
+        margin: 0;
+        padding: 0;
+    }
+    #num_keyboard {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 307px;
+
+
+    }
+
+    .keys {
+        margin: 0 5px 5px 0;
+
+        text-align: center;
+        background: #fff;
+        border: 1px solid #f9f9f9;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #num_keyboard li {
+        width: 95px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .enterkey {
+        margin: 0;
+        width: 115px;
+        height: 301px;
+        line-height: 301px;
+
+    }
+
+    #numkey_area {
+        width: 436px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #1b5480;
+        padding: 10px 0;
+    }
+
+    .keys:hover {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        border-color: #e5e5e5;
+        cursor: pointer;
+    }
+
+</style>
+<div id="numkey_area">
+
+    <ul id="num_keyboard">
+        <li class="keys">0</li>
+        <li class="keys">清空</li>
+        <li class="keys">退格</li>
+
+        <li class="keys">1</li>
+        <li class="keys">2</li>
+        <li class="keys">3</li>
+        <li class="keys">4</li>
+        <li class="keys">5</li>
+        <li class="keys">6</li>
+        <li class="keys">7</li>
+        <li class="keys">8</li>
+        <li class="keys">9</li>
+    </ul>
+
+    <span class="keys enterkey">确定</span>
+</div>
+</body>
+</html>
