@@ -1,0 +1,687 @@
+
+导入失败的书:
+{'name': '秘密', 'href': 'http://www.kindlepush.com:80/book/18053', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51lqYlTY6TL._SX343_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '[日]东野圭吾', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '骗局', 'href': 'http://www.kindlepush.com:80/book/1049', 'cover_link': 'https://img3.doubanio.com/lpic/s1503062.jpg', 'pingfen': '7.3', 'author': '[美] 丹·布朗', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '数字城堡', 'href': 'http://www.kindlepush.com:80/book/734', 'cover_link': 'https://img3.doubanio.com/lpic/s2414085.jpg', 'pingfen': '7.3', 'author': '[美] 丹·布朗', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '鬼吹灯Ⅱ之四巫峡棺山', 'href': 'http://www.kindlepush.com:80/book/22376', 'cover_link': 'https://img3.doubanio.com/lpic/s24117424.jpg', 'pingfen': '8.0', 'author': '天下霸唱', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '开膛手杰克结案报告', 'href': 'http://www.kindlepush.com:80/book/3685', 'cover_link': 'https://img3.doubanio.com/lpic/s1441145.jpg', 'pingfen': '7.0', 'author': '（美）派翠西亚・康薇尔', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '魔术的耳语', 'href': 'http://www.kindlepush.com:80/book/14966', 'cover_link': 'https://img3.doubanio.com/lpic/s4555462.jpg', 'pingfen': '7.0', 'author': '宫部美雪', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '单恋', 'href': 'http://www.kindlepush.com:80/book/18110', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51s7q7dXzwL.jpg', 'pingfen': '瓣评分：暂', 'author': '[日]东野圭吾', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '白与黑', 'href': 'http://www.kindlepush.com:80/book/27521', 'cover_link': 'https://img1.doubanio.com/lpic/s27222158.jpg', 'pingfen': '6.6', 'author': '[日]横沟正史', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '谋杀启事', 'href': 'http://www.kindlepush.com:80/book/23143', 'cover_link': 'https://img3.doubanio.com/lpic/s2963946.jpg', 'pingfen': '瓣评分：暂', 'author': '阿加莎克里斯蒂', 'type': '侦探推理'}
+
+导入失败的书:
+{'name': '律师实务研究（第3卷）', 'href': 'http://www.kindlepush.com:80/book/2912', 'cover_link': 'https://img3.doubanio.com/lpic/s6275011.jpg', 'pingfen': '瓣评分：暂', 'author': '', 'type': '词典专业'}
+
+导入失败的书:
+{'name': '微笑力', 'href': 'http://www.kindlepush.com:80/book/3111', 'cover_link': 'https://img3.doubanio.com/lpic/s4532131.jpg', 'pingfen': '7.8', 'author': '汪若菡 朱瑛石', 'type': '词典专业'}
+
+导入失败的书:
+{'name': '民办高校人才培养模式改革的理论与实践', 'href': 'http://www.kindlepush.com:80/book/2591', 'cover_link': 'http://img3.doubanio.com/lpic/s8908237.jpg', 'pingfen': '0.0', 'author': '陈新民', 'type': '词典专业'}
+
+导入失败的书:
+{'name': '浙江基础研究二十年', 'href': 'http://www.kindlepush.com:80/book/2797', 'cover_link': 'https://img3.doubanio.com/lpic/s6031061.jpg', 'pingfen': '0.0', 'author': '', 'type': '词典专业'}
+第: 7  页
+http://www.kindlepush.com/category/17/0/7
+
+导入失败的书:
+{'name': '再生型经济', 'href': 'http://www.kindlepush.com:80/book/2731', 'cover_link': 'https://img3.doubanio.com/lpic/s9958554.jpg', 'pingfen': '0.0', 'author': '陈世清', 'type': '词典专业'}
+
+导入失败的书:
+{'name': '开一家赚钱的特色店', 'href': 'http://www.kindlepush.com:80/book/2908', 'cover_link': 'https://img3.doubanio.com/lpic/s3734352.jpg', 'pingfen': '0.0', 'author': '范修初', 'type': '词典专业'}
+
+导入失败的书:
+{'name': '享受人生', 'href': 'http://www.kindlepush.com:80/book/3075', 'cover_link': 'https://img3.doubanio.com/lpic/s26859931.jpg', 'pingfen': '7.4', 'author': '李银河', 'type': '词典专业'}
+
+
+2017-12-08 14:31:33,672 INFO 导入失败的书: 
+2017-12-08 14:31:33,673 INFO {'name': '鱼羊野史(1-4卷)', 'href': 'http://www.kindlepush.com:80/book/14973', 'cover_link': 'https://img3.doubanio.com/lpic/s28277141.jpg', 'pingfen': '瓣评分：暂', 'author': '高晓松', 'type': '人文社科'}
+2017-12-08 14:32:13,681 INFO 导入失败的书: 
+2017-12-08 14:32:13,681 INFO {'name': '此生未完成', 'href': 'http://www.kindlepush.com:80/book/14513', 'cover_link': 'https://images-cn-8.ssl-images-amazon.com/images/I/3154aM64BcL._SX326_BO1,204,203,200_.jpg', 'pingfen': '9.0', 'author': '于娟', 'type': '人文社科'}
+2017-12-08 14:32:38,892 INFO 导入失败的书: 
+2017-12-08 14:32:38,893 INFO {'name': '推背图中的历史', 'href': 'http://www.kindlepush.com:80/book/3141', 'cover_link': 'https://img3.doubanio.com/lpic/s3075022.jpg', 'pingfen': '6.1', 'author': '[唐] 李淳风', 'type': '人文社科'}
+2017-12-08 14:32:41,794 INFO 导入失败的书: 
+2017-12-08 14:32:41,794 INFO {'name': '斯通纳', 'href': 'http://www.kindlepush.com:80/book/14541', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51H30E0fqKL._SX371_BO1,204,203,200_.jpg', 'pingfen': '8.8', 'author': '[美] 约翰·威廉斯', 'type': '人文社科'}
+2017-12-08 14:32:57,930 INFO 导入失败的书: 
+2017-12-08 14:32:57,931 INFO {'name': '上学记', 'href': 'http://www.kindlepush.com:80/book/3970', 'cover_link': 'https://img3.doubanio.com/lpic/s1950424.jpg', 'pingfen': '8.8', 'author': '何兆武 口述', 'type': '人文社科'}
+2017-12-08 14:33:00,476 INFO 导入失败的书: 
+2017-12-08 14:33:00,476 INFO {'name': '无人区', 'href': 'http://www.kindlepush.com:80/book/29094', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51SQiqucG2L.jpg', 'pingfen': '瓣评分：暂', 'author': '杨志军', 'type': '人文社科'}
+2017-12-08 14:33:07,143 INFO 导入失败的书: 
+2017-12-08 14:33:07,143 INFO {'name': '给理想一点时间', 'href': 'http://www.kindlepush.com:80/book/1921', 'cover_link': 'https://img3.doubanio.com/lpic/s7043045.jpg', 'pingfen': '7.1', 'author': '刘瑜', 'type': '人文社科'}
+2017-12-08 14:33:09,478 INFO 导入失败的书: 
+2017-12-08 14:33:09,479 INFO {'name': '白说', 'href': 'http://www.kindlepush.com:80/book/10079', 'cover_link': 'https://img3.doubanio.com/lpic/s28290375.jpg', 'pingfen': '7.3', 'author': '白岩松', 'type': '人文社科'}
+2017-12-08 14:34:24,408 INFO 导入失败的书: 
+2017-12-08 14:34:24,408 INFO {'name': '此生必读文化常识系列（套装书全5册）', 'href': 'http://www.kindlepush.com:80/book/19330', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51bspOZvlRL.jpg', 'pingfen': '瓣评分：暂', 'author': '王颖', 'type': '人文社科'}
+2017-12-08 14:34:45,183 INFO 导入失败的书: 
+2017-12-08 14:34:45,183 INFO {'name': '有闲阶级论', 'href': 'http://www.kindlepush.com:80/book/761', 'cover_link': 'https://img3.doubanio.com/lpic/s28121915.jpg', 'pingfen': '8.0', 'author': '[美] 凡勃伦', 'type': '人文社科'}
+2017-12-08 14:35:09,866 INFO 导入失败的书: 
+2017-12-08 14:35:09,866 INFO {'name': '美国总统演说系列（套装共6册）', 'href': 'http://www.kindlepush.com:80/book/11948', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51AONa8Cl%2BL._SY498_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '任宪宝编', 'type': '人文社科'}
+2017-12-08 14:35:26,726 INFO 导入失败的书: 
+2017-12-08 14:35:26,726 INFO {'name': '飞行中的科学', 'href': 'http://www.kindlepush.com:80/book/5297', 'cover_link': 'http://img3.doubanio.com/lpic/s27219736.jpg', 'pingfen': '6.7', 'author': '(英)布莱恩•克雷格（Brian Clegg）', 'type': '人文社科'}
+2017-12-08 14:35:36,179 INFO 导入失败的书: 
+2017-12-08 14:35:36,180 INFO {'name': '美国种族简史', 'href': 'http://www.kindlepush.com:80/book/19934', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41FlmfdpFAL.jpg', 'pingfen': '瓣评分：暂', 'author': '托马斯·索威尔', 'type': '人文社科'}
+2017-12-08 14:35:44,033 INFO 导入失败的书: 
+2017-12-08 14:35:44,033 INFO {'name': '从外星球来的孩子', 'href': 'http://www.kindlepush.com:80/book/21488', 'cover_link': 'https://img3.doubanio.com/lpic/s27202735.jpg', 'pingfen': '8.2', 'author': '杨红樱', 'type': '人文社科'}
+2017-12-08 14:35:44,877 INFO 导入失败的书: 
+2017-12-08 14:35:44,877 INFO {'name': '甲骨文', 'href': 'http://www.kindlepush.com:80/book/20697', 'cover_link': 'https://img3.doubanio.com/lpic/s2400703.jpg', 'pingfen': '瓣评分：暂', 'author': '何伟', 'type': '人文社科'}
+2017-12-08 14:36:02,657 INFO 导入失败的书: 
+2017-12-08 14:36:02,657 INFO {'name': '我的凉山兄弟：毒品、艾滋与流动青年', 'href': 'http://www.kindlepush.com:80/book/14554', 'cover_link': 'https://images-cn-8.ssl-images-amazon.com/images/I/41ro6-C3vKL._SX417_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '刘邵华', 'type': '人文社科'}
+2017-12-08 14:36:02,874 INFO 导入失败的书: 
+2017-12-08 14:36:02,874 INFO {'name': '中国农民工生存纪实', 'href': 'http://www.kindlepush.com:80/book/5361', 'cover_link': 'http://img3.doubanio.com/lpic/s5647329.jpg', 'pingfen': '7.4', 'author': '蔡建文', 'type': '人文社科'}
+2017-12-08 14:36:31,032 INFO 导入失败的书: 
+2017-12-08 14:36:31,032 INFO {'name': '新人生观 鸭池十讲', 'href': 'http://www.kindlepush.com:80/book/18274', 'cover_link': 'https://img3.doubanio.com/lpic/s2073084.jpg', 'pingfen': '8.1', 'author': '罗家伦 罗庸', 'type': '人文社科'}
+2017-12-08 14:36:31,121 INFO 导入失败的书: 
+2017-12-08 14:36:31,121 INFO {'name': '中国隐性权力调查', 'href': 'http://www.kindlepush.com:80/book/22436', 'cover_link': 'https://img3.doubanio.com/lpic/s4671696.jpg', 'pingfen': '7.3', 'author': '李松', 'type': '人文社科'}
+2017-12-08 14:36:41,929 INFO 导入失败的书: 
+2017-12-08 14:36:41,929 INFO {'name': '我读', 'href': 'http://www.kindlepush.com:80/book/20560', 'cover_link': 'https://img3.doubanio.com/lpic/s4368286.jpg', 'pingfen': '瓣评分：暂', 'author': '梁文道', 'type': '人文社科'}
+2017-12-08 14:36:50,881 INFO 导入失败的书: 
+2017-12-08 14:36:50,881 INFO {'name': '伟大的思想双语版第4辑[套装10册]', 'href': 'http://www.kindlepush.com:80/book/21457', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51xnCjv1VQL.jpg', 'pingfen': '瓣评分：暂', 'author': '亚伯拉罕·林肯； 托马斯·霍布斯等', 'type': '人文社科'}
+2017-12-08 14:37:06,597 INFO 导入失败的书: 
+2017-12-08 14:37:06,597 INFO {'name': '他们都在看', 'href': 'http://www.kindlepush.com:80/book/26008', 'cover_link': 'https://img3.doubanio.com/lpic/s27190526.jpg', 'pingfen': '7.5', 'author': '朱永新', 'type': '人文社科'}
+2017-12-08 14:37:54,573 INFO 导入失败的书: 
+2017-12-08 14:37:54,573 INFO {'name': '对话孩子：我在加拿大做心理咨询与治疗', 'href': 'http://www.kindlepush.com:80/book/21921', 'cover_link': 'https://img3.doubanio.com/lpic/s28156800.jpg', 'pingfen': '0.0', 'author': '黄蘅玉', 'type': '人文社科'}
+2017-12-08 14:38:05,422 INFO 导入失败的书: 
+2017-12-08 14:38:05,422 INFO {'name': '马克思与福柯', 'href': 'http://www.kindlepush.com:80/book/28289', 'cover_link': 'https://img1.doubanio.com/lpic/s3061759.jpg', 'pingfen': '7.2', 'author': '莱姆克等', 'type': '人文社科'}
+2017-12-08 14:38:14,692 INFO 导入失败的书: 
+2017-12-08 14:38:14,692 INFO {'name': '浆糊·爱', 'href': 'http://www.kindlepush.com:80/book/21925', 'cover_link': 'https://img3.doubanio.com/lpic/s1738464.jpg', 'pingfen': '6.4', 'author': '宁财神', 'type': '人文社科'}
+2017-12-08 14:38:25,115 INFO 导入失败的书: 
+2017-12-08 14:38:25,115 INFO {'name': '转校生', 'href': 'http://www.kindlepush.com:80/book/29340', 'cover_link': 'https://img1.doubanio.com/lpic/s1059938.jpg', 'pingfen': '7.6', 'author': '肖铁', 'type': '人文社科'}
+2017-12-08 14:38:46,970 INFO 导入失败的书: 
+2017-12-08 14:38:46,970 INFO {'name': '梨园幽韵', 'href': 'http://www.kindlepush.com:80/book/14745', 'cover_link': 'https://img3.doubanio.com/lpic/s24480730.jpg', 'pingfen': '7.1', 'author': '苏海坡', 'type': '人文社科'}
+2017-12-08 14:38:47,069 INFO 导入失败的书: 
+2017-12-08 14:38:47,069 INFO {'name': '这辈子，只能这样吗？', 'href': 'http://www.kindlepush.com:80/book/27158', 'cover_link': 'https://img3.doubanio.com/lpic/s4431405.jpg', 'pingfen': '7.4', 'author': '肯尼斯•克利斯汀Kenneth W. Christian', 'type': '人文社科'}
+2017-12-08 14:38:58,157 INFO 导入失败的书: 
+2017-12-08 14:38:58,157 INFO {'name': '三十能立', 'href': 'http://www.kindlepush.com:80/book/14762', 'cover_link': 'https://img3.doubanio.com/lpic/s4457991.jpg', 'pingfen': '7.2', 'author': '韩单', 'type': '人文社科'}
+2017-12-08 14:38:58,205 INFO 导入失败的书: 
+2017-12-08 14:38:58,205 INFO {'name': '富贵逼人1', 'href': 'http://www.kindlepush.com:80/book/3676', 'cover_link': 'http://img3.doubanio.com/lpic/s6075849.jpg', 'pingfen': '6.5', 'author': '圆不破', 'type': '人文社科'}
+2017-12-08 14:39:11,861 INFO 导入失败的书: 
+2017-12-08 14:39:11,861 INFO {'name': '司马迁之志', 'href': 'http://www.kindlepush.com:80/book/21125', 'cover_link': 'https://img3.doubanio.com/lpic/s28333906.jpg', 'pingfen': '7.2', 'author': '陈文洁', 'type': '人文社科'}
+2017-12-08 14:39:11,933 INFO 导入失败的书: 
+2017-12-08 14:39:11,933 INFO {'name': '何叔衡', 'href': 'http://www.kindlepush.com:80/book/10558', 'cover_link': 'https://img3.doubanio.com/f/shire/5522dd1f5b742d1e1394a17f44d590646b63871d/pics/book-default-large.gif', 'pingfen': '0.0', 'author': '杨青', 'type': '人文社科'}
+2017-12-08 14:39:21,755 INFO 导入失败的书: 
+2017-12-08 14:39:21,755 INFO {'name': '蔡元培全集（第二卷）', 'href': 'http://www.kindlepush.com:80/book/18902', 'cover_link': 'https://img1.doubanio.com/lpic/s9226957.jpg', 'pingfen': '0.0', 'author': '高平叔 編', 'type': '人文社科'}
+2017-12-08 14:39:30,699 INFO 导入失败的书: 
+2017-12-08 14:39:30,699 INFO {'name': '聆听心灵的声音', 'href': 'http://www.kindlepush.com:80/book/3003', 'cover_link': 'http://img3.doubanio.com/lpic/s11133619.jpg', 'pingfen': '8.0', 'author': '刘墉', 'type': '人文社科'}
+2017-12-08 14:39:40,122 INFO 导入失败的书: 
+2017-12-08 14:39:40,123 INFO {'name': '夜香', 'href': 'http://www.kindlepush.com:80/book/15837', 'cover_link': 'https://img3.doubanio.com/lpic/s23594113.jpg', 'pingfen': '0.0', 'author': '张宝瑞', 'type': '人文社科'}
+2017-12-08 14:39:40,163 INFO 导入失败的书: 
+2017-12-08 14:39:40,164 INFO {'name': '茅台故事365天', 'href': 'http://www.kindlepush.com:80/book/3011', 'cover_link': 'http://img3.doubanio.com/lpic/s6151828.jpg', 'pingfen': '0.0', 'author': '蒋子龙 编', 'type': '人文社科'}
+2017-12-08 14:39:40,257 INFO 导入失败的书: 
+2017-12-08 14:39:40,258 INFO {'name': '奇闻趣事未解之谜', 'href': 'http://www.kindlepush.com:80/book/3192', 'cover_link': 'https://img3.doubanio.com/lpic/s5855475.jpg', 'pingfen': '0.0', 'author': '倪雷雨 编', 'type': '人文社科'}
+2017-12-08 14:39:42,001 INFO 导入失败的书: 
+2017-12-08 14:39:42,002 INFO {'name': '空虚的云（下）', 'href': 'http://www.kindlepush.com:80/book/21090', 'cover_link': 'https://img3.doubanio.com/lpic/s2861165.jpg', 'pingfen': '瓣评分：暂', 'author': '冯冯', 'type': '人文社科'}
+2017-12-08 14:57:14,845 INFO 导入失败的书: 
+2017-12-08 14:57:14,845 INFO {'name': '宋词鉴赏辞典 (中国古典诗词曲赋鉴赏系列工具书)', 'href': 'http://www.kindlepush.com:80/book/20573', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51wKbf5J9YL.jpg', 'pingfen': '瓣评分：暂', 'author': '唐圭璋', 'type': '诗歌散文'}
+2017-12-08 15:04:05,554 INFO 导入失败的书: 
+2017-12-08 15:04:05,554 INFO {'name': '我的奋斗', 'href': 'http://www.kindlepush.com:80/book/66', 'cover_link': 'http://img3.doubanio.com/lpic/s4270619.jpg', 'pingfen': '7.3', 'author': '罗永浩', 'type': '励志职场'}
+2017-12-08 15:05:44,308 INFO 导入失败的书: 
+2017-12-08 15:05:44,308 INFO {'name': '赢在职场2', 'href': 'http://www.kindlepush.com:80/book/2859', 'cover_link': 'http://img3.doubanio.com/lpic/s9061979.jpg', 'pingfen': '0.0', 'author': '霍晨昕 编', 'type': '励志职场'}
+2017-12-08 15:05:44,681 INFO 导入失败的书: 
+2017-12-08 15:05:44,681 INFO {'name': '山中少年今何在', 'href': 'http://www.kindlepush.com:80/book/2378', 'cover_link': 'https://img3.doubanio.com/lpic/s27469251.jpg', 'pingfen': '8.0', 'author': '林世保', 'type': '励志职场'}
+2017-12-08 15:05:49,387 INFO 导入失败的书: 
+2017-12-08 15:05:49,387 INFO {'name': '创业团队的理论与实践', 'href': 'http://www.kindlepush.com:80/book/2546', 'cover_link': 'http://img3.doubanio.com/lpic/s7653498.jpg', 'pingfen': '0.0', 'author': '', 'type': '励志职场'}
+2017-12-08 15:05:49,525 INFO 导入失败的书: 
+2017-12-08 15:05:49,525 INFO {'name': '男人不狠地位不稳', 'href': 'http://www.kindlepush.com:80/book/2615', 'cover_link': 'https://img3.doubanio.com/lpic/s4599380.jpg', 'pingfen': '6.8', 'author': '永放\u3000编著', 'type': '励志职场'}
+2017-12-08 15:05:49,594 INFO 导入失败的书: 
+2017-12-08 15:05:49,594 INFO {'name': '如何减轻工作压力-职业倦怠的防治与调适', 'href': 'http://www.kindlepush.com:80/book/2364', 'cover_link': 'http://img3.doubanio.com/lpic/s6234168.jpg', 'pingfen': '0.0', 'author': '', 'type': '励志职场'}
+2017-12-08 15:05:49,697 INFO 导入失败的书: 
+2017-12-08 15:05:49,697 INFO {'name': '困难是我们的恩人 (平装)', 'href': 'http://www.kindlepush.com:80/book/27148', 'cover_link': 'https://img3.doubanio.com/lpic/s25767766.jpg', 'pingfen': '0.0', 'author': '汪传华', 'type': '励志职场'}
+2017-12-08 15:15:58,163 INFO 导入失败的书: 
+2017-12-08 15:15:58,163 INFO {'name': '巨婴国', 'href': 'http://www.kindlepush.com:80/book/20265', 'cover_link': 'https://img3.doubanio.com/lpic/s29150752.jpg', 'pingfen': '6.7', 'author': '武志红', 'type': '心理科学'}
+2017-12-08 15:16:31,812 INFO 导入失败的书: 
+2017-12-08 15:16:31,812 INFO 导入失败的书: 
+2017-12-08 15:16:31,812 INFO {'name': '巨婴国', 'href': 'http://www.kindlepush.com:80/book/20265', 'cover_link': 'https://img3.doubanio.com/lpic/s29150752.jpg', 'pingfen': '6.7', 'author': '武志红', 'type': '心理科学'}
+2017-12-08 15:16:31,812 INFO {'name': '巨婴国', 'href': 'http://www.kindlepush.com:80/book/20265', 'cover_link': 'https://img3.doubanio.com/lpic/s29150752.jpg', 'pingfen': '6.7', 'author': '武志红', 'type': '心理科学'}
+
+2017-12-08 15:17:13,015 INFO 导入失败的书: 
+2017-12-08 15:17:13,015 INFO 导入失败的书: 
+2017-12-08 15:17:13,015 INFO {'name': '幸福的方法', 'href': 'http://www.kindlepush.com:80/book/8448', 'cover_link': 'https://img3.doubanio.com/lpic/s3793703.jpg', 'pingfen': '8.2', 'author': '（以）泰勒•本-沙哈尔', 'type': '心理科学'}
+2017-12-08 15:17:13,015 INFO {'name': '幸福的方法', 'href': 'http://www.kindlepush.com:80/book/8448', 'cover_link': 'https://img3.doubanio.com/lpic/s3793703.jpg', 'pingfen': '8.2', 'author': '（以）泰勒•本-沙哈尔', 'type': '心理科学'}
+
+2017-12-08 15:18:06,805 INFO 导入失败的书: 
+2017-12-08 15:18:06,805 INFO 导入失败的书: 
+2017-12-08 15:18:06,806 INFO {'name': '乐嘉色眼识人（套装全4册）', 'href': 'http://www.kindlepush.com:80/book/930', 'cover_link': 'https://img3.doubanio.com/lpic/s11353301.jpg', 'pingfen': '6.6', 'author': '', 'type': '心理科学'}
+2017-12-08 15:18:06,806 INFO {'name': '乐嘉色眼识人（套装全4册）', 'href': 'http://www.kindlepush.com:80/book/930', 'cover_link': 'https://img3.doubanio.com/lpic/s11353301.jpg', 'pingfen': '6.6', 'author': '', 'type': '心理科学'}
+
+2017-12-08 15:18:09,576 INFO 导入失败的书: 
+2017-12-08 15:18:09,576 INFO 导入失败的书: 
+2017-12-08 15:18:09,577 INFO {'name': '精神现象学', 'href': 'http://www.kindlepush.com:80/book/1904', 'cover_link': 'https://img3.doubanio.com/lpic/s28263600.jpg', 'pingfen': '9.3', 'author': '黑格尔', 'type': '心理科学'}
+2017-12-08 15:18:09,577 INFO {'name': '精神现象学', 'href': 'http://www.kindlepush.com:80/book/1904', 'cover_link': 'https://img3.doubanio.com/lpic/s28263600.jpg', 'pingfen': '9.3', 'author': '黑格尔', 'type': '心理科学'}
+
+2017-12-08 15:18:35,104 INFO 导入失败的书: 
+2017-12-08 15:18:35,104 INFO 导入失败的书: 
+2017-12-08 15:18:35,104 INFO {'name': '李银河自选集', 'href': 'http://www.kindlepush.com:80/book/8452', 'cover_link': 'https://img3.doubanio.com/lpic/s2407803.jpg', 'pingfen': '8.4', 'author': '李银河', 'type': '心理科学'}
+2017-12-08 15:18:35,104 INFO {'name': '李银河自选集', 'href': 'http://www.kindlepush.com:80/book/8452', 'cover_link': 'https://img3.doubanio.com/lpic/s2407803.jpg', 'pingfen': '8.4', 'author': '李银河', 'type': '心理科学'}
+
+2017-12-08 15:18:38,622 INFO 导入失败的书: 
+2017-12-08 15:18:38,622 INFO 导入失败的书: 
+2017-12-08 15:18:38,623 INFO {'name': '忧伤的时候，到厨房去', 'href': 'http://www.kindlepush.com:80/book/12686', 'cover_link': 'https://img1.doubanio.com/lpic/s28070058.jpg', 'pingfen': '8.2', 'author': '（土）爱诗乐·沛克 著 韩玲 译 (作者), 韩玲 (译者)', 'type': '心理科学'}
+2017-12-08 15:18:38,623 INFO {'name': '忧伤的时候，到厨房去', 'href': 'http://www.kindlepush.com:80/book/12686', 'cover_link': 'https://img1.doubanio.com/lpic/s28070058.jpg', 'pingfen': '8.2', 'author': '（土）爱诗乐·沛克 著 韩玲 译 (作者), 韩玲 (译者)', 'type': '心理科学'}
+
+2017-12-08 15:19:47,623 INFO 导入失败的书: 
+2017-12-08 15:19:47,623 INFO 导入失败的书: 
+2017-12-08 15:19:47,623 INFO {'name': '如何实现有效社交', 'href': 'http://www.kindlepush.com:80/book/26367', 'cover_link': 'https://img3.doubanio.com/lpic/s28996873.jpg', 'pingfen': '6.8', 'author': '【美】凯伦·伯格', 'type': '心理科学'}
+2017-12-08 15:19:47,623 INFO {'name': '如何实现有效社交', 'href': 'http://www.kindlepush.com:80/book/26367', 'cover_link': 'https://img3.doubanio.com/lpic/s28996873.jpg', 'pingfen': '6.8', 'author': '【美】凯伦·伯格', 'type': '心理科学'}
+
+2017-12-08 15:19:55,010 INFO 导入失败的书: 
+2017-12-08 15:19:55,010 INFO 导入失败的书: 
+2017-12-08 15:19:55,011 INFO {'name': '别拿男人不当动物', 'href': 'http://www.kindlepush.com:80/book/7316', 'cover_link': 'http://img3.doubanio.com/lpic/s4642509.jpg', 'pingfen': '7.5', 'author': '杨冰阳', 'type': '心理科学'}
+2017-12-08 15:19:55,011 INFO {'name': '别拿男人不当动物', 'href': 'http://www.kindlepush.com:80/book/7316', 'cover_link': 'http://img3.doubanio.com/lpic/s4642509.jpg', 'pingfen': '7.5', 'author': '杨冰阳', 'type': '心理科学'}
+2
+2017-12-08 15:20:02,602 INFO 导入失败的书: 
+2017-12-08 15:20:02,602 INFO 导入失败的书: 
+2017-12-08 15:20:02,602 INFO {'name': '意志力训练', 'href': 'http://www.kindlepush.com:80/book/5898', 'cover_link': 'https://img3.doubanio.com/lpic/s23805582.jpg', 'pingfen': '6.9', 'author': '[美[弗兰科·哈德克', 'type': '心理科学'}
+2017-12-08 15:20:02,602 INFO {'name': '意志力训练', 'href': 'http://www.kindlepush.com:80/book/5898', 'cover_link': 'https://img3.doubanio.com/lpic/s23805582.jpg', 'pingfen': '6.9', 'author': '[美[弗兰科·哈德克', 'type': '心理科学'}
+
+2017-12-08 15:20:13,061 INFO 导入失败的书: 
+2017-12-08 15:20:13,061 INFO 导入失败的书: 
+2017-12-08 15:20:13,061 INFO {'name': '关键对话：如何高效能沟通', 'href': 'http://www.kindlepush.com:80/book/18238', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51XPPI4p6rL._SX331_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '科里•帕特森(Kerry Patterson) (作者), 约瑟夫•格雷尼(Joseph Grenny) (作者), 罗恩•麦克米兰(Ron McMillan) (作者)', 'type': '心理科学'}
+2017-12-08 15:20:13,061 INFO {'name': '关键对话：如何高效能沟通', 'href': 'http://www.kindlepush.com:80/book/18238', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51XPPI4p6rL._SX331_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '科里•帕特森(Kerry Patterson) (作者), 约瑟夫•格雷尼(Joseph Grenny) (作者), 罗恩•麦克米兰(Ron McMillan) (作者)', 'type': '心理科学'}
+
+2017-12-08 15:20:17,642 INFO 导入失败的书: 
+2017-12-08 15:20:17,642 INFO 导入失败的书: 
+2017-12-08 15:20:17,643 INFO {'name': '最后的日记', 'href': 'http://www.kindlepush.com:80/book/2281', 'cover_link': 'https://img3.doubanio.com/lpic/s6053463.jpg', 'pingfen': '8.7', 'author': '克里希那穆提', 'type': '心理科学'}
+2017-12-08 15:20:17,643 INFO {'name': '最后的日记', 'href': 'http://www.kindlepush.com:80/book/2281', 'cover_link': 'https://img3.doubanio.com/lpic/s6053463.jpg', 'pingfen': '8.7', 'author': '克里希那穆提', 'type': '心理科学'}
+
+2017-12-08 15:21:15,749 INFO 导入失败的书: 
+2017-12-08 15:21:15,749 INFO 导入失败的书: 
+2017-12-08 15:21:15,750 INFO {'name': '活在当下', 'href': 'http://www.kindlepush.com:80/book/17238', 'cover_link': 'https://img3.doubanio.com/lpic/s4367763.jpg', 'pingfen': '7.7', 'author': '[美] 芭芭拉·安吉丽思', 'type': '心理科学'}
+2017-12-08 15:21:15,750 INFO {'name': '活在当下', 'href': 'http://www.kindlepush.com:80/book/17238', 'cover_link': 'https://img3.doubanio.com/lpic/s4367763.jpg', 'pingfen': '7.7', 'author': '[美] 芭芭拉·安吉丽思', 'type': '心理科学'}
+
+2017-12-08 15:21:34,172 INFO 导入失败的书: 
+2017-12-08 15:21:34,172 INFO 导入失败的书: 
+2017-12-08 15:21:34,172 INFO {'name': '其實你已經很塔羅了(第2版)', 'href': 'http://www.kindlepush.com:80/book/31481', 'cover_link': 'https://img3.doubanio.com/lpic/s27247494.jpg', 'pingfen': '8.5', 'author': '', 'type': '心理科学'}
+2017-12-08 15:21:34,172 INFO {'name': '其實你已經很塔羅了(第2版)', 'href': 'http://www.kindlepush.com:80/book/31481', 'cover_link': 'https://img3.doubanio.com/lpic/s27247494.jpg', 'pingfen': '8.5', 'author': '', 'type': '心理科学'}
+
+2017-12-08 15:21:56,120 INFO 导入失败的书: 
+2017-12-08 15:21:56,120 INFO 导入失败的书: 
+2017-12-08 15:21:56,120 INFO {'name': '梦控师', 'href': 'http://www.kindlepush.com:80/book/18160', 'cover_link': 'https://img1.doubanio.com/lpic/s28047497.jpg', 'pingfen': '6.9', 'author': '追梦蚂蚁', 'type': '心理科学'}
+2017-12-08 15:21:56,120 INFO {'name': '梦控师', 'href': 'http://www.kindlepush.com:80/book/18160', 'cover_link': 'https://img1.doubanio.com/lpic/s28047497.jpg', 'pingfen': '6.9', 'author': '追梦蚂蚁', 'type': '心理科学'}
+
+2017-12-08 15:22:15,978 INFO 导入失败的书: 
+2017-12-08 15:22:15,978 INFO 导入失败的书: 
+2017-12-08 15:22:15,979 INFO {'name': '人气心理学', 'href': 'http://www.kindlepush.com:80/book/22837', 'cover_link': 'https://img1.doubanio.com/lpic/s28005197.jpg', 'pingfen': '6.4', 'author': '', 'type': '心理科学'}
+2017-12-08 15:22:15,979 INFO {'name': '人气心理学', 'href': 'http://www.kindlepush.com:80/book/22837', 'cover_link': 'https://img1.doubanio.com/lpic/s28005197.jpg', 'pingfen': '6.4', 'author': '', 'type': '心理科学'}
+
+2017-12-08 15:22:37,662 INFO 导入失败的书: 
+2017-12-08 15:22:37,662 INFO 导入失败的书: 
+2017-12-08 15:22:37,662 INFO {'name': '一分钟掌控人心', 'href': 'http://www.kindlepush.com:80/book/2677', 'cover_link': 'http://img3.doubanio.com/lpic/s9061976.jpg', 'pingfen': '7.0', 'author': '李凤云', 'type': '心理科学'}
+2017-12-08 15:22:37,662 INFO {'name': '一分钟掌控人心', 'href': 'http://www.kindlepush.com:80/book/2677', 'cover_link': 'http://img3.doubanio.com/lpic/s9061976.jpg', 'pingfen': '7.0', 'author': '李凤云', 'type': '心理科学'}
+2017-12-08 15:22:37,663 INFO 读取 心理科学目录下书籍成功
+2017-12-08 15:22:37,663 INFO 读取 心理科学目录下书籍成功
+2017-12-08 15:22:37,740 INFO 导入失败的书: 
+2017-12-08 15:22:37,740 INFO 导入失败的书: 
+2017-12-08 15:22:37,741 INFO {'name': '做自己的心理医生大全集', 'href': 'http://www.kindlepush.com:80/book/11669', 'cover_link': 'http://img3.doubanio.com/lpic/s6285609.jpg', 'pingfen': '0.0', 'author': '赵广娜//郝羽', 'type': '心理科学'}
+2017-12-08 15:22:37,741 INFO {'name': '做自己的心理医生大全集', 'href': 'http://www.kindlepush.com:80/book/11669', 'cover_link': 'http://img3.doubanio.com/lpic/s6285609.jpg', 'pingfen': '0.0', 'author': '赵广娜//郝羽', 'type': '心理科学'}
+
+2017-12-08 15:22:41,839 INFO 导入失败的书: 
+2017-12-08 15:22:41,839 INFO 导入失败的书: 
+2017-12-08 15:22:41,839 INFO {'name': '控制焦虑', 'href': 'http://www.kindlepush.com:80/book/24364', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51WKTplMNuL.jpg', 'pingfen': '瓣评分：暂', 'author': '[美]阿尔伯特·埃利斯', 'type': '心理科学'}
+2017-12-08 15:22:41,839 INFO {'name': '控制焦虑', 'href': 'http://www.kindlepush.com:80/book/24364', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51WKTplMNuL.jpg', 'pingfen': '瓣评分：暂', 'author': '[美]阿尔伯特·埃利斯', 'type': '心理科学'}
+
+2017-12-08 15:23:19,751 INFO 导入失败的书: 
+2017-12-08 15:23:19,751 INFO 导入失败的书: 
+2017-12-08 15:23:19,751 INFO {'name': '我当心理咨询师遇到的那些怪诞事件', 'href': 'http://www.kindlepush.com:80/book/26033', 'cover_link': 'https://img3.doubanio.com/lpic/s29470901.jpg', 'pingfen': '0.0', 'author': '胡定乐', 'type': '心理科学'}
+2017-12-08 15:23:19,751 INFO {'name': '我当心理咨询师遇到的那些怪诞事件', 'href': 'http://www.kindlepush.com:80/book/26033', 'cover_link': 'https://img3.doubanio.com/lpic/s29470901.jpg', 'pingfen': '0.0', 'author': '胡定乐', 'type': '心理科学'}
+2017-12-08 15:23:19,752 INFO 读取 心理科学目录下书籍成功
+2017-12-08 15:23:19,752 INFO 读取 心理科学目录下书籍成功
+2017-12-08 15:23:19,883 INFO 导入失败的书: 
+2017-12-08 15:23:19,883 INFO 导入失败的书: 
+2017-12-08 15:23:19,883 INFO {'name': '大地母亲时代的来临', 'href': 'http://www.kindlepush.com:80/book/24255', 'cover_link': 'https://img3.doubanio.com/lpic/s27188446.jpg', 'pingfen': '8.4', 'author': '央金拉姆', 'type': '心理科学'}
+2017-12-08 15:23:19,883 INFO {'name': '大地母亲时代的来临', 'href': 'http://www.kindlepush.com:80/book/24255', 'cover_link': 'https://img3.doubanio.com/lpic/s27188446.jpg', 'pingfen': '8.4', 'author': '央金拉姆', 'type': '心理科学'}
+
+2017-12-08 15:23:32,946 INFO 导入失败的书: 
+2017-12-08 15:23:32,946 INFO 导入失败的书: 
+2017-12-08 15:23:32,946 INFO {'name': '体验悲哀', 'href': 'http://www.kindlepush.com:80/book/2165', 'cover_link': 'https://img3.doubanio.com/lpic/s26366913.jpg', 'pingfen': '7.4', 'author': '维雷娜.卡斯特', 'type': '心理科学'}
+2017-12-08 15:23:32,946 INFO {'name': '体验悲哀', 'href': 'http://www.kindlepush.com:80/book/2165', 'cover_link': 'https://img3.doubanio.com/lpic/s26366913.jpg', 'pingfen': '7.4', 'author': '维雷娜.卡斯特', 'type': '心理科学'}
+
+2017-12-08 15:23:49,023 INFO 导入失败的书: 
+2017-12-08 15:23:49,023 INFO 导入失败的书: 
+2017-12-08 15:23:49,023 INFO {'name': '人类与动物心理学讲义', 'href': 'http://www.kindlepush.com:80/book/19937', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51e0VTQRbXL.jpg', 'pingfen': '瓣评分：暂', 'author': '(德)威廉·冯特', 'type': '心理科学'}
+2017-12-08 15:23:49,023 INFO {'name': '人类与动物心理学讲义', 'href': 'http://www.kindlepush.com:80/book/19937', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51e0VTQRbXL.jpg', 'pingfen': '瓣评分：暂', 'author': '(德)威廉·冯特', 'type': '心理科学'}
+
+2017-12-08 15:24:06,024 INFO 导入失败的书: 
+2017-12-08 15:24:06,024 INFO 导入失败的书: 
+2017-12-08 15:24:06,024 INFO {'name': '接吻简史', 'href': 'http://www.kindlepush.com:80/book/22794', 'cover_link': 'https://img3.doubanio.com/lpic/s27668871.jpg', 'pingfen': '6.3', 'author': '[丹]克里斯托弗•尼罗普', 'type': '心理科学'}
+2017-12-08 15:24:06,024 INFO {'name': '接吻简史', 'href': 'http://www.kindlepush.com:80/book/22794', 'cover_link': 'https://img3.doubanio.com/lpic/s27668871.jpg', 'pingfen': '6.3', 'author': '[丹]克里斯托弗•尼罗普', 'type': '心理科学'}
+
+2017-12-08 15:24:11,774 INFO 导入失败的书: 
+2017-12-08 15:24:11,774 INFO 导入失败的书: 
+2017-12-08 15:24:11,774 INFO {'name': '人脉心理学', 'href': 'http://www.kindlepush.com:80/book/2500', 'cover_link': 'https://img3.doubanio.com/lpic/s6249612.jpg', 'pingfen': '6.7', 'author': '夏浩', 'type': '心理科学'}
+2017-12-08 15:24:11,774 INFO {'name': '人脉心理学', 'href': 'http://www.kindlepush.com:80/book/2500', 'cover_link': 'https://img3.doubanio.com/lpic/s6249612.jpg', 'pingfen': '6.7', 'author': '夏浩', 'type': '心理科学'}
+
+2017-12-08 15:24:24,800 INFO 导入失败的书: 
+2017-12-08 15:24:24,800 INFO 导入失败的书: 
+2017-12-08 15:24:24,800 INFO {'name': '每天懂点孩子心理学2', 'href': 'http://www.kindlepush.com:80/book/2951', 'cover_link': 'https://img3.doubanio.com/lpic/s26740201.jpg', 'pingfen': '0.0', 'author': '孙玉梅', 'type': '心理科学'}
+2017-12-08 15:24:24,800 INFO {'name': '每天懂点孩子心理学2', 'href': 'http://www.kindlepush.com:80/book/2951', 'cover_link': 'https://img3.doubanio.com/lpic/s26740201.jpg', 'pingfen': '0.0', 'author': '孙玉梅', 'type': '心理科学'}
+2017-12-08 15:31:36,163 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:31:44,742 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:31:52,055 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:32:00,065 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:32:05,936 INFO 导入失败的书: 
+2017-12-08 15:32:05,936 INFO {'name': '国画', 'href': 'http://www.kindlepush.com:80/book/19833', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41hnR%2BoPcLL.jpg', 'pingfen': '瓣评分：暂', 'author': '王跃文', 'type': '政治官场'}
+2017-12-08 15:32:07,381 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:32:11,394 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:32:15,191 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:32:15,623 INFO 导入失败的书: 
+2017-12-08 15:32:15,623 INFO {'name': '酒局', 'href': 'http://www.kindlepush.com:80/book/3024', 'cover_link': 'https://img3.doubanio.com/lpic/s8865053.jpg', 'pingfen': '4.9', 'author': '陈亚辉', 'type': '政治官场'}
+2017-12-08 15:32:20,630 INFO 读取 政治官场目录下书籍成功
+2017-12-08 15:37:24,216 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:29,333 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:34,248 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:38,608 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:43,200 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:47,125 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:51,482 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:55,628 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:37:59,665 INFO 导入失败的书: 
+2017-12-08 15:37:59,666 INFO {'name': 'Never Eat Alone', 'href': 'http://www.kindlepush.com:80/book/29303', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51VP6Ae3unL.jpg', 'pingfen': '瓣评分：暂', 'author': '(美)基思•法拉奇(Keith Ferrazzi)', 'type': '外文原版'}
+2017-12-08 15:38:00,101 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:04,622 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:05,387 INFO 导入失败的书: 
+2017-12-08 15:38:05,387 INFO {'name': 'The Kite Runner', 'href': 'http://www.kindlepush.com:80/book/20773', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51eKKDBOXHL._SX305_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Khaled Hosseini', 'type': '外文原版'}
+2017-12-08 15:38:09,926 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:14,113 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:15,044 INFO 导入失败的书: 
+2017-12-08 15:38:15,044 INFO {'name': 'Hillbilly Elegy', 'href': 'http://www.kindlepush.com:80/book/29876', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51gufUMfXZL._SX328_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'J. D. Vance', 'type': '外文原版'}
+2017-12-08 15:38:15,446 INFO 导入失败的书: 
+2017-12-08 15:38:15,446 INFO {'name': 'A Street Cat Named Bob', 'href': 'http://www.kindlepush.com:80/book/20210', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51-sCc1yaML._SX323_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'James Bowen', 'type': '外文原版'}
+2017-12-08 15:38:16,023 INFO 导入失败的书: 
+2017-12-08 15:38:16,023 INFO {'name': 'Founders at Work', 'href': 'http://www.kindlepush.com:80/book/16600', 'cover_link': 'https://img3.doubanio.com/lpic/s1994753.jpg', 'pingfen': '8.6', 'author': 'Jessica Livingston', 'type': '外文原版'}
+2017-12-08 15:38:18,601 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:19,582 INFO 导入失败的书: 
+2017-12-08 15:38:19,582 INFO {'name': 'Tuesdays with Morrie', 'href': 'http://www.kindlepush.com:80/book/24879', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51-EUN8mdEL.jpg', 'pingfen': '瓣评分：暂', 'author': 'Mitch Albom', 'type': '外文原版'}
+2017-12-08 15:38:21,396 INFO 导入失败的书: 
+2017-12-08 15:38:21,396 INFO {'name': 'Gone with the Wind', 'href': 'http://www.kindlepush.com:80/book/20212', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51pZagJtHdL._SX308_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '格丽特•米切尔 (Margaret Mitchell)', 'type': '外文原版'}
+2017-12-08 15:38:22,094 INFO 导入失败的书: 
+2017-12-08 15:38:22,094 INFO {'name': 'Atlas Shrugged', 'href': 'http://www.kindlepush.com:80/book/3514', 'cover_link': 'http://img3.doubanio.com/lpic/s1448069.jpg', 'pingfen': '8.9', 'author': '安·兰德', 'type': '外文原版'}
+2017-12-08 15:38:22,387 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:26,965 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:28,283 INFO 导入失败的书: 
+2017-12-08 15:38:28,284 INFO {'name': 'How Google Works', 'href': 'http://www.kindlepush.com:80/book/20679', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41O-nnsG5fL._SX333_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Larry Page', 'type': '外文原版'}
+2017-12-08 15:38:32,325 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:32,681 INFO 导入失败的书: 
+2017-12-08 15:38:32,681 INFO {'name': 'Invisible Man', 'href': 'http://www.kindlepush.com:80/book/3581', 'cover_link': 'https://img3.doubanio.com/lpic/s29090952.jpg', 'pingfen': '8.3', 'author': 'Ralph Ellison', 'type': '外文原版'}
+2017-12-08 15:38:33,073 INFO 导入失败的书: 
+2017-12-08 15:38:33,073 INFO {'name': 'Never Eat Alone', 'href': 'http://www.kindlepush.com:80/book/21533', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41P7lgDxWxL._SX329_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Keith Ferrazzi', 'type': '外文原版'}
+2017-12-08 15:38:35,374 INFO 导入失败的书: 
+2017-12-08 15:38:35,374 INFO {'name': 'The Coaching Habit', 'href': 'http://www.kindlepush.com:80/book/30358', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51LZ9XeBxvL._SX323_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Michael Bungay Stanier', 'type': '外文原版'}
+2017-12-08 15:38:36,781 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:42,553 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:44,333 INFO 导入失败的书: 
+2017-12-08 15:38:44,333 INFO {'name': "The Zookeeper''s Wife", 'href': 'http://www.kindlepush.com:80/book/20488', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51aJ2SN49IL._SX324_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Diane Ackerman', 'type': '外文原版'}
+2017-12-08 15:38:48,314 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:48,646 INFO 导入失败的书: 
+2017-12-08 15:38:48,646 INFO {'name': 'Numbers Rule Your World', 'href': 'http://www.kindlepush.com:80/book/6186', 'cover_link': 'https://img3.doubanio.com/lpic/s4242850.jpg', 'pingfen': '7.0', 'author': 'Kaiser Fung', 'type': '外文原版'}
+2017-12-08 15:38:48,765 INFO 导入失败的书: 
+2017-12-08 15:38:48,765 INFO {'name': 'Rhyme Stew', 'href': 'http://www.kindlepush.com:80/book/22113', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51Kc4Ye6fiL.jpg', 'pingfen': '瓣评分：暂', 'author': 'Roald Dahl', 'type': '外文原版'}
+2017-12-08 15:38:51,260 INFO 导入失败的书: 
+2017-12-08 15:38:51,261 INFO {'name': 'Dog Days (Diary of a Wimpy Kid Book 4)', 'href': 'http://www.kindlepush.com:80/book/27403', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51Leddiw99L._SX323_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jeff Kinney', 'type': '外文原版'}
+2017-12-08 15:38:52,792 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:53,008 INFO 导入失败的书: 
+2017-12-08 15:38:53,008 INFO {'name': 'The Story of a Seagull and the Cat Who Taught Her to Fly', 'href': 'http://www.kindlepush.com:80/book/5924', 'cover_link': 'https://img3.doubanio.com/lpic/s6688093.jpg', 'pingfen': '0.0', 'author': 'Sepulveda, Luis/ Peden, Margaret Sayers/ Sheban, Chris (ILT)', 'type': '外文原版'}
+2017-12-08 15:38:54,838 INFO 导入失败的书: 
+2017-12-08 15:38:54,838 INFO {'name': 'Just Kids', 'href': 'http://www.kindlepush.com:80/book/21632', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51bpvhzaBvL.jpg', 'pingfen': '瓣评分：暂', 'author': '[美] 帕蒂·史密斯', 'type': '外文原版'}
+2017-12-08 15:38:56,356 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:38:58,094 INFO 导入失败的书: 
+2017-12-08 15:38:58,094 INFO {'name': 'Docker in Practice', 'href': 'http://www.kindlepush.com:80/book/16637', 'cover_link': 'http://img3.doubanio.com/lpic/s28789226.jpg', 'pingfen': '0.0', 'author': 'Ian Miell', 'type': '外文原版'}
+2017-12-08 15:39:05,372 INFO 导入失败的书: 
+2017-12-08 15:39:05,372 INFO {'name': 'A Story Told from a Broken Heart', 'href': 'http://www.kindlepush.com:80/book/19829', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/410jSFmQTgL._SX384_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'R. T. Goodrich', 'type': '外文原版'}
+2017-12-08 15:39:05,763 INFO 导入失败的书: 
+2017-12-08 15:39:05,764 INFO {'name': 'Pride and Prejudice', 'href': 'http://www.kindlepush.com:80/book/20278', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51jSMPqBXxL.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jane Austen', 'type': '外文原版'}
+2017-12-08 15:39:05,765 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:08,534 INFO 导入失败的书: 
+2017-12-08 15:39:08,534 INFO {'name': 'The Renaissance', 'href': 'http://www.kindlepush.com:80/book/27599', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51oGGEspZ-L._SX314_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jerry Brotton', 'type': '外文原版'}
+2017-12-08 15:39:11,219 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:11,829 INFO 导入失败的书: 
+2017-12-08 15:39:11,830 INFO {'name': 'Ways of Seeing', 'href': 'http://www.kindlepush.com:80/book/21736', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41DD4GM2w9L._SX349_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'John Berger', 'type': '外文原版'}
+2017-12-08 15:39:12,101 INFO 导入失败的书: 
+2017-12-08 15:39:12,102 INFO {'name': 'VI Editor Pocket Reference', 'href': 'http://www.kindlepush.com:80/book/3596', 'cover_link': 'http://img3.doubanio.com/lpic/s1457116.jpg', 'pingfen': '0.0', 'author': 'Arnold Robbins', 'type': '外文原版'}
+2017-12-08 15:39:16,567 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:17,203 INFO 导入失败的书: 
+2017-12-08 15:39:17,204 INFO {'name': 'The Hunt for Red October', 'href': 'http://www.kindlepush.com:80/book/21618', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/515kw2u7b3L._SX281_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Tom Clancy', 'type': '外文原版'}
+2017-12-08 15:39:21,579 INFO 导入失败的书: 
+2017-12-08 15:39:21,579 INFO {'name': 'Lord of the Flies', 'href': 'http://www.kindlepush.com:80/book/29450', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/512mrQMBIOL.jpg', 'pingfen': '瓣评分：暂', 'author': 'William Golding', 'type': '外文原版'}
+2017-12-08 15:39:21,716 INFO 导入失败的书: 
+2017-12-08 15:39:21,716 INFO {'name': 'Freedom', 'href': 'http://www.kindlepush.com:80/book/28778', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51EtI4tykvL._SX317_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jonathan Franzen', 'type': '外文原版'}
+2017-12-08 15:39:22,293 INFO 导入失败的书: 
+2017-12-08 15:39:22,293 INFO {'name': 'Lord of the Flies', 'href': 'http://www.kindlepush.com:80/book/31691', 'cover_link': 'https://images-cn-4.ssl-images-amazon.com/images/I/51e%2BBVeRvrL._SX320_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': '威廉•戈尔丁 (William Golding)', 'type': '外文原版'}
+2017-12-08 15:39:22,890 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:24,725 INFO 导入失败的书: 
+2017-12-08 15:39:24,725 INFO {'name': 'Going Solo', 'href': 'http://www.kindlepush.com:80/book/22114', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51JAvMPgHsL.jpg', 'pingfen': '瓣评分：暂', 'author': 'RoaldDahl', 'type': '外文原版'}
+2017-12-08 15:39:24,809 INFO 导入失败的书: 
+2017-12-08 15:39:24,809 INFO {'name': "Who''s Who in the Classical World (Oxford Paperback Reference)", 'href': 'http://www.kindlepush.com:80/book/8098', 'cover_link': 'https://img3.doubanio.com/lpic/s4025632.jpg', 'pingfen': '0.0', 'author': '', 'type': '外文原版'}
+2017-12-08 15:39:28,039 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:28,370 INFO 导入失败的书: 
+2017-12-08 15:39:28,370 INFO {'name': 'Blur', 'href': 'http://www.kindlepush.com:80/book/5454', 'cover_link': 'https://img3.doubanio.com/lpic/s4347062.jpg', 'pingfen': '7.8', 'author': 'Bill Kovach', 'type': '外文原版'}
+2017-12-08 15:39:28,412 INFO 导入失败的书: 
+2017-12-08 15:39:28,412 INFO {'name': 'Howard Hughes - His Life and Madness', 'href': 'http://www.kindlepush.com:80/book/5480', 'cover_link': 'http://img3.doubanio.com/lpic/s4064188.jpg', 'pingfen': '0.0', 'author': 'Donald L. Bartlett', 'type': '外文原版'}
+2017-12-08 15:39:28,511 INFO 导入失败的书: 
+2017-12-08 15:39:28,511 INFO {'name': 'The Bourne Ultimatum', 'href': 'http://www.kindlepush.com:80/book/21616', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51FWErf3YcL._SX323_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Robert Ludlum', 'type': '外文原版'}
+2017-12-08 15:39:30,064 INFO 导入失败的书: 
+2017-12-08 15:39:30,064 INFO {'name': 'Boy: Tales of Childhood', 'href': 'http://www.kindlepush.com:80/book/22118', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51gUOaV5P1L._SY346_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Roald Dahl', 'type': '外文原版'}
+2017-12-08 15:39:30,176 INFO 导入失败的书: 
+2017-12-08 15:39:30,177 INFO {'name': 'Introductory Econometrics', 'href': 'http://www.kindlepush.com:80/book/26661', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51pjPlmbLyL._SX397_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jeffrey M. Wooldridge', 'type': '外文原版'}
+2017-12-08 15:39:33,836 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:48,191 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:39:55,646 INFO 导入失败的书: 
+2017-12-08 15:39:55,646 INFO {'name': 'The Millionaire Fastlane', 'href': 'http://www.kindlepush.com:80/book/20832', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/514kBeGrXDL._SX331_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'MJ DeMarco', 'type': '外文原版'}
+2017-12-08 15:40:00,915 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:08,892 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:12,822 INFO 导入失败的书: 
+2017-12-08 15:40:12,823 INFO {'name': 'The Willpower Instinct', 'href': 'http://www.kindlepush.com:80/book/21770', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41sfzUK8JUL._SX331_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Kelly McGonigal', 'type': '外文原版'}
+2017-12-08 15:40:13,303 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:14,531 INFO 导入失败的书: 
+2017-12-08 15:40:14,531 INFO {'name': 'The Governess and Other Stories', 'href': 'http://www.kindlepush.com:80/book/5527', 'cover_link': 'http://img3.doubanio.com/lpic/s6757689.jpg', 'pingfen': '0.0', 'author': 'Zweig, Stefan', 'type': '外文原版'}
+2017-12-08 15:40:14,578 INFO 导入失败的书: 
+2017-12-08 15:40:14,579 INFO {'name': 'The Concise Oxford Dictionary of Art and Artists (Oxford Paperback Reference)', 'href': 'http://www.kindlepush.com:80/book/8045', 'cover_link': 'http://img3.doubanio.com/lpic/s3722226.jpg', 'pingfen': '0.0', 'author': 'Ian Chilvers', 'type': '外文原版'}
+2017-12-08 15:40:14,654 INFO 导入失败的书: 
+2017-12-08 15:40:14,654 INFO {'name': 'Pro IOS Graphics and Animation', 'href': 'http://www.kindlepush.com:80/book/16257', 'cover_link': 'https://img3.doubanio.com/f/shire/5522dd1f5b742d1e1394a17f44d590646b63871d/pics/book-default-large.gif', 'pingfen': '0.0', 'author': 'Topley, Kim', 'type': '外文原版'}
+2017-12-08 15:40:14,758 INFO 导入失败的书: 
+2017-12-08 15:40:14,758 INFO {'name': 'The Willpower Instinct', 'href': 'http://www.kindlepush.com:80/book/21770', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/41sfzUK8JUL._SX331_BO1,204,203,200_.jpg', 'pingfen': '瓣评分：暂', 'author': 'Kelly McGonigal', 'type': '外文原版'}
+2017-12-08 15:40:14,836 INFO 导入失败的书: 
+2017-12-08 15:40:14,836 INFO {'name': 'The Varieties of Scientific Experience', 'href': 'http://www.kindlepush.com:80/book/5543', 'cover_link': 'https://img3.doubanio.com/lpic/s2984724.jpg', 'pingfen': '0.0', 'author': 'Carl Sagan', 'type': '外文原版'}
+2017-12-08 15:40:14,909 INFO 导入失败的书: 
+2017-12-08 15:40:14,909 INFO {'name': 'The Oxford Dictionary of Abbreviations (Oxford Paperback References)', 'href': 'http://www.kindlepush.com:80/book/8062', 'cover_link': 'https://img3.doubanio.com/lpic/s3506533.jpg', 'pingfen': '0.0', 'author': '', 'type': '外文原版'}
+2017-12-08 15:40:15,874 INFO 导入失败的书: 
+2017-12-08 15:40:15,874 INFO {'name': 'The Oxford Dictionary of Christian Art and Architecture', 'href': 'http://www.kindlepush.com:80/book/8064', 'cover_link': 'http://img3.doubanio.com/lpic/s26744336.jpg', 'pingfen': '0.0', 'author': 'Devonshire Jones, Tom', 'type': '外文原版'}
+2017-12-08 15:40:16,078 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:16,683 INFO 导入失败的书: 
+2017-12-08 15:40:16,683 INFO {'name': 'A Dictionary of Computing', 'href': 'http://www.kindlepush.com:80/book/8069', 'cover_link': 'https://img3.doubanio.com/lpic/s11464681.jpg', 'pingfen': '瓣评分：暂', 'author': 'Oxford University Press', 'type': '外文原版'}
+2017-12-08 15:40:25,061 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:34,412 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:38,664 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:41,885 INFO 导入失败的书: 
+2017-12-08 15:40:41,885 INFO {'name': 'Evidence', 'href': 'http://www.kindlepush.com:80/book/20605', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/51eQAV0axZL.jpg', 'pingfen': '瓣评分：暂', 'author': 'Jonathan Kellerman', 'type': '外文原版'}
+2017-12-08 15:40:42,694 INFO 导入失败的书: 
+2017-12-08 15:40:42,694 INFO {'name': 'The Oxford Dictionary of Dance', 'href': 'http://www.kindlepush.com:80/book/8070', 'cover_link': 'https://img3.doubanio.com/lpic/s26742403.jpg', 'pingfen': '0.0', 'author': 'Craine, Debra; Mackrell, Judith;', 'type': '外文原版'}
+2017-12-08 15:40:43,483 INFO 导入失败的书: 
+2017-12-08 15:40:43,483 INFO {'name': 'Act of Will', 'href': 'http://www.kindlepush.com:80/book/17182', 'cover_link': 'https://img3.doubanio.com/lpic/s4677840.jpg', 'pingfen': '0.0', 'author': 'A.J. Hartley', 'type': '外文原版'}
+2017-12-08 15:40:44,124 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:40:44,446 INFO 导入失败的书: 
+2017-12-08 15:40:44,447 INFO {'name': '汤姆.索亚历险记-书虫.牛津英汉双语读物', 'href': 'http://www.kindlepush.com:80/book/2423', 'cover_link': 'https://img3.doubanio.com/lpic/s7635655.jpg', 'pingfen': '7.6', 'author': '本社', 'type': '外文原版'}
+2017-12-08 15:40:54,955 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:41:00,436 INFO 读取 外文原版目录下书籍成功
+2017-12-08 15:41:01,842 INFO 导入失败的书: 
+2017-12-08 15:41:01,842 INFO {'name': '英语学习成功之路', 'href': 'http://www.kindlepush.com:80/book/2826', 'cover_link': 'https://img1.doubanio.com/lpic/s6271198.jpg', 'pingfen': '0.0', 'author': '方立勋', 'type': '外文原版'}
+2017-12-08 15:41:02,512 INFO 读取 外文原版目录下书籍成功
+2017-12-13 08:39:09,563 INFO 导入失败的书: 
+2017-12-13 08:39:09,611 INFO {'origin_name': '一个人的朝圣 (3).mobi', 'book_name': '一个人的朝圣 (3)', 'author': '未知', 'size': 713680, 'ext': 'mobi'}
+2017-12-13 08:39:09,614 INFO 导入失败的书: 
+2017-12-13 08:39:09,614 INFO {'origin_name': '一个人的朝圣.azw3', 'book_name': '一个人的朝圣', 'author': '未知', 'size': 780904, 'ext': 'azw3'}
+2017-12-13 08:39:09,617 INFO 导入失败的书: 
+2017-12-13 08:39:09,617 INFO {'origin_name': '一个人的朝圣.mobi', 'book_name': '一个人的朝圣', 'author': '未知', 'size': 713680, 'ext': 'mobi'}
+2017-12-13 08:39:09,620 INFO 导入失败的书: 
+2017-12-13 08:39:09,620 INFO {'origin_name': '一九八四.mobi', 'book_name': '一九八四', 'author': '未知', 'size': 571480, 'ext': 'mobi'}
+2017-12-13 08:39:09,622 INFO 导入失败的书: 
+2017-12-13 08:39:09,622 INFO {'origin_name': '一千零一夜-纳训.mobi', 'book_name': '一千零一夜', 'author': '纳训.mobi', 'size': 576595, 'ext': 'mobi'}
+2017-12-13 08:39:09,624 INFO 导入失败的书: 
+2017-12-13 08:39:09,624 INFO {'origin_name': '一口气读完世界历史.mobi', 'book_name': '一口气读完世界历史', 'author': '未知', 'size': 374271, 'ext': 'mobi'}
+2017-12-13 08:39:09,626 INFO 导入失败的书: 
+2017-12-13 08:39:09,627 INFO {'origin_name': '一定要教给孩子的60个安全自救细节.azw3', 'book_name': '一定要教给孩子的60个安全自救细节', 'author': '未知', 'size': 5258566, 'ext': 'azw3'}
+2017-12-13 08:39:09,629 INFO 导入失败的书: 
+2017-12-13 08:39:09,629 INFO {'origin_name': '一座营盘-陶纯.mobi', 'book_name': '一座营盘', 'author': '陶纯.mobi', 'size': 1467302, 'ext': 'mobi'}
+2017-12-13 08:39:09,631 INFO 导入失败的书: 
+2017-12-13 08:39:09,632 INFO {'origin_name': '一日学习法2.pdf', 'book_name': '一日学习法2', 'author': '未知', 'size': 39295488, 'ext': 'pdf'}
+2017-12-13 08:39:09,634 INFO 导入失败的书: 
+2017-12-13 08:39:09,634 INFO {'origin_name': '一本书读懂投资理财学.pdf', 'book_name': '一本书读懂投资理财学', 'author': '未知', 'size': 51279232, 'ext': 'pdf'}
+2017-12-13 08:39:09,636 INFO 导入失败的书: 
+2017-12-13 08:39:09,636 INFO {'origin_name': '严歌苓小说精选.azw3', 'book_name': '严歌苓小说精选', 'author': '未知', 'size': 3565319, 'ext': 'azw3'}
+2017-12-13 08:39:09,639 INFO 导入失败的书: 
+2017-12-13 08:39:09,639 INFO {'origin_name': '严歌苓文集.rar', 'book_name': '严歌苓文集', 'author': '未知', 'size': 12740943, 'ext': 'rar'}
+2017-12-13 08:39:09,641 INFO 导入失败的书: 
+2017-12-13 08:39:09,642 INFO {'origin_name': '乡村教师.mobi', 'book_name': '乡村教师', 'author': '未知', 'size': 1109197, 'ext': 'mobi'}
+2017-12-13 08:39:09,644 INFO 导入失败的书: 
+2017-12-13 08:39:09,644 INFO {'origin_name': '以色列：一个国家的诞生.mobi', 'book_name': '以色列：一个国家的诞生', 'author': '未知', 'size': 2744626, 'ext': 'mobi'}
+2017-12-13 08:39:09,647 INFO 导入失败的书: 
+2017-12-13 08:39:09,648 INFO {'origin_name': '伊斯坦布尔假期-马克·李维.mobi', 'book_name': '伊斯坦布尔假期', 'author': '马克·李维.mobi', 'size': 630944, 'ext': 'mobi'}
+2017-12-13 08:39:09,650 INFO 导入失败的书: 
+2017-12-13 08:39:09,650 INFO {'origin_name': '倚天屠龙记.mobi', 'book_name': '倚天屠龙记', 'author': '未知', 'size': 23892503, 'ext': 'mobi'}
+2017-12-13 08:39:09,652 INFO 导入失败的书: 
+2017-12-13 08:39:09,652 INFO {'origin_name': '先发影响力 (1).mobi', 'book_name': '先发影响力 (1)', 'author': '未知', 'size': 5296035, 'ext': 'mobi'}
+2017-12-13 08:39:09,654 INFO 导入失败的书: 
+2017-12-13 08:39:09,655 INFO {'origin_name': '先发影响力.mobi', 'book_name': '先发影响力', 'author': '未知', 'size': 5296035, 'ext': 'mobi'}
+2017-12-13 08:39:09,657 INFO 导入失败的书: 
+2017-12-13 08:39:09,657 INFO {'origin_name': '先知三部曲.mobi', 'book_name': '先知三部曲', 'author': '未知', 'size': 5181604, 'ext': 'mobi'}
+2017-12-13 08:39:09,659 INFO 导入失败的书: 
+2017-12-13 08:39:09,660 INFO {'origin_name': '写给大家看的设计书(第3版).pdf', 'book_name': '写给大家看的设计书(第3版)', 'author': '未知', 'size': 54690027, 'ext': 'pdf'}
+2017-12-13 08:39:09,662 INFO 导入失败的书: 
+2017-12-13 08:39:09,662 INFO {'origin_name': '刑法学(第4版).mobi', 'book_name': '刑法学(第4版)', 'author': '未知', 'size': 2554842, 'ext': 'mobi'}
+2017-12-13 08:39:09,664 INFO 导入失败的书: 
+2017-12-13 08:39:09,665 INFO {'origin_name': '刑警罗飞系列全集.txt', 'book_name': '刑警罗飞系列全集', 'author': '未知', 'size': 3137156, 'ext': 'txt'}
+2017-12-13 08:39:09,667 INFO 导入失败的书: 
+2017-12-13 08:39:09,667 INFO {'origin_name': '匣心记 - 伍倩.mobi', 'book_name': '匣心记', 'author': '伍倩.mobi', 'size': 2638243, 'ext': 'mobi'}
+2017-12-13 08:39:09,669 INFO 导入失败的书: 
+2017-12-13 08:39:09,670 INFO {'origin_name': '叶嘉莹说陶渊明饮酒及拟古诗.pdf', 'book_name': '叶嘉莹说陶渊明饮酒及拟古诗', 'author': '未知', 'size': 30705374, 'ext': 'pdf'}
+2017-12-13 08:39:09,673 INFO 导入失败的书: 
+2017-12-13 08:39:09,673 INFO {'origin_name': '向左走向右走.mobi', 'book_name': '向左走向右走', 'author': '未知', 'size': 3454987, 'ext': 'mobi'}
+2017-12-13 08:39:09,675 INFO 导入失败的书: 
+2017-12-13 08:39:09,675 INFO {'origin_name': '向死而生.azw3', 'book_name': '向死而生', 'author': '未知', 'size': 86700, 'ext': 'azw3'}
+2017-12-13 08:39:09,677 INFO 导入失败的书: 
+2017-12-13 08:39:09,678 INFO {'origin_name': '夏洛克•福尔摩斯全集(英文原版)(.azw', 'book_name': '夏洛克•福尔摩斯全集(英文原版)(', 'author': '未知', 'size': 4994356, 'ext': 'azw'}
+2017-12-13 08:39:09,680 INFO 导入失败的书: 
+2017-12-13 08:39:09,680 INFO {'origin_name': '夏至未至.txt', 'book_name': '夏至未至', 'author': '未知', 'size': 460370, 'ext': 'txt'}
+2017-12-13 08:39:09,682 INFO 导入失败的书: 
+2017-12-13 08:39:09,682 INFO {'origin_name': '嫌疑人X的献身 - 东野圭吾.mobi', 'book_name': '嫌疑人X的献身', 'author': '东野圭吾.mobi', 'size': 655701, 'ext': 'mobi'}
+2017-12-13 08:39:09,684 INFO 导入失败的书: 
+2017-12-13 08:39:09,684 INFO {'origin_name': '学习JavaScript数据结构与算法.azw3', 'book_name': '学习JavaScript数据结构与算法', 'author': '未知', 'size': 4875303, 'ext': 'azw3'}
+2017-12-13 08:39:09,687 INFO 导入失败的书: 
+2017-12-13 08:39:09,687 INFO {'origin_name': '学会提问---批判性思维指南（第七版）.mobi', 'book_name': '学会提问', 'author': '', 'size': 576778, 'ext': 'mobi'}
+2017-12-13 08:39:09,689 INFO 导入失败的书: 
+2017-12-13 08:39:09,689 INFO {'origin_name': '寻找时间的人.mobi', 'book_name': '寻找时间的人', 'author': '未知', 'size': 421989, 'ext': 'mobi'}
+2017-12-13 08:39:09,691 INFO 导入失败的书: 
+2017-12-13 08:39:09,692 INFO {'origin_name': '小书馆第2辑.azw3', 'book_name': '小书馆第2辑', 'author': '未知', 'size': 2910077, 'ext': 'azw3'}
+2017-12-13 08:39:09,694 INFO 导入失败的书: 
+2017-12-13 08:39:09,694 INFO {'origin_name': '小夜曲——音乐与黄昏五故事集-石黑一雄.mobi', 'book_name': '小夜曲——音乐与黄昏五故事集', 'author': '石黑一雄.mobi', 'size': 718285, 'ext': 'mobi'}
+2017-12-13 08:39:09,696 INFO 导入失败的书: 
+2017-12-13 08:39:09,696 INFO {'origin_name': '小妇人.mobi', 'book_name': '小妇人', 'author': '未知', 'size': 974398, 'ext': 'mobi'}
+2017-12-13 08:39:09,699 INFO 导入失败的书: 
+2017-12-13 08:39:09,699 INFO {'origin_name': '小岛经济学.mobi', 'book_name': '小岛经济学', 'author': '未知', 'size': 66903079, 'ext': 'mobi'}
+2017-12-13 08:39:09,701 INFO 导入失败的书: 
+2017-12-13 08:39:09,701 INFO {'origin_name': '小张和小丽.mobi', 'book_name': '小张和小丽', 'author': '未知', 'size': 290936, 'ext': 'mobi'}
+2017-12-13 08:39:09,703 INFO 导入失败的书: 
+2017-12-13 08:39:09,703 INFO {'origin_name': '小木屋的故事系列(全9册).azw3', 'book_name': '小木屋的故事系列(全9册)', 'author': '未知', 'size': 18079607, 'ext': 'azw3'}
+2017-12-13 08:39:09,706 INFO 导入失败的书: 
+2017-12-13 08:39:09,706 INFO {'origin_name': '小狗钱钱（套装全2册）.azw', 'book_name': '小狗钱钱（套装全2册）', 'author': '未知', 'size': 1615272, 'ext': 'azw'}
+2017-12-13 08:39:09,708 INFO 导入失败的书: 
+2017-12-13 08:39:09,708 INFO {'origin_name': '小王子(中英法三语对照经典版).azw3', 'book_name': '小王子(中英法三语对照经典版)', 'author': '未知', 'size': 3801376, 'ext': 'azw3'}
+2017-12-13 08:39:09,710 INFO 导入失败的书: 
+2017-12-13 08:39:09,710 INFO {'origin_name': '小王子(精排四语插图版).mobi', 'book_name': '小王子(精排四语插图版)', 'author': '未知', 'size': 4570505, 'ext': 'mobi'}
+2017-12-13 08:39:09,712 INFO 导入失败的书: 
+2017-12-13 08:39:09,712 INFO {'origin_name': '小王子.mobi', 'book_name': '小王子', 'author': '未知', 'size': 4569934, 'ext': 'mobi'}
+2017-12-13 08:39:09,714 INFO 导入失败的书: 
+2017-12-13 08:39:09,714 INFO {'origin_name': '小花的投资魔法书.mobi', 'book_name': '小花的投资魔法书', 'author': '未知', 'size': 2946817, 'ext': 'mobi'}
+2017-12-13 08:39:09,716 INFO 导入失败的书: 
+2017-12-13 08:39:09,716 INFO {'origin_name': '希利尔文史经典套装共6册世界历史世界地理艺术史英汉双语版.mobi', 'book_name': '希利尔文史经典套装共6册世界历史世界地理艺术史英汉双语版', 'author': '未知', 'size': 18010677, 'ext': 'mobi'}
+2017-12-13 08:39:09,718 INFO 导入失败的书: 
+2017-12-13 08:39:09,718 INFO {'origin_name': '希区.柯克短篇故事集.txt', 'book_name': '希区.柯克短篇故事集', 'author': '未知', 'size': 117666, 'ext': 'txt'}
+2017-12-13 08:39:09,720 INFO 导入失败的书: 
+2017-12-13 08:39:09,720 INFO {'origin_name': '希拉里传.txt', 'book_name': '希拉里传', 'author': '未知', 'size': 355842, 'ext': 'txt'}
+2017-12-13 08:39:09,722 INFO 导入失败的书: 
+2017-12-13 08:39:09,722 INFO {'origin_name': '希特勒传：跃升年代.mobi', 'book_name': '希特勒传：跃升年代', 'author': '未知', 'size': 8283517, 'ext': 'mobi'}
+2017-12-13 08:39:09,725 INFO 导入失败的书: 
+2017-12-13 08:39:09,725 INFO {'origin_name': '希特勒的私家生活.mobi', 'book_name': '希特勒的私家生活', 'author': '未知', 'size': 6001760, 'ext': 'mobi'}
+2017-12-13 08:39:09,727 INFO 导入失败的书: 
+2017-12-13 08:39:09,728 INFO {'origin_name': '席慕容诗集 - 席慕蓉.mobi', 'book_name': '席慕容诗集', 'author': '席慕蓉.mobi', 'size': 933294, 'ext': 'mobi'}
+2017-12-13 08:39:09,730 INFO 导入失败的书: 
+2017-12-13 08:39:09,730 INFO {'origin_name': '延安日记.pdf', 'book_name': '延安日记', 'author': '未知', 'size': 21781463, 'ext': 'pdf'}
+2017-12-13 08:39:09,732 INFO 导入失败的书: 
+2017-12-13 08:39:09,733 INFO {'origin_name': '异乡人3.mobi', 'book_name': '异乡人3', 'author': '未知', 'size': 4907410, 'ext': 'mobi'}
+2017-12-13 08:39:09,735 INFO 导入失败的书: 
+2017-12-13 08:39:09,735 INFO {'origin_name': '异乡人4.mobi', 'book_name': '异乡人4', 'author': '未知', 'size': 4148727, 'ext': 'mobi'}
+2017-12-13 08:39:09,738 INFO 导入失败的书: 
+2017-12-13 08:39:09,738 INFO {'origin_name': '异想天开：岛田庄司.mobi', 'book_name': '异想天开：岛田庄司', 'author': '未知', 'size': 466249, 'ext': 'mobi'}
+2017-12-13 08:39:09,740 INFO 导入失败的书: 
+2017-12-13 08:39:09,741 INFO {'origin_name': '性别打结——拆除父权违建.pdf', 'book_name': '性别打结——拆除父权违建', 'author': '未知', 'size': 33647633, 'ext': 'pdf'}
+2017-12-13 08:39:09,743 INFO 导入失败的书: 
+2017-12-13 08:39:09,744 INFO {'origin_name': '想得美.azw3', 'book_name': '想得美', 'author': '未知', 'size': 4571231, 'ext': 'azw3'}
+2017-12-13 08:39:09,746 INFO 导入失败的书: 
+2017-12-13 08:39:09,746 INFO {'origin_name': '意林 2016年11期.mobi', 'book_name': '意林 2016年11期', 'author': '未知', 'size': 4857552, 'ext': 'mobi'}
+2017-12-13 08:39:09,749 INFO 导入失败的书: 
+2017-12-13 08:39:09,749 INFO {'origin_name': '新一轮产业革命科技革命如何改变商业世界2016-08(微信jnztxy).mobi', 'book_name': '新一轮产业革命科技革命如何改变商业世界2016', 'author': '08(微信jnztxy).mobi', 'size': 575228, 'ext': 'mobi'}
+2017-12-13 08:39:09,751 INFO 导入失败的书: 
+2017-12-13 08:39:09,751 INFO {'origin_name': '新世纪中的哲学.mobi', 'book_name': '新世纪中的哲学', 'author': '未知', 'size': 420935, 'ext': 'mobi'}
+2017-12-13 08:39:09,754 INFO 导入失败的书: 
+2017-12-13 08:39:09,754 INFO {'origin_name': '新手谋杀案 - 杰拉尔德·温伯格.mobi', 'book_name': '新手谋杀案', 'author': '杰拉尔德·温伯格.mobi', 'size': 1519592, 'ext': 'mobi'}
+2017-12-13 08:39:09,757 INFO 导入失败的书: 
+2017-12-13 08:39:09,757 INFO {'origin_name': '新概念英语kindle版第四册.mobi', 'book_name': '新概念英语kindle版第四册', 'author': '未知', 'size': 448129, 'ext': 'mobi'}
+2017-12-13 08:39:09,759 INFO 导入失败的书: 
+2017-12-13 08:39:09,760 INFO {'origin_name': '星球大战(套装共6册).mobi', 'book_name': '星球大战(套装共6册)', 'author': '未知', 'size': 3733284, 'ext': 'mobi'}
+2017-12-13 08:39:09,762 INFO 导入失败的书: 
+2017-12-13 08:39:09,762 INFO {'origin_name': '星际穿越.mobi', 'book_name': '星际穿越', 'author': '未知', 'size': 18445017, 'ext': 'mobi'}
+2017-12-13 08:39:09,764 INFO 导入失败的书: 
+2017-12-13 08:39:09,764 INFO {'origin_name': '晓松奇谈.azw3', 'book_name': '晓松奇谈', 'author': '未知', 'size': 814641, 'ext': 'azw3'}
+2017-12-13 08:39:09,767 INFO 导入失败的书: 
+2017-12-13 08:39:09,767 INFO {'origin_name': '晓松奇谈.mobi', 'book_name': '晓松奇谈', 'author': '未知', 'size': 1271145, 'ext': 'mobi'}
+2017-12-13 08:39:09,770 INFO 导入失败的书: 
+2017-12-13 08:39:09,770 INFO {'origin_name': '杨宽著作集第一辑.mobi', 'book_name': '杨宽著作集第一辑', 'author': '未知', 'size': 79304088, 'ext': 'mobi'}
+2017-12-13 08:39:09,773 INFO 导入失败的书: 
+2017-12-13 08:39:09,773 INFO {'origin_name': '杨绛传-罗银胜.azw3', 'book_name': '杨绛传', 'author': '罗银胜.azw3', 'size': 871592, 'ext': 'azw3'}
+2017-12-13 08:39:09,775 INFO 导入失败的书: 
+2017-12-13 08:39:09,775 INFO {'origin_name': '毅力-如何培养自律能力.azw3', 'book_name': '毅力', 'author': '如何培养自律能力.azw3', 'size': 41019517, 'ext': 'azw3'}
+2017-12-13 08:39:09,778 INFO 导入失败的书: 
+2017-12-13 08:39:09,778 INFO {'origin_name': '毅力如何培养自律的习惯漫画版_简单有趣的个人管理丛书.mobi', 'book_name': '毅力如何培养自律的习惯漫画版_简单有趣的个人管理丛书', 'author': '未知', 'size': 7664001, 'ext': 'mobi'}
+2017-12-13 08:39:09,780 INFO 导入失败的书: 
+2017-12-13 08:39:09,780 INFO {'origin_name': '洋务自强：张鸣.mobi', 'book_name': '洋务自强：张鸣', 'author': '未知', 'size': 11211995, 'ext': 'mobi'}
+2017-12-13 08:39:09,783 INFO 导入失败的书: 
+2017-12-13 08:39:09,783 INFO {'origin_name': '消失的殖民星球（雨果奖、星云奖双料获奖作品。21世纪美国头号科幻小说系列！）.azw3', 'book_name': '消失的殖民星球（雨果奖、星云奖双料获奖作品。21世纪美国头号科幻小说系列！）', 'author': '未知', 'size': 572797, 'ext': 'azw3'}
+2017-12-13 08:39:09,785 INFO 导入失败的书: 
+2017-12-13 08:39:09,786 INFO {'origin_name': '消费者行为学.mobi', 'book_name': '消费者行为学', 'author': '未知', 'size': 720272, 'ext': 'mobi'}
+2017-12-13 08:39:09,788 INFO 导入失败的书: 
+2017-12-13 08:39:09,789 INFO {'origin_name': '燕尾蝶 - 岩井俊二.mobi', 'book_name': '燕尾蝶', 'author': '岩井俊二.mobi', 'size': 245191, 'ext': 'mobi'}
+2017-12-13 08:39:09,791 INFO 导入失败的书: 
+2017-12-13 08:39:09,791 INFO {'origin_name': '现实一种-余华.mobi', 'book_name': '现实一种', 'author': '余华.mobi', 'size': 79628, 'ext': 'mobi'}
+2017-12-13 08:39:09,793 INFO 导入失败的书: 
+2017-12-13 08:39:09,793 INFO {'origin_name': '盐铁往事：两千年前的货币战争.mobi', 'book_name': '盐铁往事：两千年前的货币战争', 'author': '未知', 'size': 729007, 'ext': 'mobi'}
+2017-12-13 08:39:09,795 INFO 导入失败的书: 
+2017-12-13 08:39:09,795 INFO {'origin_name': '秧歌-张爱玲.mobi', 'book_name': '秧歌', 'author': '张爱玲.mobi', 'size': 402911, 'ext': 'mobi'}
+2017-12-13 08:39:09,797 INFO 导入失败的书: 
+2017-12-13 08:39:09,797 INFO {'origin_name': '笑傲江湖.mobi', 'book_name': '笑傲江湖', 'author': '未知', 'size': 19627715, 'ext': 'mobi'}
+2017-12-13 08:39:09,798 INFO 导入失败的书: 
+2017-12-13 08:39:09,799 INFO {'origin_name': '笑忘录.mobi', 'book_name': '笑忘录', 'author': '未知', 'size': 984285, 'ext': 'mobi'}
+2017-12-13 08:39:09,800 INFO 导入失败的书: 
+2017-12-13 08:39:09,800 INFO {'origin_name': '笑死人不偿命的冷笑话.mobi', 'book_name': '笑死人不偿命的冷笑话', 'author': '未知', 'size': 1707426, 'ext': 'mobi'}
+2017-12-13 08:39:09,802 INFO 导入失败的书: 
+2017-12-13 08:39:09,802 INFO {'origin_name': '笑猫日记.mobi', 'book_name': '笑猫日记', 'author': '未知', 'size': 129140, 'ext': 'mobi'}
+2017-12-13 08:39:09,804 INFO 导入失败的书: 
+2017-12-13 08:39:09,804 INFO {'origin_name': '笑面人.mobi', 'book_name': '笑面人', 'author': '未知', 'size': 1121138, 'ext': 'mobi'}
+2017-12-13 08:39:09,806 INFO 导入失败的书: 
+2017-12-13 08:39:09,807 INFO {'origin_name': '系统之美-决策者的系统思考（英文版）.pdf', 'book_name': '系统之美', 'author': '决策者的系统思考（英文版）.pdf', 'size': 2696260, 'ext': 'pdf'}
+2017-12-13 08:39:09,809 INFO 导入失败的书: 
+2017-12-13 08:39:09,809 INFO {'origin_name': '系统思考（白金版）.mobi', 'book_name': '系统思考（白金版）', 'author': '未知', 'size': 13552464, 'ext': 'mobi'}
+2017-12-13 08:39:09,811 INFO 导入失败的书: 
+2017-12-13 08:39:09,811 INFO {'origin_name': '线性代数习题全解（同济5版）.mobi', 'book_name': '线性代数习题全解（同济5版）', 'author': '未知', 'size': 23941392, 'ext': 'mobi'}
+2017-12-13 08:39:09,813 INFO 导入失败的书: 
+2017-12-13 08:39:09,813 INFO {'origin_name': '线性代数（同济5版）.mobi', 'book_name': '线性代数（同济5版）', 'author': '未知', 'size': 18786124, 'ext': 'mobi'}
+2017-12-13 08:39:09,815 INFO 导入失败的书: 
+2017-12-13 08:39:09,815 INFO {'origin_name': '细米 (曹文轩纯美小说系列(完整版)).azw3', 'book_name': '细米 (曹文轩纯美小说系列(完整版))', 'author': '未知', 'size': 435559, 'ext': 'azw3'}
+2017-12-13 08:39:09,817 INFO 导入失败的书: 
+2017-12-13 08:39:09,817 INFO {'origin_name': '细节：如何轻松影响他人（完整图文版）.mobi', 'book_name': '细节：如何轻松影响他人（完整图文版）', 'author': '未知', 'size': 498197, 'ext': 'mobi'}
+2017-12-13 08:39:09,818 INFO 导入失败的书: 
+2017-12-13 08:39:09,819 INFO {'origin_name': '羊道三部曲-李娟.mobi', 'book_name': '羊道三部曲', 'author': '李娟.mobi', 'size': 1431215, 'ext': 'mobi'}
+2017-12-13 08:39:09,820 INFO 导入失败的书: 
+2017-12-13 08:39:09,821 INFO {'origin_name': '耶路撒冷三千年.mobi', 'book_name': '耶路撒冷三千年', 'author': '未知', 'size': 1831492, 'ext': 'mobi'}
+2017-12-13 08:39:09,822 INFO 导入失败的书: 
+2017-12-13 08:39:09,822 INFO {'origin_name': '艺术哲学.mobi', 'book_name': '艺术哲学', 'author': '未知', 'size': 736238, 'ext': 'mobi'}
+2017-12-13 08:39:09,824 INFO 导入失败的书: 
+2017-12-13 08:39:09,824 INFO {'origin_name': '艺术的故事-贡布里希.mobi', 'book_name': '艺术的故事', 'author': '贡布里希.mobi', 'size': 23549447, 'ext': 'mobi'}
+2017-12-13 08:39:09,825 INFO 导入失败的书: 
+2017-12-13 08:39:09,825 INFO {'origin_name': '虚拟机下Centos7安装和oracle11g安装.pdf', 'book_name': '虚拟机下Centos7安装和oracle11g安装', 'author': '未知', 'size': 3806901, 'ext': 'pdf'}
+2017-12-13 08:39:09,827 INFO 导入失败的书: 
+2017-12-13 08:39:09,827 INFO {'origin_name': '虚无的十字架 - 东野圭吾.mobi', 'book_name': '虚无的十字架', 'author': '东野圭吾.mobi', 'size': 411560, 'ext': 'mobi'}
+2017-12-13 08:39:09,829 INFO 导入失败的书: 
+2017-12-13 08:39:09,829 INFO {'origin_name': '血腥的盛唐（1-7）.mobi', 'book_name': '血腥的盛唐（1', 'author': '7）.mobi', 'size': 4547877, 'ext': 'mobi'}
+2017-12-13 08:39:09,831 INFO 导入失败的书: 
+2017-12-13 08:39:09,831 INFO {'origin_name': '西南联大行思录.mobi', 'book_name': '西南联大行思录', 'author': '未知', 'size': 1040829, 'ext': 'mobi'}
+2017-12-13 08:39:09,833 INFO 导入失败的书: 
+2017-12-13 08:39:09,834 INFO {'origin_name': '西方哲学史_增补修订版.azw', 'book_name': '西方哲学史_增补修订版', 'author': '未知', 'size': 1508857, 'ext': 'azw'}
+2017-12-13 08:39:09,836 INFO 导入失败的书: 
+2017-12-13 08:39:09,836 INFO {'origin_name': '西游记.txt', 'book_name': '西游记', 'author': '未知', 'size': 1316487, 'ext': 'txt'}
+2017-12-13 08:39:09,838 INFO 导入失败的书: 
+2017-12-13 08:39:09,838 INFO {'origin_name': '西点军校经典法则：菁英修炼版.mobi', 'book_name': '西点军校经典法则：菁英修炼版', 'author': '未知', 'size': 518579, 'ext': 'mobi'}
+2017-12-13 08:39:09,840 INFO 导入失败的书: 
+2017-12-13 08:39:09,840 INFO {'origin_name': '西蒙·蒙蒂菲奥里经典历史著作套装三册（耶路撒冷三千年，大人物的世界史，青年斯大林）.mobi', 'book_name': '西蒙·蒙蒂菲奥里经典历史著作套装三册（耶路撒冷三千年，大人物的世界史，青年斯大林）', 'author': '未知', 'size': 5397076, 'ext': 'mobi'}
+2017-12-13 08:39:09,842 INFO 导入失败的书: 
+2017-12-13 08:39:09,842 INFO {'origin_name': '西藏生死书.mobi', 'book_name': '西藏生死书', 'author': '未知', 'size': 1174097, 'ext': 'mobi'}
+2017-12-13 08:39:09,844 INFO 导入失败的书: 
+2017-12-13 08:39:09,845 INFO {'origin_name': '西顿动物小说集（共6册）.mobi', 'book_name': '西顿动物小说集（共6册）', 'author': '未知', 'size': 19925769, 'ext': 'mobi'}
+2017-12-13 08:39:09,846 INFO 导入失败的书: 
+2017-12-13 08:39:09,847 INFO {'origin_name': '野火集.mobi', 'book_name': '野火集', 'author': '未知', 'size': 4495223, 'ext': 'mobi'}
+2017-12-13 08:39:09,848 INFO 导入失败的书: 
+2017-12-13 08:39:09,848 INFO {'origin_name': '银河帝国13：繁星若尘.mobi', 'book_name': '银河帝国13：繁星若尘', 'author': '未知', 'size': 416764, 'ext': 'mobi'}
+2017-12-13 08:39:09,850 INFO 导入失败的书: 
+2017-12-13 08:39:09,851 INFO {'origin_name': '银河帝国14：星空暗流.mobi', 'book_name': '银河帝国14：星空暗流', 'author': '未知', 'size': 393412, 'ext': 'mobi'}
+2017-12-13 08:39:09,852 INFO 导入失败的书: 
+2017-12-13 08:39:09,853 INFO {'origin_name': '银河帝国15：苍穹微石.mobi', 'book_name': '银河帝国15：苍穹微石', 'author': '未知', 'size': 424896, 'ext': 'mobi'}
+2017-12-13 08:39:09,855 INFO 导入失败的书: 
+2017-12-13 08:39:09,855 INFO {'origin_name': '银河系搭车客指南5部曲.mobi', 'book_name': '银河系搭车客指南5部曲', 'author': '未知', 'size': 6001786, 'ext': 'mobi'}
+2017-12-13 08:39:09,857 INFO 导入失败的书: 
+2017-12-13 08:39:09,857 INFO {'origin_name': '雅舍小品-梁实秋.mobi', 'book_name': '雅舍小品', 'author': '梁实秋.mobi', 'size': 460382, 'ext': 'mobi'}
+2017-12-13 08:39:09,859 INFO 导入失败的书: 
+2017-12-13 08:39:09,859 INFO {'origin_name': '雪中悍刀行.azw3', 'book_name': '雪中悍刀行', 'author': '未知', 'size': 16105682, 'ext': 'azw3'}
+2017-12-13 08:39:09,862 INFO 导入失败的书: 
+2017-12-13 08:39:09,862 INFO {'origin_name': '雪人 - 尤·奈斯博.mobi', 'book_name': '雪人', 'author': '尤·奈斯博.mobi', 'size': 2111553, 'ext': 'mobi'}
+2017-12-13 08:39:09,864 INFO 导入失败的书: 
+2017-12-13 08:39:09,864 INFO {'origin_name': '雪人-尤·奈斯博.azw3', 'book_name': '雪人', 'author': '尤·奈斯博.azw3', 'size': 520353, 'ext': 'azw3'}
+2017-12-13 08:39:09,866 INFO 导入失败的书: 
+2017-12-13 08:39:09,866 INFO {'origin_name': '雪人.mobi', 'book_name': '雪人', 'author': '未知', 'size': 6712872, 'ext': 'mobi'}
+2017-12-13 08:39:09,868 INFO 导入失败的书: 
+2017-12-13 08:39:09,868 INFO {'origin_name': '鞋狗-菲尔·奈特.azw', 'book_name': '鞋狗', 'author': '菲尔·奈特.azw', 'size': 2186114, 'ext': 'azw'}
+2017-12-13 08:39:09,870 INFO 导入失败的书: 
+2017-12-13 08:39:09,870 INFO {'origin_name': '鞋狗.azw3', 'book_name': '鞋狗', 'author': '未知', 'size': 2648538, 'ext': 'azw3'}
+2017-12-13 08:39:09,872 INFO 导入失败的书: 
+2017-12-13 08:39:09,873 INFO {'origin_name': '香水—个谋杀犯的故事 -帕·聚斯金德.mobi', 'book_name': '香水—个谋杀犯的故事', 'author': '帕·聚斯金德.mobi', 'size': 449149, 'ext': 'mobi'}
+2017-12-13 09:52:55,196 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:52:58,932 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:03,452 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:08,640 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:13,158 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:17,506 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:20,748 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:24,584 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:25,762 INFO 导入失败的书: 
+2017-12-13 09:53:25,762 INFO {'name': '应许之日', 'href': 'http://www.kindlepush.com:80/book/14561', 'cover_link': 'https://images-cn.ssl-images-amazon.com/images/I/61mTi1h%2BpGL._SX338_BO1,204,203,200_.jpg', 'pingfen': '6.9', 'author': '辛夷坞', 'type': '言情耽美'}
+2017-12-13 09:53:28,667 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:32,829 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:37,389 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:40,917 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:42,966 INFO 导入失败的书: 
+2017-12-13 09:53:42,967 INFO {'name': '婚结', 'href': 'http://www.kindlepush.com:80/book/30951', 'cover_link': 'https://img3.doubanio.com/lpic/s6477904.jpg', 'pingfen': '瓣评分：暂', 'author': '飘阿兮', 'type': '言情耽美'}
+2017-12-13 09:53:44,960 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:49,112 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:52,575 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:56,492 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:53:59,535 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:54:04,562 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:54:08,012 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:54:10,996 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:54:15,383 INFO 读取 言情耽美目录下书籍成功
+2017-12-13 09:54:15,698 INFO 导入失败的书: 
+2017-12-13 09:54:15,698 INFO {'name': '末路相逢', 'href': 'http://www.kindlepush.com:80/book/2581', 'cover_link': 'https://img3.doubanio.com/lpic/s3436173.jpg', 'pingfen': '7.2', 'author': '晴空蓝兮', 'type': '言情耽美'}
+2017-12-13 09:54:15,765 INFO 导入失败的书: 
+2017-12-13 09:54:15,765 INFO {'name': '这些都是我给你的爱', 'href': 'http://www.kindlepush.com:80/book/2837', 'cover_link': 'https://img3.doubanio.com/lpic/s4588222.jpg', 'pingfen': '7.3', 'author': '周语 编', 'type': '言情耽美'}
+2017-12-13 09:54:15,816 INFO 导入失败的书: 
+2017-12-13 09:54:15,816 INFO {'name': '我遇见了怎样的男子', 'href': 'http://www.kindlepush.com:80/book/3139', 'cover_link': 'http://img3.doubanio.com/lpic/s24406499.jpg', 'pingfen': '6.9', 'author': '洛克晓能', 'type': '言情耽美'}
+2017-12-13 09:54:16,133 INFO 导入失败的书: 
+2017-12-13 09:54:16,133 INFO {'name': '梦回大秦', 'href': 'http://www.kindlepush.com:80/book/2585', 'cover_link': 'https://img3.doubanio.com/lpic/s25109860.jpg', 'pingfen': '6.5', 'author': '留雁', 'type': '言情耽美'}
+2017-12-13 09:54:16,630 INFO 导入失败的书: 
+2017-12-13 09:54:16,631 INFO {'name': '台北', 'href': 'http://www.kindlepush.com:80/book/2332', 'cover_link': 'http://img3.doubanio.com/lpic/s6173719.jpg', 'pingfen': '6.7', 'author': '堂心子', 'type': '言情耽美'}
+2017-12-13 09:54:17,025 INFO 导入失败的书: 
+2017-12-13 09:54:17,025 INFO {'name': '天命皇妃乱君心', 'href': 'http://www.kindlepush.com:80/book/2356', 'cover_link': 'https://img3.doubanio.com/lpic/s24406521.jpg', 'pingfen': '0.0', 'author': '倾城留雁', 'type': '言情耽美'}
+2017-12-13 09:54:17,228 INFO 读取 言情耽美目录下书籍成功

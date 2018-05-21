@@ -16,7 +16,6 @@
 
 3) yandex
 
-俄罗斯
  ( https://yandex.com/ ) https://yandex.com/
 
 
@@ -480,18 +479,14 @@ python 500行代码系列:  ( http://aosabook.org/en/500L/ ) http://aosabook.org
 ----------------------------------------
 
 
-73) js
-
-如何修复那些奇怪的 JavaScript 错误
+73) 如何修复那些奇怪的JavaScript错误
  ( http://bubkoo.com/2015/01/25/Strange-JavaScript-Errors-and-How-to-Fix-Them/ ) http://bubkoo.com/2015/01/25/Strange-JavaScript-Errors-and-How-to-Fix-Them/
 
 
 ----------------------------------------
 
 
-74) git
-
-为了更好地使用亲爱的GitHub
+74) git为了更好地使用亲爱的GitHub
  ( http://www.poetries.top/2016/03/13/为了更好地使用亲爱的GitHub/ ) http://www.poetries.top/2016/03/13/%E4%B8%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E5%9C%B0%E4%BD%BF%E7%94%A8%E4%BA%B2%E7%88%B1%E7%9A%84GitHub/
 
 

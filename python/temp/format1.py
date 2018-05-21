@@ -1,6 +1,6 @@
 import re
 
-source_path = u"E:\\fav\\1.txt"
+source_path = u"1.txt"
 
 f = open(source_path, encoding="utf-8")
 text = f.read()
@@ -10,7 +10,8 @@ text = f.read()
 
 # 去除多余换行
 text = re.sub(r'\n\n', '', text)
-# print(text)
+text = re.sub(r'\n\s\(', ' (', text)
+print(text)
 
 # p = re.compile(r'\d{1,2}\)[\s\S]*\)')
 # print(p.findall(text))
@@ -19,18 +20,28 @@ list_link = []
 p1 = re.compile(r'\(\s+\S+\s+\)')
 list_link  = p1.findall(text)
 
+# print(len(list_link))
+# index = 0
+# for i in list_link:
+#     print(index)
+#     index = index + 1
+#     print(i)
+#     # print(i)
+#
 
 
-p2 = re.compile(r'\d{1,2}\)(\s\S+)+\s*\(')
+p2 = re.compile(r'\d{1,2}\)'+ r'.*?' +r'\(')
 t2 = p2.findall(text)
 
-index = 0
-for i in t2:
-    print(index)
-    index = index + 1
-    print(i)
-# print(list_link)
-exit()
+# print(len(t2))
+# index = 0
+# for i in t2:
+#     print(index)
+#     index = index + 1
+#     print(i)
+#     # exit()
+# # print(list_link)
+# exit()
 
 title = []
 for t in t2:
