@@ -12,7 +12,7 @@ db_name = 'favorites'
 
 
 def execute_save(sql):
-    print(sql)
+    # print(sql)
     conn = pymysql.connect(
         host=host,
         user=username,
@@ -40,7 +40,7 @@ def execute_save(sql):
     return result
 
 def execute_insert(sql):
-    print(sql)
+    # print(sql)
     conn = pymysql.connect(
         host=host,
         user=username,
@@ -73,30 +73,30 @@ def save_item(d):
         value = "'" + d['name'] + "','" + d['root'] + "','" + d['link'] + "'"
         insert_item_sql = "insert into item (name, root, link) values ( %s )" % (value)
 
-        print(insert_item_sql)
+        # print(insert_item_sql)
 
         item_id = execute_insert(insert_item_sql)
     else:
         item_id = result[0][0]
 
-    # select type
-    select_type_sql = "select * from type where name= '%s' " % (d['type'])
-    type_result = execute_save(select_type_sql)
+    if 'tag' in d.keys():
+        # select type
+        select_type_sql = "select * from tag where name= '%s' " % (d['tag'])
+        type_result = execute_save(select_type_sql)
 
-    print("--")
-    print(type_result)
+        # print("--")
+        # print(type_result)
 
-    # add item_type
-    if len(type_result) == 0:
-        insert_type_sql = "insert into type (name) values ( %s )" % ("'" + d['type'] + "'")
-        type_id = execute_insert(insert_type_sql)
-    else:
-        type_id = type_result[0][0]
+        # add item_type
+        if len(type_result) == 0:
+            insert_type_sql = "insert into tag (name) values ( %s )" % ("'" + d['tag'] + "'")
+            type_id = execute_insert(insert_type_sql)
+        else:
+            type_id = type_result[0][0]
 
-        insert_itemType_sql = "insert into item_type (itemid, typeid) values (%d, %d)" % (item_id, type_id)
-        execute_insert(insert_itemType_sql)
+            insert_itemType_sql = "insert into item_tag (itemid, tagid) values (%d, %d)" % (item_id, type_id)
+            execute_insert(insert_itemType_sql)
 
-    pass
 
 
 
