@@ -17,6 +17,7 @@ def get_location(url):
     return r.headers['location']
 
 url = "https://shouku123.com/xizi"
+url = "https://shouku123.com/xizi/%E5%85%B6%E4%BB%96"
 html = get_html(url)
 soup = BeautifulSoup(html, 'lxml')
 
@@ -27,12 +28,14 @@ items = []
 for li in liSets:
     title = ""
     ulTitle = li.find("ul",  attrs={'class': 'list-group collapse in urls '})
+    # print(ulTitle)
+    # exit()
     title = ulTitle['title']
 
     linkLis = li.findAll("li",  attrs={'class': 'list-group-item'})
     for linkLi in linkLis:
         link = {}
-        link['type'] = title
+        link['tag'] = title
         lUrl = "https://shouku123.com/" + linkLi.a['href']
 
         link['link'] = get_location(lUrl)
