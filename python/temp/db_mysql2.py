@@ -50,6 +50,8 @@ def save_item2(dList):
 
     db = SQLManager.SQLManager()
 
+    itemSumA = 0 # 表中已存在的
+    itemSumB = 0 # 新插入的
     for d in dList:
         # print("d")
         # print(d)
@@ -60,13 +62,20 @@ def save_item2(dList):
 
         # print(result)
         if result:
+            itemSumA = itemSumA + 1
             itemId = d['id'] = result['id']
             # print(itemId)
+            # print('***')
+            # print(d['name'])
         else:
+            itemSumB = itemSumB + 1
             itemId = d['id'] = myfunc.genid()
             # print(itemId)
             itemInsert.append((d['id'], d['name'], d['root'], d['link']))
-
+            # print('&&&')
+            # print(d['name'])
+        # print()
+        # print(d['name'])
         if 'tag' in d.keys():
             sql = "select * from tag where name= %s"
             args = (d['tag'])
@@ -81,7 +90,7 @@ def save_item2(dList):
 
             sql = "select * from item_tag where itemid=%s and tagid=%s"
             args = (d['id'], d['tagid'])
-            print(args)
+            # print(args)
 
             itemTag = db.get_one(sql, args)
 
@@ -97,6 +106,7 @@ def save_item2(dList):
     #     print(mm)
 
 
+
     # print(itemInsert)
     if itemInsert:
         db.multi_modify(itemInsertSql, itemInsert)
@@ -104,8 +114,15 @@ def save_item2(dList):
     if itemTagInsert:
         db.multi_modify(ttSql, itemTagInsert)
 
+    # print("-----------存入数据库")
+    # for itemfor in itemInsert:
+    #     print(itemfor['name'])
 
-
+    print()
+    print("----------------------------")
+    print("处理了" + str(len(dList)) + "项")
+    print("已存在条目为: " + str(itemSumA))
+    print("新插入条目为: " + str(itemSumB))
 
     db.close()
 

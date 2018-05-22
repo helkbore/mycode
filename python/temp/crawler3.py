@@ -11,14 +11,6 @@ soup = BeautifulSoup(html, 'lxml')
 result = []
 
 title_sets = soup.findAll("h2")
-# ts2 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts3 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts4 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts5 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts6 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts7 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts8 = soup.findAll("h2", attrs={'class': 'c2'})
-# ts9 = soup.findAll("h2", attrs={'class': 'c2'})
 
 title_lists = []
 
