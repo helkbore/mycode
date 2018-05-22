@@ -1,159 +1,82 @@
-
-32) 算法
-
+算法
 LintCode:  ( http://www.lintcode.com/problem/ ) http://www.lintcode.com/problem/
 leetcode:  ( https://leetcode.com/ ) https://leetcode.com/
-
-
 ----------------------------------------
-
-
-33) 其他
-
+其他
 物联网:  ( http://iot.ofweek.com/ ) http://iot.ofweek.com/
 国外的计算机漫画:  ( https://xkcd.com/ ) https://xkcd.com/
-
 ----------------------------------------
-
-
-36) 慕课
-
-优达学城(中国):  ( http://cn.udacity.com/ ) http://cn.udacity.com/
-edx(国外):  ( https://www.edx.org/ ) https://www.edx.org/
+慕课
+优达学城-中国:  ( http://cn.udacity.com/ ) http://cn.udacity.com/
 慕课网:  ( https://www.imooc.com/ ) https://www.imooc.com/
 实验楼:  ( https://www.shiyanlou.com/ ) https://www.shiyanlou.com/
 果壳的MOOC学院:  ( https://mooc.guokr.com/ ) https://mooc.guokr.com/
-lynda(国外):  ( https://www.lynda.com/ ) https://www.lynda.com/
-
-中国大学 MOOC ：https://www.icourse163.org/
-爱课程：http://www.icourses.cn/
-MOOC 学院 : https://mooc.guokr.com/
-好大学在线：http://www.cnmooc.org/home/index.mooc
-MOOC 中国 ：http://www.mooc.cn/
-学堂在线：http://www.xuetangx.com/
-
-提到的国外网站：
-Coursera ：https://www.coursera.org/
-EDX : https://www.edx.org/
-
-
-39) 博客
-
+中国大学 MOOC : ( https://www.icourse163.org/ )
+爱课程: ( http://www.icourses.cn/ )
+MOOC 学院 :( https://mooc.guokr.com/ )
+好大学在线: ( http://www.cnmooc.org/home/index.mooc )
+MOOC 中国 : ( http://www.mooc.cn/ )
+学堂在线: ( http://www.xuetangx.com/ )
+----------------------------------------
+国外慕课: 
+Coursera : ( https://www.coursera.org/ )
+EDX : ( https://www.edx.org/ )
+lynda:  ( https://www.lynda.com/ ) https://www.lynda.com/
+----------------------------------------
+博客
 默默的点滴:  ( http://www.mobibrw.com/ ) http://www.mobibrw.com/
 酷壳:  ( https://coolshell.cn/ ) https://coolshell.cn/
 前端博客-海子:  ( http://www.cnblogs.com/dolphin0520/ ) http://www.cnblogs.com/dolphin0520/
 小火柴的蓝色理想:  ( http://www.cnblogs.com/xiaohuochai/ ) http://www.cnblogs.com/xiaohuochai/
-
 廖雪峰:  ( https://www.liaoxuefeng.com/ ) https://www.liaoxuefeng.com/
 亦是美:  ( http://www.yishimei.cn/ ) http://www.yishimei.cn/
-
-很强大, 也想做一个这样的博客
- ( http://blog.poetries.top ) http://blog.poetries.top
-
-
+很强大, 也想做一个这样的博客: ( http://blog.poetries.top ) http://blog.poetries.top
 ----------------------------------------
-
-
-40) 文档教程码仓
-
+文档教程码仓
 IBM developerWorks:  ( https://www.ibm.com/developerworks/cn/ ) https://www.ibm.com/developerworks/cn/
 github:  ( https://github.com/ ) https://github.com/
-一译中文文档(python的比较多):  ( http://python.usyiyi.cn/?page=1 ) http://python.usyiyi.cn/?page=1
+一译中文文档-python的比较多:  ( http://python.usyiyi.cn/?page=1 ) http://python.usyiyi.cn/?page=1
 csdn知识库:  ( http://lib.csdn.net/home ) http://lib.csdn.net/home
-
-
 ----------------------------------------
-
-
-41) 资讯
-
+资讯
 知乎:  ( https://www.zhihu.com/ ) https://www.zhihu.com/
 豆瓣:  ( https://www.douban.com/ ) https://www.douban.com/
 segmentfault:  ( https://segmentfault.com/ ) https://segmentfault.com/
-
-
 ----------------------------------------
-
-
-42) 工具
-
+工具
 谷歌翻译:  ( https://translate.google.cn/ ) https://translate.google.cn/
 网易邮箱:  ( https://mail.163.com/ ) https://mail.163.com/
-
-
 ----------------------------------------
-
-
-43) 实验
-
+实验
 腾讯云-开发者实验室:  ( https://cloud.tencent.com/developer/labs ) https://cloud.tencent.com/developer/labs
-
-
 ----------------------------------------
-
-
-44) java
-
-mybatis
- ( http://blog.mybatis.org/ ) http://blog.mybatis.org/
- ( http://www.mybatis.org/mybatis-3/zh/getting-started.html ) http://www.mybatis.org/mybatis-3/zh/getting-started.html
-
-spring
- ( https://spring.io/ ) https://spring.io/
-
-
+java
+mybatis1: ( http://blog.mybatis.org/ ) http://blog.mybatis.org/
+mybatis2: ( http://www.mybatis.org/mybatis-3/zh/getting-started.html ) http://www.mybatis.org/mybatis-3/zh/getting-started.html
+spring1: ( https://spring.io/ ) https://spring.io/
 ----------------------------------------
-
-63) git教程
-
+git教程
 Git超级简明手册:   ( http://blog.csdn.net/shendl/article/details/50248161 ) http://blog.csdn.net/shendl/article/details/50248161
 gitignore:  ( https://github.com/github/gitignore/blob/master/Python.gitignore ) https://github.com/github/gitignore/blob/master/Python.gitignore
-
-
 ----------------------------------------
-
-
-65) 爬墙
-
+爬墙
 一枝红杏:  ( https://www.yizhihongxing2017.com/index.html ) https://www.yizhihongxing2017.com/index.html
 科学上网的原理:  ( https://segmentfault.com/a/1190000011485579 ) https://segmentfault.com/a/1190000011485579
-
-
 ----------------------------------------
-
-
-68) linux
-
+linux
 Linux 编程和系统管理新手入门:   ( https://www.ibm.com/developerworks/cn/linux/newto/index.html ) https://www.ibm.com/developerworks/cn/linux/newto/index.html
 开源世界旅行手册:  ( https://i.linuxtoy.org/docs/guide/index.html ) https://i.linuxtoy.org/docs/guide/index.html
-
-
 ----------------------------------------
-
-70) markdown
-
+markdown
 10款流行的Markdown编辑器，总有一款适合你 :  ( http://www.csdn.net/article/2014-05-05/2819623 ) http://www.csdn.net/article/2014-05-05/2819623
-
- ( http://blog.csdn.net/minmin_1123/article/details/69487900 ) MarkdownPad 2在win10上安装及破解（含安装包）
- ( http://blog.csdn.net/minmin_1123/article/details/69487900 ) http://blog.csdn.net/minmin_1123/article/details/69487900
-
-
+ MarkdownPad 2在win10上安装及破解（含安装包）: ( http://blog.csdn.net/minmin_1123/article/details/69487900 )
 ----------------------------------------
-
-
-71) java
-
-( http://blog.csdn.net/rishizhihou/article/details/78718136 ) win10下安装配置Java web开发环境(win10+jdk1.8+tomcat8.5+mysql5.7)
- ( http://blog.csdn.net/rishizhihou/article/details/78718136 ) http://blog.csdn.net/rishizhihou/article/details/78718136
-
-
+java
+win10下安装配置Java web开发环境（win10+jdk1.8+tomcat8.5+mysql5.7）: ( http://blog.csdn.net/rishizhihou/article/details/78718136 ) 
 ----------------------------------------
-
-79) 非计算机
-
+非计算机
 群空间:  ( http://qun.qzone.qq.com/ ) http://qun.qzone.qq.com/
 下厨房:  ( http://www.xiachufang.com/ ) http://www.xiachufang.com/
 博客类蛋糕制作:   ( https://www.douban.com/photos/album/116792215/ ) https://www.douban.com/photos/album/116792215/
 教育网站:  ( https://www.jiemodui.com/ ) https://www.jiemodui.com/
-
-kindle推(集思会):  ( http://www.kindlepush.com/main ) http://www.kindlepush.com/main
+kindle推:  ( http://www.kindlepush.com/main ) http://www.kindlepush.com/main
