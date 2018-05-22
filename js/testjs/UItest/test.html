@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input type="text" id="input_forb_maxnum" data-max="2000"/>
+
+<script>
+    (function(){
+        var limitMaxNumber = document.getElementById("input_forb_maxnum"),		//获取限制对象
+            clearNonumber = function(tThis){					//清除数字
+                var _v = tThis.value,
+                    _vLen = _v.length,
+                    dataMax = tThis.getAttribute("data-max"),
+                    maxNum;
+
+                    maxNum = Number(dataMax);
+                    tThis.value = _v.replace(/\D/g, "");
+
+                if(Number(tThis.value) >= maxNum){
+                    alert("只能输入小于两千的整数");
+                    tThis.value = ""
+                }
+            };
+        limitMaxNumber.onfocus = function(){							//获取焦点事件
+            clearNonumber(this);
+        }
+        limitMaxNumber.onkeyup = function(){							//键盘事件
+            clearNonumber(this);
+        }
+
+        limitMaxNumber.onblur = function(){							//失去焦点事件
+            clearNonumber(this);
+        }
+
+        limitMaxNumber.onchange = function() {
+            clearNonumber(this);
+        }
+    })()
+
+</script>
+</body>
+</html>
