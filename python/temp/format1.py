@@ -1,4 +1,6 @@
 import re
+from urllib.parse import urlparse
+import db_mysql
 
 source_path = u"1.txt"
 
@@ -11,60 +13,43 @@ text = f.read()
 # 去除多余换行
 text = re.sub(r'\n\n', '', text)
 text = re.sub(r'\n\s\(', ' (', text)
-print(text)
 
-# p = re.compile(r'\d{1,2}\)[\s\S]*\)')
-# print(p.findall(text))
-
+# 找出括号及其中的网址
 list_link = []
 p1 = re.compile(r'\(\s+\S+\s+\)')
 list_link  = p1.findall(text)
 
-# print(len(list_link))
-# index = 0
-# for i in list_link:
-#     print(index)
-#     index = index + 1
-#     print(i)
-#     # print(i)
-#
-
-
+# 找出如 "74) yandex (" 的
 p2 = re.compile(r'\d{1,2}\)'+ r'.*?' +r'\(')
 t2 = p2.findall(text)
 
-# print(len(t2))
-# index = 0
-# for i in t2:
-#     print(index)
-#     index = index + 1
-#     print(i)
-#     # exit()
-# # print(list_link)
-# exit()
+
 
 title = []
 for t in t2:
+    # 去掉数字和括号
     t = re.sub(r'\d{1,2}\)', "", t)
     t = re.sub(r'\(', "", t)
     title.append(t.strip())
-# print(title)
 
 result = []
 for i in range(len(title)):
     item = {}
 
-    item['title'] = title[i]
-    item['link'] = list_link[i]
+    title[i] = re.sub(r'\d{1,2}\)', "", title[i])
+    title[i] = re.sub(r'\(', "", title[i])
 
+    list_link[i] = re.sub(r'\(', '', list_link[i])
+    list_link[i] = re.sub(r'\)', '', list_link[i])
+    item['name'] = title[i].strip()
+    item['link'] = list_link[i].strip()
+
+    item['root'] = urlparse(item['link'])[0] + "://" + urlparse(item['link'])[1]
+
+
+    print(item)
+    db_mysql.save_item(item)
     result.append(item)
 
 
-index = 0
-for i in result:
-    print(index)
-    index = index + 1
-    print(i)
-    print()
-# print(list_link[0])
-# print(result)
+
