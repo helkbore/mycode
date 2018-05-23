@@ -192,3 +192,7 @@ dList = [d1, d2, d3]
 
 
 # save_item2(dList)
+# db = SQLManager.SQLManager()
+# result = db.get_one("select * from item_tag where tagid = 22")
+# print(result)
+# db.close()

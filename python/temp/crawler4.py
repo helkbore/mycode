@@ -26,7 +26,9 @@ for t in tab:
         ftab = fsoup.findAll("a", attrs={'class': 'more'})
         ftag = []
         for ft in ftab:
-            ftag.append(ft.text.strip())
+            tttemptag = ft.text.strip()
+            tttemptag = tttemptag.replace("•", "-")
+            ftag.append(tttemptag)
 
 
         ul_list = fsoup.findAll("ul", attrs={'class': 'f-cb'})
@@ -35,6 +37,9 @@ for t in tab:
         for ii in range(len(ul_list)):
             ffav = ul_list[ii].findAll("a", attrs={'class': 'link'})
             result = []
+            print()
+            print(ftag[ii] + "--" + cat['name'])
+
 
             for ff in ffav:
                 fitem = {}
@@ -53,10 +58,10 @@ for t in tab:
             db_mysql2.save_item2(result)
 
             print("--------------------------")
-            for r in result:
-                print(r)
-
-            result = []
+            # for r in result:
+            #     print(r)
+            #
+            # result = []
     # print(len(result))
 
 
