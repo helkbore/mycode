@@ -3,10 +3,17 @@ import db_mysql2
 from bs4 import BeautifulSoup
 
 urlsets = [
-    "https://123.w3cschool.cn/"
+    "http://www.jikezhi.net/navs"
 ]
 
 prefixs = []
+
+findTag = [
+    ['div', 'item'],
+    ['h2', ''],
+    ['a', '']
+
+]
 # urlsets = [
 #     "http://www.c3z.cn/Index/hot.html",
 #     "http://www.c3z.cn/Index/web.html",
@@ -25,13 +32,13 @@ prefixs = []
 #     "学习"
 # ]
 
-findTag = [
-    ["div", "portlet cardarea"],
-    ["div", "caption"],["span", ""],
-
-    ["a","list-card-details list-card-items popovers"],
-    ["span", "cardinfoa"]
-]
+# findTag = [
+#     ["div", "portlet cardarea"],
+#     ["div", "caption"],["span", ""],
+#
+#     ["a","list-card-details list-card-items popovers"],
+#     ["span", "cardinfoa"]
+# ]
 
 
 
@@ -52,19 +59,20 @@ def do_crawler(urlsets, prefixs, findTag):
         # print(layer1)
         # exit()
 
-        # print(layer1)
+        print(findTag[1][1])
         for l1 in layer1:
-            title = l1.find(findTag[1][0], attrs={'class': findTag[1][1]}).find(findTag[2][0], attrs={'class': findTag[2][1]}).text.strip()
-            # print(l1.find(findTag[1][0], attrs={'class': findTag[1][1]}))
-            # print(l1.find(""))
+            title = l1.find(findTag[1][0], attrs={'class': findTag[1][1]}).text.strip() #.find(findTag[2][0], attrs={'class': findTag[2][1]}).text.strip()
+
+            # print(title)
             # exit()
-            layer2 = l1.findAll(findTag[3][0],  attrs={'class': findTag[3][1]})
+
+            layer2 = l1.findAll(findTag[2][0],  attrs={'class': findTag[2][1]})
 
             # print()
             # print(prefixs[indexHtml])
             for l2 in layer2:
                 item = {}
-                item['name'] = l2.find(findTag[4][0], attrs={'class': findTag[4][1]}).text.strip()
+                item['name'] = l2.text # .find(findTag[4][0], attrs={'class': findTag[4][1]}).text.strip()
                 item['link'] = l2['href'].strip()
                 item['root'] = myfunc.get_root(item['link'])
 

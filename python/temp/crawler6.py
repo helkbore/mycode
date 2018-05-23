@@ -19,6 +19,8 @@ typeList = []
 # print(isinstance(typeLayer1, BeautifulSoup.element.ResultSet))
 commonList = []
 
+result = []
+
 typeDic = {
     "bgmsc" : "bgmusic",
     "bgvdo" : "bgvedio",
@@ -47,23 +49,27 @@ tab = soup.findAll("ul", class_="m-tags")
 
 for i in range(len(tab)):
     tag = commonList[i]
-    # favs = tab[i].findAll("p")
-    # # print(typeList)
-    # for f in favs:
-    #     # print(f)
-    #     for m in typeList[i]:
-    #         print(m)
-    #         if f['class'][0] == m['class']:
-    #             item = {}
-    #             item['tag'] = m['name']
-    #             item['name'] = p.
+    li = tab[i].findAll("li")
 
-        # for m in tabList[i]:
-        #     # if p['class'][0] ==
-        #     pass
+    for l in li:
+        a = l.find("a")
+        p = l.find("p")
+        # print(p['class'][0])
+        print()
+        print(commonList[i])
+        for m in typeList[i]:
+            # print(typeDic[m['class']])
+            if p['class'][0] == typeDic[m['class']]:
+                item = {}
+                item['tag'] = m['name']
+                # item['tag'] = commonList[i]
 
-    pass
-for t in tab:
-    favs = t.findAll("p")
+                item['name'] = p.text
+                item['link'] = a['href']
+                item['root'] = myfunc.get_root(item['link'])
+                print(item)
+                result.append(item)
+
+db_mysql2.save_item2(result)
 
 
