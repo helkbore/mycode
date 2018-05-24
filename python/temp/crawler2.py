@@ -1,7 +1,59 @@
 import myfunc
-import db_mysql2
+import db_mysql4
 from bs4 import BeautifulSoup
 
+
+url = "http://www.jikedaohang.com/"
+
+html = myfunc.get_html(url)
+soup = BeautifulSoup(html, "html.parser")
+menu = soup.find("ul", class_="layui-nav am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list")
+menuItem = menu.findAll("a")
+# print(len(menuItem))
+result = []
+for i in range(len(menuItem) - 1):
+    first_title = menuItem[i].text.strip()
+    pageLink = "http://www.jikedaohang.com/" + menuItem[i]['href']
+
+    # print(first_title)
+    # print(pageLink)
+    cHtml = myfunc.get_html(pageLink)
+    cSoup = BeautifulSoup(cHtml, "html.parser")
+    main = cSoup.find("div", class_="site-content")
+
+    tab = main.findAll("div", class_="layui-tab layui-tab-card")
+    # print(len(tab))
+
+
+    for m in tab:
+        title = m.find("ul").find("li", class_="layui-tab-li").text.strip()
+        # print(title)
+        # print(len(title))
+        favTab = m.find("div", class_="layui-tab-content")
+        fav = favTab.findAll("a", class_="box-item")
+        for n in fav:
+            item = {}
+            item['tag'] = []
+            item['tag'].append(title)
+            item['tag'].append(first_title)
+            item['name'] = n.text.strip()
+
+            # item['link'] = ""
+            item['link'] = n['href']
+            item['fromurl'] = url
+
+            result.append(item)
+            print(item)
+
+print("***********************")
+print("开始插入数据库")
+print("处理项共计: " + str(len(result)))
+db_mysql4.saveResult(result)
+result = []
+
+
+
+'''
 # url = "http://www.jikedaohang.com/index/index/part/id/10/name/IOS.html"
 # prefix = "IOS"
 
@@ -55,3 +107,4 @@ for t in tab:
 #     print(i)
 
 db_mysql2.save_item2(result)
+'''

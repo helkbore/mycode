@@ -36,7 +36,7 @@ def genid():
     # print(datetime.datetime.now().microsecond)
 
     id = str(now) + str(datetime.datetime.now().microsecond) + str(randomNum)
-    return int(id)
+    return str(id)
 
 # print(genid())
 def get_location(url):

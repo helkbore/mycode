@@ -1,14 +1,13 @@
 import myfunc
 import db_mysql4
 from bs4 import BeautifulSoup
-import bs4
-import requests
 
 
 url = "https://shouku123.com/xizi"
 # url = "https://shouku123.com/xizi/%E5%85%B6%E4%BB%96"
 html = myfunc.get_html(url)
 soup = BeautifulSoup(html, 'html.parser')
+
 
 tab = soup.findAll("li", class_="urlGroupItem")
 result = []
@@ -19,17 +18,18 @@ for t in tab:
     linkList = t.findAll("a")
     for i in linkList:
         item = {}
-        item['tag'] = title
+        item['tag'] = []
+        item['tag'].append(title)
         item['name'] = i.text.strip()
 
         lUrl = "https://shouku123.com/" +i['href']
-        item['link'] = ""
-        # item['link'] = myfunc.get_location(lUrl)
+        # item['link'] = ""
+        item['link'] = myfunc.get_location(lUrl)
 
         item['fromurl'] = url
 
         result.append(item)
-        # print(item)
+        print(item)
 
 print("***********************")
 print("开始插入数据库")
