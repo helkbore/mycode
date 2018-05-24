@@ -12,8 +12,19 @@ def get_html(url):
     except:
         return "ERROR"
 
+def get_html_gbk(url):
+    try:
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
+        r.encoding = 'gbk'
+        return r.text
+    except:
+        return "ERROR"
 def get_root(url):
-    return urlparse(url)[0] + "://" + urlparse(url)[1]
+    if url:
+        return urlparse(url)[0] + "://" + urlparse(url)[1]
+    else:
+        return ""
 
 def genid():
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -28,3 +39,10 @@ def genid():
     return int(id)
 
 # print(genid())
+def get_location(url):
+    r = requests.get(url, timeout=30, allow_redirects=False)
+    # print(r.headers['location'])
+    return r.headers['location']
+
+def ifNullValue(v):
+    return v if v else ""

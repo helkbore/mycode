@@ -16,6 +16,11 @@ url = "http://daohang.itqiyi.com/"
 html = get_html(url)
 soup = BeautifulSoup(html, 'html.parser')
 
+
+"""
+#####################################
+# 左边栏
+#####################################
 part1 = soup.find("div", attrs={'id': 'qiaoqiao_cate'})
 # print(part1)
 
@@ -88,4 +93,57 @@ for pus in part1_ul_sets:
 #         print(pp)
 #
 # tableSets = soup.findAll('table')
-# print(tableSets)
+"""
+
+'''
+######################
+##       右上       ##
+######################
+result = []
+# print(soup.prettify())
+soup.prettify()
+part2 = soup.find(id="qiaoqiao_fm")
+# print(part2)
+# exit()
+favs = part2.findAll("a")
+for f in favs:
+    # print(f)
+    item = {}
+    item['tag'] = '名站导航'
+    item['name'] = f.text.strip()
+    item['link'] = f['href']
+    item['root'] = myfunc.get_root(item['link'])
+
+    result.append(item)
+    print(item)
+db_mysql2.save_item2(result)
+
+'''
+
+######################
+##       右下       ##
+######################
+
+result = []
+part3 = soup.find(id="qiaoqiao_ls")
+# print(part3)
+
+dlSets = part3.findAll("dl")
+print(len(dlSets))
+for dl in dlSets:
+    title = dl.find("dt").text.strip()
+
+    ddSets = dl.find("dd", class_="l")
+    linkSets = ddSets.findAll("a")
+    for l in linkSets:
+        # print(l)
+        # exit()
+        item = {}
+        item['tag'] = title
+        item['name'] = l.text.strip()
+        item['link'] = l['href']
+        item['root'] = myfunc.get_root(item['link'])
+
+        result.append(item)
+        print(item)
+db_mysql2.save_item2(result)

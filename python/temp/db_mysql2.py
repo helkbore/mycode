@@ -147,51 +147,54 @@ def save_item2(dList):
     #         addItemTag(itemId, tagId)
 
 
-def getItemByName(name):
-    pass
-
-def addItemByDict(d):
-    pass
-
-def getTagByName(name):
-    pass
-
-def addTagByDict(d):
-    pass
-
-def getItemTag(itemId, tagId):
-    pass
-
-def addItemTag(itemId, tagId):
-    pass
 
 
 # 测试
 d1 = {
-    "name" : "whellote博客",
-    "link" : "https://whellote.site",
-    "root" : "https://whellote.site",
-    "tag"  : "测试"
+    "name" : "站长工具",
+    "link" : "http://tool.chinaz.com",
+    "root" : "http://tool.chinaz.com",
+    "tag"  : "实用工具"
 }
 
 d2 = {
-    "name" : "whellote博客2",
-    "link" : "https://whellotea.site",
-    "root" : "https://whellotea.site",
-    "tag"  : "测试"
+    "name" : "网站备案",
+    "link" : "http://www.miitbeian.gov.cn/publish/query/indexFirst.action/",
+    "root" : "http://www.miitbeian.gov.cn",
+    "tag"  : "实用工具"
 }
 
 d3 = {
-    "name" : "whellote博客3",
-    "link" : "https://whellote.site",
-    "root" : "https://whellote.site",
-    "tag"  : "测试2"
+    "name" : "域名注册",
+    "link" : "https://wanwang.aliyun.com/domain/",
+    "root" : "https://wanwang.aliyun.com",
+    "tag"  : "实用工具"
 }
 
-dList = [d1, d2, d3]
+d4 = {
+    "name" : "在线杀毒",
+    "link" : "http://webscan.360.cn/",
+    "root" : "http://webscan.360.cn",
+    "tag"  : "实用工具"
+}
+
+d5 = {
+    "name" : "二维码",
+    "link" : "https://cli.im/",
+    "root" : "https://cli.im",
+    "tag"  : "实用工具"
+}
+
+d6 = {
+    "name" : "虚拟主机",
+    "link" : "https://www.cndns.com/",
+    "root" : "https://www.cndns.com",
+    "tag"  : "实用工具"
+}
+
+dList = [d1, d2, d3, d4, d5, d6]
 
 
-# save_item2(dList)
 # db = SQLManager.SQLManager()
 # result = db.get_one("select * from item_tag where tagid = 22")
 # print(result)

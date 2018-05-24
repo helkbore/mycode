@@ -1,8 +1,41 @@
-import requests
+import myfunc
+import db_mysql4
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse
-import db_mysql
+import bs4
+import requests
 
+
+url = "https://shouku123.com/xizi"
+# url = "https://shouku123.com/xizi/%E5%85%B6%E4%BB%96"
+html = myfunc.get_html(url)
+soup = BeautifulSoup(html, 'html.parser')
+
+tab = soup.findAll("li", class_="urlGroupItem")
+result = []
+for t in tab:
+    title = t.find("ul", class_="list-group collapse in urls ")['title']
+    print(title)
+
+    linkList = t.findAll("a")
+    for i in linkList:
+        item = {}
+        item['tag'] = title
+        item['name'] = i.text.strip()
+
+        lUrl = "https://shouku123.com/" +i['href']
+        item['link'] = ""
+        # item['link'] = myfunc.get_location(lUrl)
+
+        item['fromurl'] = url
+
+        result.append(item)
+        # print(item)
+
+print("***********************")
+print("开始插入数据库")
+print("处理项共计: " + str(len(result)))
+db_mysql4.saveResult(result)
+'''
 def get_html(url):
     try:
         r = requests.get(url, timeout=30)
@@ -50,3 +83,4 @@ for li in liSets:
     print(title)
 
 # print(html)
+'''
