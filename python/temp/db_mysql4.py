@@ -1,6 +1,7 @@
 import SQLManager
 import myfunc
 import datetime
+import operator
 
 def saveResult(dList):
 
@@ -23,38 +24,39 @@ def saveResult(dList):
     resultTag2 = []
     resultItemTag2 = []
 
+    find_error = {}
+    find_error['item'] = {}
+    find_error['item']['name'] = "颜色转换"
+    find_error['tag'] = {}
+    find_error['tag']['name'] = "Android"
+
     # 整理item
     for d in dList:
         d['link'] = myfunc.ifNullValue(d['link'])
         d['root'] = myfunc.get_root(d['link'])
         d['updatetime'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        if d['name'] not in itemDict:
-            itemDict.append(d['name'])
+        if d['name'].lower() not in itemDict:
+            itemDict.append(d['name'].lower())
             itemList.append(d)
         else:
-            itemList[itemDict.index(d['name'])]['tag'] = list(set(itemList[itemDict.index(d['name'])]['tag'] + d['tag']))
-            # itemList[itemDict.index(d['name'])]['tag'] = itemList[itemDict.index(d['name'])]['tag'] + d['tag']
-
-        # print("===============================")
-        # print(itemList[itemDict.index(d['name'])]['tag'])
-        # itemDictIndex = itemDict.index(d['name'])
-
-    # print(len(itemList))
+            itemList[itemDict.index(d['name'].lower())]['tag'] = list(set(itemList[itemDict.index(d['name'].lower())]['tag'] + d['tag']))
 
     db = SQLManager.SQLManager()
     for i in itemList:
-        # item数据库去重
         sql = "select id from item where name = %s"
         args = i['name']
         result = db.get_one(sql, args)
 
-        itemDictIndex = itemDict.index(i['name'])
+        itemDictIndex = itemDict.index(i['name'].lower())
+
+        itemList[itemDictIndex]['itemid'] = "未添加"
         if result:
             repeatItem = repeatItem + 1
             itemList[itemDictIndex]['itemid'] = result['id']
         else:
             itemList[itemDictIndex]['itemid'] = myfunc.genid()
+
 
         # 整理tag
         for m in i['tag']:
@@ -62,11 +64,10 @@ def saveResult(dList):
             tempTag['name'] = m
             tempTag['id'] = ""
             tempTag['fromurl'] = i['fromurl']
-            if m not in tagDict:
-                tagDict.append(m)
+            if m.lower() not in tagDict:
+                tagDict.append(m.lower())
                 tagList.append(tempTag)
 
-        # print(len(tagList))
 
         # tag 数据库去重
         for i in range(len(tagList)):
@@ -82,13 +83,12 @@ def saveResult(dList):
                 tagList[i]['id'] = myfunc.genid()
 
 
-
     # 整理item_tag
     for i in itemList:
         for m in i['tag']:
             tempItemTag = {}
             tempItemTag['itemid'] = i['itemid']
-            tempItemTag['tagid'] = tagList[tagDict.index(m)]['id']
+            tempItemTag['tagid'] = tagList[tagDict.index(m.lower())]['id']
 
             # item_tag 数据库去重
             sql = "select id from item_tag where itemid = %s and tagid = %s"
@@ -116,7 +116,6 @@ def saveResult(dList):
 
         resultItem.append(tempList)
         tempIndex = tempIndex + 1
-        # print(tempList)
 
 
 
@@ -137,7 +136,6 @@ def saveResult(dList):
         resultTag.append(tempList)
         resultTag2.append((i['index'], i['id']))
         tempIndex = tempIndex + 1
-        # print(tempList)
 
     db.multi_modify(sql, resultTag)
     db.multi_modify(sql2, resultTag2)
@@ -150,12 +148,14 @@ def saveResult(dList):
     sql = "replace into item_tag ( id, itemid, tagid) values (%s, %s, %s)"
     sql2 = "update item_tag set `index` = %s where id = %s"
     for i in itemTagList:
+        # print(itemTagList)
+        if i['itemid'] == '2018052514371931752756' and i['tagid'] == "2018052514372050159427":
+            print("ok")
         i['index'] = tempIndex
         tempList = (i['id'], i['itemid'], i['tagid'])
         resultItemTag.append(tempList)
         resultItemTag2.append((i['index'], i['id']))
         tempIndex = tempIndex + 1
-        # print(tempList)
 
     db.multi_modify(sql, resultItemTag)
     db.multi_modify(sql2, resultItemTag2)
@@ -326,3 +326,43 @@ def saveResult(dList):
     db.close()
     pass
 '''
+
+def saveResult_test(dList):
+    db = SQLManager.SQLManager()
+    for d in dList:
+        sql = "select id from item where `name` = %s"
+        args = d['name']
+        result = db.get_one(sql, args)
+
+        if not result:
+            print("未找到item记录: ")
+            print(d)
+        else:
+            itemid = result['id']
+
+            # print("tag length: " + str(len(d['tag'])))
+            for t in d['tag']:
+                sql = "select id from tag where `name` = %s"
+                args = t
+                result = db.get_one(sql, args)
+
+                if not result:
+                    print("未找到tag记录: ")
+                    print(t)
+                else:
+                    tagid = result['id']
+
+                    sql = "select * from item_tag where itemid = %s and tagid = %s"
+                    args = (itemid, tagid)
+
+                    result = db.get_list(sql, args)
+                    if len(result) == 0:
+                        print("---------------------------------------未找到item_tag记录: ")
+                        print(d)
+                        print(t)
+
+
+
+
+
+

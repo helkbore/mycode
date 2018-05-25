@@ -2,7 +2,7 @@ import myfunc
 import db_mysql4
 from bs4 import BeautifulSoup
 
-
+result = []
 url = "http://www.jikedaohang.com/"
 
 html = myfunc.get_html(url)
@@ -10,7 +10,7 @@ soup = BeautifulSoup(html, "html.parser")
 menu = soup.find("ul", class_="layui-nav am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list")
 menuItem = menu.findAll("a")
 # print(len(menuItem))
-result = []
+# result = []
 for i in range(len(menuItem) - 1):
     first_title = menuItem[i].text.strip()
     pageLink = "http://www.jikedaohang.com/" + menuItem[i]['href']
@@ -43,12 +43,13 @@ for i in range(len(menuItem) - 1):
             item['fromurl'] = url
 
             result.append(item)
-            print(item)
+            # print(item)
 
 print("***********************")
 print("开始插入数据库")
 print("处理项共计: " + str(len(result)))
 db_mysql4.saveResult(result)
+# db_mysql4.saveResult_test(result)
 result = []
 
 

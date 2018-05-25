@@ -6,7 +6,7 @@ DB_CONFIG = {
     "port"     : 3306,
     "user" :'root',
     "password" : "root",
-    "db"  : 'favorites',
+    "db"  : 'fav',
     "charset"  : "utf8"
 
 }
@@ -33,25 +33,46 @@ class SQLManager(object):
 
     # 查询多条数据
     def get_list(self, sql, args=None):
-        self.cursor.execute(sql, args)
-        result = self.cursor.fetchall()
-        return result
+        try:
+            self.cursor.execute(sql, args)
+            result = self.cursor.fetchall()
+            return result
+        except BaseException as e:
+            print("---------------error----------------")
+            print("error: ", e)
+            print(sql)
+
 
     # 查询单条
     def get_one(self, sql, args=None):
-        self.cursor.execute(sql, args)
-        result = self.cursor.fetchone()
-        return result
+        try:
+            self.cursor.execute(sql, args)
+            result = self.cursor.fetchone()
+            return result
+        except BaseException as e:
+            print("---------------error----------------")
+            print("error: ", e)
+            print(sql)
 
     # 执行单条SQL语句
     def moddify(self, sql, args=None):
-        self.cursor.execute(sql, args)
-        self.conn.commit()
+        try:
+            self.cursor.execute(sql, args)
+            self.conn.commit()
+        except BaseException as e:
+            print("---------------error----------------")
+            print("error: ", e)
+            print(sql)
 
     # 执行多条数据
     def multi_modify(self, sql, args=None):
-        self.cursor.executemany(sql, args)
-        self.conn.commit()
+        try:
+            self.cursor.executemany(sql, args)
+            self.conn.commit()
+        except BaseException as e:
+            print("---------------error----------------")
+            print("error: ", e)
+            print(sql)
 
     # 插入单条
     def create(self, sql, args=None):
