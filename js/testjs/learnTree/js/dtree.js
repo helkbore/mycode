@@ -138,22 +138,28 @@ dTree.prototype.addNode = function(pNode) {
 
             // 设置节点的点击链接
             if (!cn.target && this.config.target) {
+                console.log(0)
                 cn.target = this.config.target;
             }
 
             if (cn._hc && !cn._io && this.config.useCookies) {
+                console.log(1)
                 cn._io = this.isOpen(cn.id);
             }
             if (!this.config.folderLinks && cn._hc) {
+                console.log(2)
                 cn.url = null;
             }
             if (this.config.useSelection && cn.id == this.selectedNode && !this.selectedFound) {
+                console.log(3)
                 cn._is = true;
                 this.selectedNode = n;
                 this.selectedFound = true;
             }
             str += this.node(cn, n);
-            if (cn._ls) break;
+            if (cn._ls) {
+                break;
+            }
         }
     }
     return str;
@@ -161,6 +167,8 @@ dTree.prototype.addNode = function(pNode) {
 
 // Creates the node icon, url and text
 dTree.prototype.node = function(node, nodeId) {
+    console.log(node, nodeId);
+    console.log('--has child: ' + node._hc)
     var str = '<div class="dTreeNode">' + this.indent(node, nodeId);
     if (this.config.useIcons) {
         if (!node.icon) node.icon = (this.root.id == node.pid) ? this.icon.root : ((node._hc) ? this.icon.folder : this.icon.node);
@@ -218,15 +226,23 @@ dTree.prototype.node = function(node, nodeId) {
 dTree.prototype.indent = function(node, nodeId) {
     var str = '';
     if (this.root.id != node.pid) {
-        for (var n=0; n<this.aIndent.length; n++)
+        for (var n=0; n<this.aIndent.length; n++){
             str += '<img src="' + ( (this.aIndent[n] == 1 && this.config.useLines) ? this.icon.line : this.icon.empty ) + '" alt="" />';
+        }
         (node._ls) ? this.aIndent.push(0) : this.aIndent.push(1);
+
         if (node._hc) {
             str += '<a href="javascript: ' + this.obj + '.o(' + nodeId + ');"><img id="j' + this.obj + nodeId + '" src="';
-            if (!this.config.useLines) str += (node._io) ? this.icon.nlMinus : this.icon.nlPlus;
-            else str += ( (node._io) ? ((node._ls && this.config.useLines) ? this.icon.minusBottom : this.icon.minus) : ((node._ls && this.config.useLines) ? this.icon.plusBottom : this.icon.plus ) );
+            if (!this.config.useLines) {
+                str += (node._io) ? this.icon.nlMinus : this.icon.nlPlus;
+            }
+            else {
+                str += ( (node._io) ? ((node._ls && this.config.useLines) ? this.icon.minusBottom : this.icon.minus) : ((node._ls && this.config.useLines) ? this.icon.plusBottom : this.icon.plus ) );
+            }
             str += '" alt="" /></a>';
-        } else str += '<img src="' + ( (this.config.useLines) ? ((node._ls) ? this.icon.joinBottom : this.icon.join ) : this.icon.empty) + '" alt="" />';
+        } else {
+            str += '<img src="' + ( (this.config.useLines) ? ((node._ls) ? this.icon.joinBottom : this.icon.join ) : this.icon.empty) + '" alt="" />';
+        }
     }
     return str;
 };
@@ -505,4 +521,4 @@ if (!Array.prototype.pop) {
         this.length = Math.max(this.length-1,0);
         return lastElement;
     }
-};console.log("\u002f\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u000d\u000a\u0020\u002a\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u002a\u0009\u0009\u000d\u000a\u0020\u002a\u0020\u0009\u0009\u0009\u0009\u0009\u0009\u0020\u0020\u0020\u0020\u0020\u0020\u4ee3\u7801\u5e93\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u002a\u000d\u000a\u0020\u002a\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0077\u0077\u0077\u002e\u0064\u006d\u0061\u006b\u0075\u002e\u0063\u006f\u006d\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u002a\u000d\u000a\u0020\u002a\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0009\u0009\u0020\u0020\u52aa\u529b\u521b\u5efa\u5b8c\u5584\u3001\u6301\u7eed\u66f4\u65b0\u63d2\u4ef6\u4ee5\u53ca\u6a21\u677f\u0009\u0009\u0009\u002a\u000d\u000a\u0020\u002a\u0020\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u002a\u000d\u000a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002a\u002f");
+};
