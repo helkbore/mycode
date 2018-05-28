@@ -6,11 +6,26 @@ url = "http://www.gogeeks.cn/nav"
 
 
 html = myfunc.get_html(url)
-soup = BeautifulSoup(html, 'lxml')
+soup = BeautifulSoup(html, 'html.parser')
 
 result = []
 
-tab = soup.findAll("div", attrs={'class': 'm-list1 m-list1-c1'})
+divTab = soup.find("div", class_="ui grid")
+h4LIst = divTab.findAll("h4", class_='ui header')
+
+
+first_title_list = []
+for i in range(1, len(h4LIst)):
+    print(h4LIst[i].text.strip())
+    first_title_list.append(h4LIst[i].text.strip())
+# print((first_title_list))
+exit()
+
+
+
+
+'''
+pageTab = soup.findAll("div", attrs={'class': 'm-list1 m-list1-c1'})
 
 cats = []
 for t in tab:
@@ -73,3 +88,5 @@ for t in tab:
 
 
 # db_mysql2.save_item2(result)
+
+'''
