@@ -171,8 +171,12 @@ dTree.prototype.node = function(node, nodeId) {
     console.log('--has child: ' + node._hc)
     var str = '<div class="dTreeNode">' + this.indent(node, nodeId);
     if (this.config.useIcons) {
-        if (!node.icon) node.icon = (this.root.id == node.pid) ? this.icon.root : ((node._hc) ? this.icon.folder : this.icon.node);
-        if (!node.iconOpen) node.iconOpen = (node._hc) ? this.icon.folderOpen : this.icon.node;
+        if (!node.icon) {
+            node.icon = (this.root.id == node.pid) ? this.icon.root : ((node._hc) ? this.icon.folder : this.icon.node);
+        }
+        if (!node.iconOpen) {
+            node.iconOpen = (node._hc) ? this.icon.folderOpen : this.icon.node;
+        }
         if (this.root.id == node.pid) {
             node.icon = this.icon.root;
             node.iconOpen = this.icon.root;
